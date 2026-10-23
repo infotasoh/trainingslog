@@ -22,7 +22,8 @@ Geen garanties, wel goed onderbouwde ideeën die passen bij hoe ik graag wed.
 - Als een favoriet te laag staat (bijv. 1.35), zoek een markt die richting 2.00 brengt
   zonder veel extra risico: winst + over 1.5, handicap, winst + BTTS nee, enz.
   Of een **kleine combi van twee** sterke, lage odds. Nooit combi's van meer dan twee.
-- **3 tot 6 tips per dag**, verdeeld over sporten waar het aanbod goed is. Kwaliteit gaat
+- **4 tot 8 tips per dag**, verdeeld over zoveel mogelijk sporten waar het aanbod goed is
+  (streef naar minstens 3 sporten). Kwaliteit gaat
   voor aantal: is er weinig te halen, geef dan minder tips en zeg dat eerlijk.
 - Elke tip krijgt een **vertrouwen van 1 tot 5**. Een `hoger`-tip heeft minimaal 4.
 
@@ -31,7 +32,7 @@ Geen garanties, wel goed onderbouwde ideeën die passen bij hoe ik graag wed.
 Waarde voor `sport` (de app groepeert hierop): `voetbal`, `basketbal` (NBA, EuroLeague),
 `ijshockey` (NHL), `tennis`, `american-football` (NFL), `honkbal` (MLB), `darts`,
 `handbal`, `volleybal`, `f1`, `mma`, `boksen`, `rugby`, `wielrennen`.
-Voetbal blijft de basis. Kijk daarnaast elke dag naar wat er speelt: NBA en NHL
+Voetbal blijft de basis. Kijk daarnaast elke dag actief naar wat er speelt: NBA en NHL
 (oktober - juni), NFL (september - februari, vooral zondag/maandag), tennis (ATP/WTA),
 darts (PDC), MLB (april - oktober). NBA/NHL/NFL spelen 's nachts in Nederlandse tijd;
 geef die tijd dan aan als bijvoorbeeld `02:00 (nacht)`.
@@ -67,17 +68,35 @@ geef die tijd dan aan als bijvoorbeeld `02:00 (nacht)`.
      van beide ploegen, blessures, onderlinge duels, wat modellen en bookmakers zeggen,
      waarom deze markt en niet een andere, en waarom de kans groot is dat hij goed gaat.
    - `risks`: wat er mis kan gaan, in één of twee zinnen.
-5. Teamlogo's: de app tekent een clubschild in de clubkleuren. Geef per team `name`,
-   `short` (2-3 letters, bijv. AJA, PSV, LAL) en `c1`/`c2` (primaire en secundaire
-   clubkleur als hex). Bij tennis/darts/MMA: de spelers met landkleuren.
-6. Schrijf de dag naar de app en sluit af met een korte samenvatting: die samenvatting
-   is de dagelijkse pushmelding.
+5. Logo's en live scores: de app haalt echte logo's en live standen bij ESPN op, in de
+   browser van de gebruiker. Geef daarom per tip `espn: {"league": "...", "date": "YYYYMMDD"}`
+   mee. `date` is de datum zoals ESPN hem gebruikt (Amerikaanse datum: een NBA-wedstrijd
+   om 03:00 Nederlandse tijd op de 24e hoort bij `date` van de 23e). Teamnamen in `home.name`
+   en `away.name` moeten herkenbaar zijn voor ESPN (bijv. "Trail Blazers", "Ajax",
+   "Mönchengladbach"); bij twijfel zet je de volledige ESPN-naam in `home.espnName`.
+   Geef ook `short` (2-3 letters) en `c1`/`c2` (clubkleuren hex): dat is de reserve als ESPN
+   niets vindt. ESPN-competities (`league`):
+   - Voetbal: `soccer/ned.1` (Eredivisie), `soccer/ned.2` (KKD), `soccer/eng.1`, `soccer/eng.2`,
+     `soccer/esp.1`, `soccer/ger.1`, `soccer/ger.2`, `soccer/ita.1`, `soccer/fra.1`, `soccer/bel.1`,
+     `soccer/por.1`, `soccer/tur.1`, `soccer/sco.1`, `soccer/ksa.1`, `soccer/usa.1`,
+     `soccer/uefa.champions`, `soccer/uefa.europa`, `soccer/uefa.europa.conf`, `soccer/ned.cup`
+   - `basketball/nba`, `basketball/wnba`, `hockey/nhl`, `football/nfl`,
+     `football/college-football`, `baseball/mlb`, `mma/ufc`, `racing/f1`
+   - Tennis, darts, handbal, volleybal: geen `espn`-veld (dan toont de app clubkleuren).
+6. Schrijf de dag naar de app (zie hieronder) en sluit af met een korte samenvatting: die
+   samenvatting is de dagelijkse pushmelding.
 
 ## Gegevens in de app
 
-Artifact https://claude.ai/artifact/RU7zftJ1ofXvDM2wjuJUDX met een database.
-Collectie `days`, document-id is de datum (`YYYY-MM-DD`). Schrijf met de `ArtifactData`
-tool (`set` voor een nieuwe dag, `update` met `if_version` voor een bestaande).
+De app is een website op GitHub Pages: https://infotasoh.github.io/trainingslog/voetbalbets/
+De gegevens zijn JSON-bestanden in de repo `infotasoh/trainingslog`, op branch `main`:
+
+- `voetbalbets/data/days/YYYY-MM-DD.json`: één bestand per dag (schema hieronder).
+- `voetbalbets/data/index.json`: `{"days": ["2026-10-24", "2026-10-23", ...]}`; voeg de nieuwe
+  datum toe (nieuwste eerst).
+
+Werk uitslagen bij in de bestanden van eerdere dagen. Commit alles in één commit
+("Bets van <datum>") en push naar `main`. Pas nooit code aan, alleen `voetbalbets/data/`.
 
 ```json
 {
@@ -93,6 +112,7 @@ tool (`set` voor een nieuwe dag, `update` met `if_version` voor een bestaande).
       "match": "Alavés - Málaga",
       "home": { "name": "Alavés", "short": "ALA", "c1": "#1F4E9C", "c2": "#FFFFFF" },
       "away": { "name": "Málaga", "short": "MAL", "c1": "#6CB4E4", "c2": "#FFFFFF" },
+      "espn": { "league": "soccer/esp.1", "date": "20261023" },
       "competition": "La Liga",
       "kickoff": "21:00",
       "market": "Uitslag (1X2)",
