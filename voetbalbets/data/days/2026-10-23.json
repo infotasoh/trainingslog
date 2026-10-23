@@ -1,7 +1,7 @@
 {
   "date": "2026-10-23",
-  "headline": "Vrijdagavond: Europa en de NBA",
-  "intro": "Rustige vrijdag met één wedstrijd per grote voetbalcompetitie en een volle NBA-nacht. Vier losse tips en één combi rond de 2.00. Elke tip, ook de combi, telt mee voor Claude's scorebord: +3 als hij goed is, −5 als hij fout is.",
+  "headline": "Vrijdagavond: Europa en een NBA-nacht",
+  "intro": "Vier voetbal- en NBA-tips van vanochtend, plus drie nieuwe NBA-bets voor vannacht (vanaf 01:00). Voor de nieuwe tips is per wedstrijd gekeken naar afwezigen; alleen wedstrijden met een duidelijke reden staan erin.",
   "generatedAt": "2026-10-23T16:00:00+02:00",
   "picks": [
     {
@@ -342,7 +342,12 @@
         },
         "impact": "Portland mist Sharpe, maar heeft met Lillard, Morant en Avdija genoeg scorend vermogen. Bij Sacramento is de grote vraag of Sabonis en LaVine spelen; berichten spreken elkaar tegen. Spelen ze allebei niet, dan wordt −7.5 veel kansrijker; spelen ze wel, dan is dit een krappe bet."
       },
-      "winChance": 50
+      "winChance": 45,
+      "lineupCheck": {
+        "at": "19:15",
+        "status": "bevestigd",
+        "note": "Sabonis en LaVine staan niet op de blessurelijst en spelen waarschijnlijk. Kans verlaagd naar 45%; niet in de top 3."
+      }
     },
     {
       "id": "combi-stuttgart-blazers",
@@ -431,29 +436,278 @@
         }
       ],
       "result": null,
-      "winChance": 51
+      "winChance": 48
+    },
+    {
+      "id": "nba-hawks-hornets",
+      "sport": "basketbal",
+      "match": "Charlotte Hornets - Atlanta Hawks",
+      "home": {
+        "name": "Hornets",
+        "short": "CHA",
+        "c1": "#1D1160",
+        "c2": "#00788C"
+      },
+      "away": {
+        "name": "Hawks",
+        "short": "ATL",
+        "c1": "#E03A3E",
+        "c2": "#C1D32F"
+      },
+      "espn": {
+        "league": "basketball/nba",
+        "date": "20261023"
+      },
+      "competition": "NBA",
+      "kickoff": "01:00 (nacht)",
+      "market": "Winnaar (moneyline)",
+      "pick": "Hawks winnen",
+      "odd": 1.7,
+      "oddNote": "DraftKings −142 (23 okt). Sommige boeken hebben Atlanta al op −3 of −3.5: de prijs zakt, zet hem liever vroeg.",
+      "confidence": 4,
+      "winChance": 62,
+      "level": "lager",
+      "reasoning": "Charlotte mist vier rotatiespelers, onder wie Knueppel en Coby White; Atlanta kan gewoon winnen zonder marge te hoeven halen.",
+      "keyFactors": [
+        "Hornets missen Knueppel, Coby White, Grant Williams en Boswell",
+        "Bij Atlanta ontbreken alleen bankspelers (Gueye, Veesaar)",
+        "Lijn schuift van −2.5 naar −3/−3.5: geld komt op Atlanta",
+        "We kiezen de moneyline: geen handicap nodig"
+      ],
+      "analysis": [
+        "Dit is de wedstrijd van de nacht waar de opstellingen het meeste verschil maken. Charlotte moet het zonder vier rotatiespelers doen: Kon Knueppel (hamstring), Coby White (kuit), Grant Williams (hamstring) en Kylan Boswell (knie). Knueppel en White zijn twee van de belangrijkste scorers van het team; zonder hen valt een groot deel van de aanval weg.",
+        "Atlanta mist alleen Mouhamed Gueye en Henri Veesaar, spelers die buiten de vaste rotatie vallen. De bookmakers zagen dat ook: de lijn opende op Hawks −2.5 en is bij meerdere boeken doorgeschoven naar −3 of −3.5.",
+        "Charlotte won de laatste drie onderlinge duels en speelt thuis, dus dit is geen uitgemaakte zaak. Daarom kiezen we niet de handicap maar gewoon de Hawks-zege. De bookmaker rekent met 58 procent; met de afwezigen aan Hornets-kant schatten wij het op ongeveer 62 procent.",
+        "De odd ligt met 1.70 onder de 1.80, maar dit is van alle NBA-wedstrijden de bet met de duidelijkste reden."
+      ],
+      "risks": "Charlotte is thuis en won de laatste drie duels; een sterke avond van LaMelo Ball kan de afwezigen compenseren.",
+      "lineups": {
+        "status": "verwacht",
+        "home": {
+          "missing": [
+            "Knueppel (hamstring)",
+            "Coby White (kuit)",
+            "Grant Williams (hamstring)",
+            "Boswell (knie)"
+          ]
+        },
+        "away": {
+          "missing": [
+            "Gueye (voet)",
+            "Veesaar (kruisband)"
+          ],
+          "note": "Dennis, Gilbert en Wilson twijfelachtig (bankspelers)"
+        },
+        "impact": "Vier Hornets-rotatiespelers weg, waaronder twee topscorers; bij Atlanta mist niemand uit de basis."
+      },
+      "sources": [
+        {
+          "label": "SI",
+          "url": "https://www.si.com/betting/hawks-vs-hornets-prediction-odds-and-best-nba-prop-bets-for-friday-oct-23-01m5k94hf7as"
+        },
+        {
+          "label": "Last Word on Sports",
+          "url": "https://lastwordonsports.com/basketball/2026/10/23/hawks-vs-hornets/"
+        },
+        {
+          "label": "Winners and Whiners",
+          "url": "https://winnersandwhiners.com/free-picks/nba/atlanta-hawks-vs-charlotte-hornets-picks-prediction-odds-and-line-movement-for-friday-october-23-2026"
+        }
+      ],
+      "result": null
+    },
+    {
+      "id": "nba-knicks-celtics-under",
+      "sport": "basketbal",
+      "match": "Boston Celtics - New York Knicks",
+      "home": {
+        "name": "Celtics",
+        "short": "BOS",
+        "c1": "#007A33",
+        "c2": "#FFFFFF"
+      },
+      "away": {
+        "name": "Knicks",
+        "short": "NYK",
+        "c1": "#006BB6",
+        "c2": "#F58426"
+      },
+      "espn": {
+        "league": "basketball/nba",
+        "date": "20261023"
+      },
+      "competition": "NBA",
+      "kickoff": "01:30 (nacht)",
+      "market": "Totaal punten",
+      "pick": "Under 223.5 punten",
+      "odd": 1.89,
+      "oddNote": "DraftKings −112. Sommige boeken staan al op 222.5: pak 223.5 of hoger als je kunt.",
+      "confidence": 3,
+      "winChance": 55,
+      "level": "kern",
+      "reasoning": "Twee verdedigend sterke rivalen die elkaar goed kennen: drie van de vier duels vorig seizoen bleven onder deze lijn.",
+      "keyFactors": [
+        "3 van de 4 onderlinge duels vorig seizoen onder 223.5",
+        "Projecties: 111-106 en 110-107 (217-217 punten)",
+        "Meerdere previews (TheSpread, Predictem, DraftKings) kiezen de under",
+        "Knicks volledig fit, Celtics missen alleen Devin Carter"
+      ],
+      "analysis": [
+        "Knicks tegen Celtics is een rivaliteit waarin het tempo traditioneel laag ligt. Vorig seizoen bleven drie van de vier duels onder de 223.5 punten. Beide ploegen spelen fysiek en verdedigen goed, en in een vroeg-seizoensduel in TD Garden draait het vaak om halve-veldaanvallen.",
+        "De modellen zitten duidelijk onder de lijn: de ene projecteert 111-106 (217 punten), de andere 110-107 (217 punten). Dat is zes punten onder de 223.5. DraftKings noemt de under zijn beste bet van de avond, en ook TheSpread en Predictem kiezen hem.",
+        "Opstellingen: de Knicks hebben geen blessures; bij Boston ontbreekt alleen guard Devin Carter (ziekte), een bankspeler. Er is dus geen reden om meer of minder punten te verwachten door afwezigen.",
+        "Een totaal in de NBA blijft spannend tot de laatste minuut (bijvoorbeeld door fouten om de klok stil te zetten). Daarom vertrouwen 3."
+      ],
+      "risks": "Een hoog schotpercentage van buiten de lijn of een verlenging; met verlenging gaat een under bijna altijd verloren.",
+      "lineups": {
+        "status": "verwacht",
+        "home": {
+          "missing": [
+            "Devin Carter (ziekte)"
+          ]
+        },
+        "away": {
+          "missing": [],
+          "note": "Geen blessures"
+        },
+        "impact": "Beide ploegen bijna compleet; het totaal hangt af van tempo en schotvorm, niet van afwezigen."
+      },
+      "sources": [
+        {
+          "label": "DraftKings Network",
+          "url": "https://dknetwork.draftkings.com/2026/10/23/nba-public-betting-trends-friday-october-23/"
+        },
+        {
+          "label": "TheSpread",
+          "url": "https://www.thespread.com/nba-articles/knicks-vs-celtics-prediction-october-23-2026/"
+        },
+        {
+          "label": "Predictem",
+          "url": "https://www.predictem.com/nba/knicks-vs-celtics-prediction-friday-best-bet-at-td-garden/"
+        }
+      ],
+      "result": null
+    },
+    {
+      "id": "combi-lakers-raptors",
+      "type": "combi",
+      "title": "Twee grote NBA-favorieten",
+      "odd": 1.65,
+      "oddNote": "1.25 × 1.32 = 1.65 (DraftKings/FanDuel, 23 okt)",
+      "confidence": 4,
+      "winChance": 62,
+      "level": "lager",
+      "legs": [
+        {
+          "match": "Washington Wizards - Toronto Raptors",
+          "sport": "basketbal",
+          "competition": "NBA",
+          "kickoff": "01:00 (nacht)",
+          "home": {
+            "name": "Wizards",
+            "short": "WAS",
+            "c1": "#002B5C",
+            "c2": "#E31837"
+          },
+          "away": {
+            "name": "Raptors",
+            "short": "TOR",
+            "c1": "#CE1141",
+            "c2": "#111111"
+          },
+          "espn": {
+            "league": "basketball/nba",
+            "date": "20261023"
+          },
+          "market": "Winnaar (moneyline)",
+          "pick": "Raptors winnen",
+          "odd": 1.32,
+          "result": null
+        },
+        {
+          "match": "Los Angeles Lakers - LA Clippers",
+          "sport": "basketbal",
+          "competition": "NBA",
+          "kickoff": "ca. 04:30 (nacht)",
+          "home": {
+            "name": "Lakers",
+            "short": "LAL",
+            "c1": "#552583",
+            "c2": "#FDB927"
+          },
+          "away": {
+            "name": "Clippers",
+            "short": "LAC",
+            "c1": "#C8102E",
+            "c2": "#1D428A"
+          },
+          "espn": {
+            "league": "basketball/nba",
+            "date": "20261023"
+          },
+          "market": "Winnaar (moneyline)",
+          "pick": "Lakers winnen",
+          "odd": 1.25,
+          "result": null
+        }
+      ],
+      "reasoning": "De twee duidelijkste favorieten van de nacht, allebei tegen een tegenstander met belangrijke afwezigen.",
+      "keyFactors": [
+        "Lakers −400: Clippers missen Ingram, Beal, Strus en Miller",
+        "Raptors −310, numberFire-model 78% winkans",
+        "Wizards missen toptalent AJ Dybantsa (enkel)",
+        "Samen ongeveer 62% kans"
+      ],
+      "analysis": [
+        "De Lakers spelen thuis tegen een Clippers-ploeg die zwaar gehavend is: Brandon Ingram, Bradley Beal, Max Strus en Jordan Miller ontbreken of zijn onzeker. De bookmakers zetten de Lakers op −400 (odd 1.25), wat neerkomt op zo'n 80 procent winkans. Bij de Lakers zijn alleen LaRavia (twijfel) en twee bankspelers onzeker; Collin Sexton maakt waarschijnlijk zijn rentree.",
+        "Toronto speelt in Washington en is daar met −310 (odd 1.32) een grote favoriet. Het model van numberFire geeft de Raptors 78 procent kans. De Wizards missen hun grootste talent AJ Dybantsa met een enkelblessure, en Felix Okpara is ziek.",
+        "Samen geeft dat ongeveer 0,80 × 0,78 = 62 procent kans dat beide winnen. De totale odd van 1.65 ligt daar net boven, dus de bet is eerlijk geprijsd met een klein plusje.",
+        "We nemen bewust geen handicaps: alleen winnen is genoeg. Dat maakt de combi minder gevoelig voor een rustig laatste kwart."
+      ],
+      "risks": "Eén verrassing is genoeg. Grootste risico: de Raptors onderschatten de Wizards in een uitwedstrijd vroeg in het seizoen.",
+      "sources": [
+        {
+          "label": "FanDuel Research",
+          "url": "https://fanduel.com/research/wizards-vs-raptors-prediction-nba-odds-spread-best-bets-for-10-23-2026"
+        },
+        {
+          "label": "WagerTalk",
+          "url": "https://www.wagertalk.com/news/nba/clippers-vs-lakers-prediction-picks-odds-for-october-23-2026/"
+        },
+        {
+          "label": "Yahoo: Clippers-blessures",
+          "url": "https://sports.yahoo.com/articles/lakers-vs-clippers-injury-report-021750845.html"
+        }
+      ],
+      "result": null
     }
   ],
   "quiet": [
     "Opstellingen gecheckt om 17:15: alle tips blijven staan. Correctie: Kings – Blazers wordt in Sacramento gespeeld, niet in Portland.",
     "Brest - Nice (Ligue 1, 20:45): Brest rond 2.25 maar modelkans maar 45%. Te gelijkopgaand.",
     "Torino wint (2.05-2.16): prijs past, maar 46% winkans is te riskant met −5 per fout.",
-    "Bucks - Bulls (NBA): Bucks rond 1.88, maar modellen geven maar 57%. Te dicht bij een muntworp.",
     "Canadiens - Blackhawks (NHL): Montreal 1.65 zonder aanvoerder Suzuki. Te onzeker.",
-    "KKD (9 duels om 20:00): geen betrouwbare wedstrijdodds gevonden."
+    "KKD (9 duels om 20:00): geen betrouwbare wedstrijdodds gevonden.",
+    "NBA vannacht bekeken en overgeslagen:",
+    "Bulls - Bucks: al begonnen (22:00).",
+    "Pistons - Heat en Timberwolves - Magic: allebei rond 50/50 (−110 aan beide kanten). Geen voordeel te vinden.",
+    "Mavericks - Pacers: Dallas mist Aldama en Lively, maar de bronnen spreken elkaar tegen over de lijn (−4.5 tot −6.5). Te onduidelijk.",
+    "Rockets - Spurs (03:30, in Austin): Spurs −6.5 / 1.43 te weinig marge na Wembanyama's 1 uit 13 in de opener; vier Spurs op de blessurelijst zonder namen.",
+    "Grizzlies - Warriors: voorspellers verdeeld (Grizzlies +3.5 tegen Warriors −4.5).",
+    "Pelicans - Jazz: geen betrouwbare actuele odds gevonden."
   ],
   "top": [
     {
-      "id": "torino-monza",
-      "why": "Grootste voorsprong op de bookmaker: wij schatten 60% kans, de odd van 1.78 rekent met 56%. Monza scoorde in alle 7 duels en Torino houdt bijna nooit de nul."
+      "id": "nba-hawks-hornets",
+      "why": "Charlotte mist vier rotatiespelers, onder wie twee topscorers. Wij schatten 62% kans, de odd 1.70 rekent met 58%."
     },
     {
-      "id": "stuttgart-gladbach",
-      "why": "Gladbach mist 9 spelers, onder wie beide spitsen. Een Stuttgart-zege met drie goals of meer is het meest waarschijnlijke scenario, en de odd 1.95 betaalt daar goed voor."
+      "id": "nba-knicks-celtics-under",
+      "why": "Modellen verwachten rond 217 punten, zes onder de lijn, en 3 van de 4 duels vorig seizoen bleven eronder. Kans 55% bij odd 1.89."
     },
     {
-      "id": "alaves-malaga",
-      "why": "Málaga mist drie aanvallers en won nog niets. Met de beste odd (1.80) heb je een kleine plus; bij 1.75 is hij dat niet meer."
+      "id": "combi-lakers-raptors",
+      "why": "Twee grote favorieten tegen gehavende tegenstanders: samen 62% kans bij odd 1.65."
     }
   ],
   "mine": [
