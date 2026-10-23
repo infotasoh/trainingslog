@@ -50,6 +50,42 @@ Voetbal blijft de basis. Kijk daarnaast elke dag actief naar wat er speelt: NBA 
 darts (PDC), MLB (april - oktober). NBA/NHL/NFL spelen 's nachts in Nederlandse tijd;
 geef die tijd dan aan als bijvoorbeeld `02:00 (nacht)`.
 
+## Kijk naar alles: opstellingen, formaties en context
+
+Een bet is pas goed onderbouwd als je weet wie er speelt. Check per wedstrijd:
+
+- **Blessures en schorsingen**, vooral van sleutelspelers: topscorer, spelmaker, eerste
+  keeper, aanvoerder, centrale verdediger. Hoeveel procent van de goals/assists valt weg?
+- **Verwachte of officiële opstelling en formatie** (bijv. 4-3-3 tegen 3-5-2). Welke
+  formaties passen slecht bij elkaar? Speelt een ploeg met een nood-verdediging?
+- **Rotatie**: Europese wedstrijd midweek, bekerduel, belangrijke wedstrijd in het verschiet.
+- **Trainerswissel** (nieuwe trainer-effect), interne onrust, motivatie (degradatie,
+  titelstrijd, niets meer te spelen).
+- **Speelschema**: back-to-backs en reizen (NBA/NHL), korte rust, jetlag.
+- **Sportspecifiek**: NHL de startende keeper, MLB de startende werper, NFL de status van
+  de quarterback, tennis fitheid en ondergrond, darts recente gemiddelden.
+- **Thuis/uit**: controleer waar de wedstrijd echt gespeeld wordt (niet aannemen op basis
+  van de volgorde van de namen; Amerikaanse sites zetten de uitploeg vaak eerst).
+- **Weer en veld** bij buitensporten (wind en regen drukken het aantal goals/punten).
+- Scheidsrechter bij kaarten-markten, onderlinge duels, vorm thuis/uit apart.
+
+Leg dit vast in het veld `lineups` van elke losse tip (zie schema) en verwerk het in de
+analyse: wat betekent de afwezigheid of formatie concreet voor deze bet?
+
+### Check vlak voor de wedstrijd
+
+Om 13:10 en 19:10 draait een extra check. Die kijkt voor alle tips van vandaag die nog
+niet begonnen zijn of de officiële opstellingen, laatste blessurenieuws en keepers/werpers
+nog kloppen met de analyse, en zet `lineupCheck`:
+
+- `bevestigd`: niets veranderd, de tip blijft staan.
+- `aangepast`: de markt is vóór de aftrap aangepast (bijv. een lagere handicap) omdat de
+  opstelling daar aanleiding toe gaf. Leg in `note` uit wat er veranderde.
+- `ingetrokken`: een concrete opstellingsreden maakt de tip te riskant (topspeler valt
+  last-minute weg, keeper geschorst, B-elftal). De tip krijgt `result: "void"` en telt dus
+  niet mee op het scorebord. Alleen bij harde nieuwsfeiten, nooit op gevoel, en altijd vóór
+  de aftrap. Benoem het in de `review` van de volgende dag.
+
 ## Puntensysteem (Claude's scorebord)
 
 - Elke tip die **goed** is: **+3 punten**. Elke tip die **fout** is: **−5 punten**.
@@ -138,6 +174,13 @@ Werk uitslagen bij in de bestanden van eerdere dagen. Commit alles in één comm
       "keyFactors": ["Feit 1", "Feit 2", "Feit 3"],
       "analysis": ["Alinea 1", "Alinea 2", "Alinea 3"],
       "risks": "Wat kan er misgaan.",
+      "lineups": {
+        "status": "verwacht",
+        "home": { "formation": "3-5-2", "missing": ["Garcés (kruisband)"], "note": "Boyé en Martínez voorin" },
+        "away": { "formation": "4-2-3-1", "missing": ["Muñoz (kuit)", "Murillo (twijfel)"], "note": "..." },
+        "impact": "Wat de afwezigen en formaties betekenen voor deze bet."
+      },
+      "lineupCheck": { "at": "19:10", "status": "bevestigd", "note": "Officiële opstelling zoals verwacht." },
       "sources": [{ "label": "Statz", "url": "https://..." }],
       "result": null
     }

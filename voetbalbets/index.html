@@ -157,6 +157,32 @@ details.analysis summary::after{content:" ↓"}
 details.analysis[open] summary::after{content:" ↑"}
 .longread{display:flex;flex-direction:column;gap:10px;margin-top:10px;font-size:14px;max-width:65ch}
 .longread p{margin:0;text-wrap:pretty}
+details.lineups{background:var(--sunk);border-radius:10px;padding:8px 12px}
+details.lineups summary{font-size:13px;font-weight:600;cursor:pointer;display:flex;gap:8px;align-items:center;list-style:none}
+details.lineups summary::-webkit-details-marker{display:none}
+details.lineups summary::after{content:"↓";margin-left:auto;color:var(--muted)}
+details.lineups[open] summary::after{content:"↑"}
+.lustatus{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;border-radius:99px;padding:1px 7px;background:var(--card);color:var(--muted)}
+.lustatus.bevestigd{color:var(--won)}
+.lugrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:8px}
+.lucol{min-width:0;font-size:13px;display:flex;flex-direction:column;gap:4px}
+.luhead{display:flex;gap:6px;align-items:baseline;flex-wrap:wrap}
+.form{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.missing{margin:0;padding-left:16px;color:var(--lost)}
+.lunote{color:var(--muted)}
+.impact{margin:8px 0 0;font-size:13px}
+.official{margin-top:8px;font-size:13px;color:var(--muted)}
+.offhead{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.starters{margin:0;padding:0;list-style:none;color:var(--fg)}
+.starters li{display:grid;grid-template-columns:22px 1fr;gap:4px}
+.starters .nr{font-family:var(--mono);color:var(--faint);font-size:12px}
+.chip.check{background:var(--sunk);color:var(--muted)}
+.chip.check.bevestigd{background:var(--pitch-soft);color:var(--pitch)}
+.chip.check.aangepast{background:var(--high-soft);color:var(--high)}
+.chip.check.ingetrokken{background:var(--lost-soft);color:var(--lost)}
+.checknote{margin:0;font-size:13px;border-radius:8px;padding:8px 10px;background:var(--sunk)}
+.checknote.ingetrokken{background:var(--lost-soft)}
+.pick.withdrawn .slip,.pick.withdrawn .scale,.pick.withdrawn .ticks{opacity:.45}
 .risk{background:var(--lost-soft);border-radius:8px;padding:8px 10px;font-size:13px}
 .risk b{color:var(--lost)}
 .src{font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 10px}
@@ -339,7 +365,7 @@ footer{font-size:12px;color:var(--faint);text-align:center}
       red: !!d.redCard,
       team: d.team && d.team.id
     }));
-    return {state: type.state || "pre", detail: type.shortDetail || type.detail || type.description || "", clock: st.displayClock, date: ev.date, home: side(home), away: side(away), plays};
+    return {id: ev.id, state: type.state || "pre", detail: type.shortDetail || type.detail || type.description || "", clock: st.displayClock, date: ev.date, home: side(home), away: side(away), plays};
   }
   async function refreshLive(){
     const day = days.find(d => d.date === selected);
@@ -472,6 +498,7 @@ footer{font-size:12px;color:var(--faint);text-align:center}
       meta.append(el("span", null, p.competition || ""), el("span", null, p.kickoff || ""));
       card.append(meta);
       if (p.home && p.away) card.append(scoreboard(p, s));
+      if (p.lineups || (s && s.id && p.espn && /^soccer\//.test(p.espn.league))) card.append(lineupBlock(p, s));
       else card.append(el("h3", "team name", p.match || ""));
     }
 
@@ -506,12 +533,19 @@ footer{font-size:12px;color:var(--faint);text-align:center}
 
     const row = el("div", "row");
     row.append(el("span", "chip " + lvl, LEVEL[lvl]));
+    const chk = p.lineupCheck;
+    if (chk && chk.status){
+      const label = {bevestigd:"Opstelling gecheckt", aangepast:"Aangepast na opstelling", ingetrokken:"Ingetrokken"}[chk.status] || chk.status;
+      row.append(el("span", "chip check " + chk.status, label + (chk.at ? " · " + chk.at : "")));
+      if (chk.status === "ingetrokken") card.classList.add("withdrawn");
+    }
     const conf = el("span", "conf"); conf.setAttribute("aria-hidden", "true");
     for (let i = 1; i <= 5; i++) conf.append(el("i", i <= (p.confidence || 0) ? "on" : ""));
     row.append(conf, el("span", "conflabel", "vertrouwen " + (p.confidence || "?") + "/5"));
     if (RESULT[p.result]) row.append(el("span", "result " + p.result, RESULT[p.result]));
     card.append(row);
 
+    if (chk && chk.note) card.append(el("p", "checknote " + (chk.status || ""), chk.note));
     if (p.reasoning) card.append(el("p", "why", p.reasoning));
     if (Array.isArray(p.keyFactors) && p.keyFactors.length){
       const ul = el("ul", "factors"); p.keyFactors.forEach(f => ul.append(el("li", null, f))); card.append(ul);
@@ -538,6 +572,67 @@ footer{font-size:12px;color:var(--faint);text-align:center}
     return card;
   }
 
+  // Expected or confirmed line-ups and absentees from the tip, plus the official
+  // ESPN line-up (football) as soon as the clubs have announced it.
+  function lineupBlock(p, s){
+    const det = el("details", "lineups");
+    const lu = p.lineups || {};
+    const sum = el("summary");
+    sum.append(el("span", null, "Opstellingen & afwezigen"));
+    if (lu.status) sum.append(el("span", "lustatus " + lu.status, lu.status === "bevestigd" ? "officieel" : "verwacht"));
+    det.append(sum);
+    const grid = el("div", "lugrid");
+    [["home", p.home], ["away", p.away]].forEach(([k, t]) => {
+      const x = lu[k] || {};
+      const col = el("div", "lucol");
+      const h = el("div", "luhead"); h.append(el("b", null, (t && t.name) || ""));
+      if (x.formation) h.append(el("span", "form", x.formation));
+      col.append(h);
+      if (Array.isArray(x.missing) && x.missing.length){
+        const ul = el("ul", "missing"); x.missing.forEach(m => ul.append(el("li", null, m))); col.append(ul);
+      } else if (p.lineups) col.append(el("div", "lunote", "Geen belangrijke afwezigen"));
+      if (x.note) col.append(el("div", "lunote", x.note));
+      col.dataset.side = k;
+      grid.append(col);
+    });
+    det.append(grid);
+    if (lu.impact) det.append(el("p", "impact", lu.impact));
+    const official = el("div", "official");
+    det.append(official);
+    let loaded = false;
+    det.addEventListener("toggle", async () => {
+      if (!det.open || loaded || !(s && s.id && p.espn)) return;
+      loaded = true;
+      official.textContent = "Officiële opstelling ophalen…";
+      try {
+        const r = await fetch(ESPN + p.espn.league + "/summary?event=" + encodeURIComponent(s.id), {cache:"no-store"});
+        if (!r.ok) throw new Error(r.status);
+        const data = await r.json();
+        const rosters = (data.rosters || []).filter(x => Array.isArray(x.roster) && x.roster.some(a => a.starter));
+        if (!rosters.length){ official.textContent = "De officiële opstelling is nog niet bekend (meestal een uur voor de aftrap)."; return; }
+        official.replaceChildren(el("div", "offhead", "Officiële basis (ESPN)"));
+        const og = el("div", "lugrid");
+        const leftId = s.home && s.home.id;
+        rosters.sort((a, b) => ((a.team && a.team.id) === leftId ? -1 : (b.team && b.team.id) === leftId ? 1 : 0)).forEach(rs => {
+          const col = el("div", "lucol");
+          const h = el("div", "luhead"); h.append(el("b", null, (rs.team && rs.team.shortDisplayName) || ""));
+          const f = typeof rs.formation === "string" ? rs.formation : (rs.formation && (rs.formation.name || rs.formation.summary));
+          if (f) h.append(el("span", "form", f));
+          col.append(h);
+          const ol = el("ol", "starters");
+          rs.roster.filter(a => a.starter).forEach(a => {
+            const li = el("li"); li.append(el("span", "nr", a.jersey || ""), el("span", null, (a.athlete && (a.athlete.shortName || a.athlete.displayName)) || ""));
+            ol.append(li);
+          });
+          col.append(ol);
+          og.append(col);
+        });
+        official.append(og);
+      } catch(e){ loaded = false; official.textContent = "De officiële opstelling kon niet geladen worden."; }
+    });
+    return det;
+  }
+
   // One leg of a combi: logos, live score and the leg's own bet.
   function legRow(l, s){
     const li = el("li", "leg" + (s && s.state === "in" ? " live" : ""));
@@ -559,7 +654,7 @@ footer{font-size:12px;color:var(--faint);text-align:center}
   }
 
   // Keep open analyses open across live re-renders.
-  function openKeys(){ return new Set([...document.querySelectorAll("details.analysis[open]")].map(d => d.dataset.key)); }
+  function openKeys(){ return new Set([...document.querySelectorAll("details[data-key][open]")].map(d => d.dataset.key)); }
 
   function renderTips(){
     const list = $("picks"), quiet = $("quiet"), nav = $("sports");
@@ -605,8 +700,7 @@ footer{font-size:12px;color:var(--faint);text-align:center}
       g.append(h);
       picks.filter(p => sportOf(p) === s).forEach(p => {
         const card = pickCard(day, p);
-        const det = card.querySelector("details.analysis");
-        if (det){ det.dataset.key = keyOf(day, p); if (keep.has(det.dataset.key)) det.open = true; }
+        card.querySelectorAll("details").forEach(det => { det.dataset.key = keyOf(day, p) + ":" + det.className; if (keep.has(det.dataset.key)) det.open = true; });
         g.append(card);
       });
       list.append(g);

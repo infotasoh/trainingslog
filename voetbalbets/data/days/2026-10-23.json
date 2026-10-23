@@ -54,12 +54,40 @@
         {
           "label": "AccuScore",
           "url": "https://www.accuscore.com/game/cmuefvux69xmese01yn53ty1e"
+        },
+        {
+          "label": "Sports Mole",
+          "url": "https://www.sportsmole.co.uk/football/stuttgart/preview/stuttgart-vs-borussia-mbach-prediction-team-news-lineups_607392.html"
         }
       ],
       "result": null,
       "espn": {
         "league": "soccer/ger.1",
         "date": "20261023"
+      },
+      "lineups": {
+        "status": "verwacht",
+        "home": {
+          "formation": "4-2-3-1",
+          "missing": [
+            "Vagnoman (blessure)",
+            "Mittelstädt (twijfel, hiel)",
+            "Zagadou, Diehl, Malanga, Nartey, Tomás"
+          ],
+          "note": "Assignon vervangt Vagnoman, Demirović in de spits"
+        },
+        "away": {
+          "formation": "3-4-2-1",
+          "missing": [
+            "Kleindienst (dij)",
+            "Lidberg (spier)",
+            "Castrop, Honorat, Leopard",
+            "Itakura (twijfel)",
+            "In totaal 9 afwezigen"
+          ],
+          "note": "Machino waarschijnlijk in de spits"
+        },
+        "impact": "Gladbach mist zijn topscorer Kleindienst én vervanger Lidberg: zonder echte spits wordt scoren lastig. Bij Stuttgart valt vooral linksback Mittelstädt mogelijk weg, wat de opbouw iets verzwakt maar de favorietenrol niet verandert. Per saldo versterkt de ziekenboeg van Gladbach deze bet."
       }
     },
     {
@@ -112,12 +140,38 @@
         {
           "label": "Sportsgambler",
           "url": "https://www.sportsgambler.com/betting-tips/football/torino-vs-monza-prediction-lineups-odds-2026-10-23/"
+        },
+        {
+          "label": "WhoScored preview",
+          "url": "https://www.whoscored.com/matches/1981038/preview/italy-serie-a-2026-2027-torino-monza"
         }
       ],
       "result": null,
       "espn": {
         "league": "soccer/ita.1",
         "date": "20261023"
+      },
+      "lineups": {
+        "status": "verwacht",
+        "home": {
+          "formation": "3-4-2-1",
+          "missing": [
+            "Ilkhan (blessure)",
+            "Israel (twijfel)",
+            "Fortini (twijfel)"
+          ],
+          "note": "Simeone en Adams voorin"
+        },
+        "away": {
+          "formation": "3-4-2-1",
+          "missing": [
+            "Pessina (blessure)",
+            "Ziółkowski (blessure)",
+            "Toure en Ciurria (twijfel)"
+          ],
+          "note": "Lucchesi terug na schorsing; Varela in de spits"
+        },
+        "impact": "Beide teams spelen met drie centrale verdedigers en vleugelverdedigers, wat vaak open wedstrijden geeft. Monza mist met Pessina zijn creatiefste middenvelder; dat is het grootste risico voor beide teams scoren. Torino's aanval (Simeone, Adams) is fit."
       }
     },
     {
@@ -170,52 +224,78 @@
         {
           "label": "Legalbet",
           "url": "https://legalbet.uk/game-center/alaves-malaga-23-10-2026/"
+        },
+        {
+          "label": "Sports Mole",
+          "url": "https://www.sportsmole.co.uk/football/malaga/preview/alaves-vs-malaga-prediction-team-news-lineups_607364.html"
         }
       ],
       "result": null,
       "espn": {
         "league": "soccer/esp.1",
         "date": "20261023"
+      },
+      "lineups": {
+        "status": "verwacht",
+        "home": {
+          "formation": "3-5-2",
+          "missing": [
+            "Garcés (kruisband, ook geschorst)",
+            "Mikel Rodríguez (kruisband)"
+          ],
+          "note": "Ángel Pérez terug na schorsing; Boyé en Martínez voorin"
+        },
+        "away": {
+          "formation": "4-2-3-1",
+          "missing": [
+            "Joaquín Muñoz (kuit)",
+            "Lobete (kruisband)",
+            "Ochoa (tot januari)",
+            "Murillo en Juan Cruz (twijfel)"
+          ],
+          "note": "Niño, Chupe en Larrubia verwacht"
+        },
+        "impact": "Málaga mist met Muñoz, Lobete en Ochoa drie aanvallende krachten; de Málaga-aanval is daardoor erg dun. Alavés mist twee verdedigers, maar Ángel Pérez keert terug. De absenties wegen zwaarder aan Málaga-kant, wat de thuiszege ondersteunt."
       }
     },
     {
       "id": "blazers-kings",
       "sport": "basketbal",
-      "match": "Portland Trail Blazers - Sacramento Kings",
+      "match": "Sacramento Kings - Portland Trail Blazers",
       "home": {
-        "name": "Trail Blazers",
-        "short": "POR",
-        "c1": "#E03A3E",
-        "c2": "#111111"
-      },
-      "away": {
         "name": "Kings",
         "short": "SAC",
         "c1": "#5A2D81",
         "c2": "#C4CED4"
+      },
+      "away": {
+        "name": "Trail Blazers",
+        "short": "POR",
+        "c1": "#E03A3E",
+        "c2": "#111111"
       },
       "competition": "NBA",
       "kickoff": "ca. 04:00 (nacht)",
       "market": "Handicap (spread)",
       "pick": "Trail Blazers −7.5",
       "odd": 1.95,
-      "oddNote": "DraftKings −105 (22 okt). Sommige boeken hebben −6.5 of −8.5: neem de laagste handicap die je vindt.",
+      "oddNote": "DraftKings −105 (22 okt). Let op: Portland speelt uit, in Sacramento. Neem de laagste handicap die je vindt (−6.5 is beter dan −7.5).",
       "confidence": 3,
       "level": "kern",
-      "reasoning": "Portland is thuis duidelijk de betere ploeg; de vraag is of ze met acht punten of meer winnen.",
+      "reasoning": "Portland is ook uit de duidelijk betere ploeg; de vraag is of ze met acht punten of meer winnen.",
       "keyFactors": [
+        "Uitwedstrijd voor Portland, in het Golden 1 Center in Sacramento",
         "Dimers geeft Portland 72,7% winkans",
         "WagerTalk verwacht 119-108 (11 punten verschil)",
-        "Een kale zege staat op ca. 1.31: te laag",
-        "Lijn bewoog van −6.5 naar −7.5: geld komt binnen op Portland"
+        "Portland mist Sharpe; bij Sacramento zijn Sabonis en LaVine onzeker"
       ],
       "analysis": [
-        "Bij de NBA-wedstrijden van vannacht is Portland tegen Sacramento de duidelijkste. De Blazers zijn thuis favoriet met een moneyline rond −325 (odd 1.31), en het model van Dimers geeft ze bijna 73 procent winkans. Een kale overwinning is dus te laag geprijsd voor onze spelregel.",
-        "Daarom kiezen we de handicap. Bij −7.5 moet Portland met minstens acht punten verschil winnen. WagerTalk projecteert 119-108, een marge van elf punten. De lijn is in de loop van de week van −6.5 naar −7.5 en bij sommige boeken zelfs −8.5 geschoven, wat betekent dat het grote geld ook op een ruime Portland-zege rekent.",
-        "Eerlijk is eerlijk: een handicap in de NBA blijft spannender dan een thuiszege in het voetbal. Niet alle voorspellers zijn het eens; Sportsgambler verwacht een krappe 115-112. Daarom krijgt deze tip vertrouwen 3 in plaats van 4. Pak waar mogelijk −6.5 in plaats van −7.5 of −8.5: elk punt minder handicap maakt de bet een stuk veiliger.",
-        "Let op het tijdstip: de wedstrijd begint rond 04:00 Nederlandse tijd, dus de uitslag zie je morgenochtend."
+        "Correctie na de opstellingencheck: deze wedstrijd wordt in Sacramento gespeeld, dus Portland speelt uit. Dat maakt de bet iets lastiger dan eerst gedacht, want thuisploegen in de NBA winnen vaak een paar punten meer dan op papier.",
+        "Toch blijft Portland een duidelijke favoriet. De bookmakers zien een moneyline rond −325 (odd 1.31) en het model van Dimers komt op bijna 73 procent winkans. WagerTalk projecteert 119-108, een marge van elf punten. De lijn is van −6.5 naar −7.5 geschoven, wat betekent dat er geld op een ruime Portland-zege binnenkomt.",
+        "De opstellingen maken het verschil. Portland mist Shaedon Sharpe, maar Lillard, Morant en Avdija zijn beschikbaar. Sacramento mist Cardwell, Raynaud en Simmons, en de berichten over Sabonis en LaVine spreken elkaar tegen. Ontbreken die twee, dan valt het grootste deel van de Kings-aanval weg en wordt −7.5 veel kansrijker.",
+        "Omdat het een uitwedstrijd is en de status van Sabonis onzeker blijft, houden we vertrouwen 3. Pak waar mogelijk −6.5 en check vlak voor de wedstrijd (04:00 Nederlandse tijd) of Sabonis speelt."
       ],
-      "risks": "Portland wint, maar met minder dan acht punten, bijvoorbeeld omdat de basisspelers in een gewonnen vierde kwart rust krijgen.",
+      "risks": "Sabonis en LaVine spelen toch, de Kings krijgen thuis steun en Portland wint met minder dan acht punten.",
       "sources": [
         {
           "label": "Dimers",
@@ -228,18 +308,42 @@
         {
           "label": "Bleacher Nation",
           "url": "https://www.bleachernation.com/picks/2026/10/23/trail-blazers-vs-kings-predictions-best-bets-and-odds-friday-october-23-2026/"
+        },
+        {
+          "label": "Injury report (iHeart)",
+          "url": "https://ripcityradio.iheart.com/content/2026-10-23-trail-blazers-vs-kings-injury-report-oct-23/"
         }
       ],
       "result": null,
       "espn": {
         "league": "basketball/nba",
         "date": "20261023"
+      },
+      "lineups": {
+        "status": "verwacht",
+        "home": {
+          "missing": [
+            "Cardwell (uit)",
+            "Raynaud (uit)",
+            "Simmons (seizoen)",
+            "Monk (twijfel)"
+          ],
+          "note": "Starters volgens projectie: Acuff Jr., LaVine, Murray, Hunter, Sabonis (status van Sabonis en LaVine niet eenduidig)"
+        },
+        "away": {
+          "missing": [
+            "Sharpe (meniscus)",
+            "Youngblood en Carlson (twijfel)"
+          ],
+          "note": "Starters volgens projectie: Lillard, Morant, Avdija, Camara, Clingan"
+        },
+        "impact": "Portland mist Sharpe, maar heeft met Lillard, Morant en Avdija genoeg scorend vermogen. Bij Sacramento is de grote vraag of Sabonis en LaVine spelen; berichten spreken elkaar tegen. Spelen ze allebei niet, dan wordt −7.5 veel kansrijker; spelen ze wel, dan is dit een krappe bet."
       }
     },
     {
       "id": "combi-stuttgart-blazers",
       "type": "combi",
-      "title": "Twee duidelijke thuisfavorieten",
+      "title": "Twee duidelijke favorieten",
       "odd": 1.78,
       "oddNote": "1.36 × 1.31 = 1.78. Losse odds van 21-22 okt.",
       "confidence": 3,
@@ -272,21 +376,21 @@
           "result": null
         },
         {
-          "match": "Portland Trail Blazers - Sacramento Kings",
+          "match": "Sacramento Kings - Portland Trail Blazers",
           "sport": "basketbal",
           "competition": "NBA",
           "kickoff": "ca. 04:00 (nacht)",
           "home": {
-            "name": "Trail Blazers",
-            "short": "POR",
-            "c1": "#E03A3E",
-            "c2": "#111111"
-          },
-          "away": {
             "name": "Kings",
             "short": "SAC",
             "c1": "#5A2D81",
             "c2": "#C4CED4"
+          },
+          "away": {
+            "name": "Trail Blazers",
+            "short": "POR",
+            "c1": "#E03A3E",
+            "c2": "#111111"
           },
           "espn": {
             "league": "basketball/nba",
@@ -298,17 +402,17 @@
           "result": null
         }
       ],
-      "reasoning": "Twee thuisploegen die elk rond 70% winkans hebben, samen goed voor een odd van bijna 1.80 zonder dat er een marge gehaald hoeft te worden.",
+      "reasoning": "Twee favorieten die elk rond 70% winkans hebben, samen goed voor een odd van bijna 1.80 zonder dat er een marge gehaald hoeft te worden.",
       "keyFactors": [
         "Stuttgart: bookmakers ca. 70% winkans, Gladbach 0 punten",
-        "Portland: Dimers-model 72,7% winkans",
+        "Portland (uit in Sacramento): Dimers-model 72,7% winkans",
         "Geen handicap of goals nodig: gewoon winnen",
         "Twee verschillende sporten, dus de uitslagen hangen niet van elkaar af"
       ],
       "analysis": [
         "Deze combi is het alternatief voor wie de losse tips op Stuttgart (winst + over 2.5) en Portland (−7.5) te spannend vindt. In plaats van een marge of veel doelpunten nodig te hebben, hoeven beide favorieten hier alleen maar te winnen.",
         "Stuttgart speelt thuis tegen de nummer laatst van de Bundesliga, die onder trainer Blessin nog geen punt pakte en mogelijk zonder spits Kleindienst speelt. Bookmakers geven Stuttgart ongeveer 70 procent kans, AccuScore zelfs 84 procent.",
-        "Portland is thuis tegen Sacramento een duidelijke favoriet met een moneyline van ongeveer −325. Het model van Dimers komt op 72,7 procent winkans en meerdere voorspellers verwachten een overwinning met ruim tien punten verschil.",
+        "Portland speelt uit in Sacramento, maar is ook daar een duidelijke favoriet met een moneyline van ongeveer −325. Het model van Dimers komt op 72,7 procent winkans. Sacramento mist Cardwell, Raynaud en Simmons, en of Sabonis en LaVine spelen is onzeker.",
         "Eerlijk gerekend: twee keer zo'n 70 tot 75 procent geeft samen rond de 50 tot 55 procent kans dat beide winnen. Dat past bij een odd van 1.78, maar het is geen zekerheidje. Daarom vertrouwen 3 en het label lager. Let op: deze combi overlapt met de losse Stuttgart- en Portland-tips. Kies er liever één van de twee dan allebei."
       ],
       "risks": "Eén verrassing is genoeg: een gelijkspel in Stuttgart of een Kings-zege in de nacht en de hele combi is fout.",
@@ -326,6 +430,7 @@
     }
   ],
   "quiet": [
+    "Opstellingen gecheckt om 17:15: alle tips blijven staan. Correctie: Kings – Blazers wordt in Sacramento gespeeld, niet in Portland.",
     "Brest - Nice (Ligue 1, 20:45): Brest rond 2.25 maar modelkans maar 45%. Te gelijkopgaand.",
     "Torino wint (2.05-2.16): prijs past, maar 46% winkans is te riskant met −5 per fout.",
     "Bucks - Bulls (NBA): Bucks rond 1.88, maar modellen geven maar 57%. Te dicht bij een muntworp.",
