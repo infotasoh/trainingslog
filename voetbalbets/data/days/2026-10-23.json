@@ -1,7 +1,7 @@
 {
   "date": "2026-10-23",
   "headline": "Vrijdagavond: Europa en een NBA-nacht",
-  "intro": "Vier voetbal- en NBA-tips van vanochtend, plus drie nieuwe NBA-bets voor vannacht (vanaf 01:00). Voor de nieuwe tips is per wedstrijd gekeken naar afwezigen; alleen wedstrijden met een duidelijke reden staan erin.",
+  "intro": "Vier voetbal- en NBA-tips van vanochtend, drie NBA-bets voor vannacht en vier jackpots met spelersprops (odds 30 tot 55) voor een klein bedrag. Geen speler zit in twee jackpots.",
   "generatedAt": "2026-10-23T16:00:00+02:00",
   "picks": [
     {
@@ -679,6 +679,921 @@
           "url": "https://sports.yahoo.com/articles/lakers-vs-clippers-injury-report-021750845.html"
         }
       ],
+      "result": null
+    },
+    {
+      "id": "jp-sterren",
+      "title": "Sterrenscoorders",
+      "legs": [
+        {
+          "match": "Lakers - Clippers",
+          "sport": "basketbal",
+          "competition": "NBA",
+          "kickoff": "ca. 04:30 (nacht)",
+          "home": {
+            "name": "Lakers",
+            "short": "LAL",
+            "c1": "#552583",
+            "c2": "#FDB927"
+          },
+          "away": {
+            "name": "Clippers",
+            "short": "LAC",
+            "c1": "#C8102E",
+            "c2": "#1D428A"
+          },
+          "espn": {
+            "league": "basketball/nba",
+            "date": "20261023"
+          },
+          "market": "Spelersprop",
+          "pick": "Luka Dončić 33+ punten",
+          "odd": 2.02,
+          "prop": {
+            "player": "Luka Doncic",
+            "stat": "pts",
+            "line": 32.5,
+            "side": "over"
+          },
+          "result": null
+        },
+        {
+          "match": "Magic - Timberwolves",
+          "sport": "basketbal",
+          "competition": "NBA",
+          "kickoff": "ca. 01:00 (nacht)",
+          "home": {
+            "name": "Magic",
+            "short": "ORL",
+            "c1": "#0077C0",
+            "c2": "#C4CED4"
+          },
+          "away": {
+            "name": "Timberwolves",
+            "short": "MIN",
+            "c1": "#0C2340",
+            "c2": "#78BE20"
+          },
+          "espn": {
+            "league": "basketball/nba",
+            "date": "20261023"
+          },
+          "market": "Spelersprop",
+          "pick": "Anthony Edwards 30+ punten",
+          "odd": 1.95,
+          "prop": {
+            "player": "Anthony Edwards",
+            "stat": "pts",
+            "line": 29.5,
+            "side": "over"
+          },
+          "result": null
+        },
+        {
+          "match": "Heat - Pistons",
+          "sport": "basketbal",
+          "competition": "NBA",
+          "kickoff": "02:00 (nacht)",
+          "home": {
+            "name": "Heat",
+            "short": "MIA",
+            "c1": "#98002E",
+            "c2": "#F9A01B"
+          },
+          "away": {
+            "name": "Pistons",
+            "short": "DET",
+            "c1": "#C8102E",
+            "c2": "#1D42BA"
+          },
+          "espn": {
+            "league": "basketball/nba",
+            "date": "20261023"
+          },
+          "market": "Spelersprop",
+          "pick": "Giannis Antetokounmpo 29+ punten",
+          "odd": 1.84,
+          "prop": {
+            "player": "Giannis Antetokounmpo",
+            "stat": "pts",
+            "line": 28.5,
+            "side": "over"
+          },
+          "result": null
+        },
+        {
+          "match": "Pacers - Mavericks",
+          "sport": "basketbal",
+          "competition": "NBA",
+          "kickoff": "02:00 (nacht)",
+          "home": {
+            "name": "Pacers",
+            "short": "IND",
+            "c1": "#002D62",
+            "c2": "#FDBB30"
+          },
+          "away": {
+            "name": "Mavericks",
+            "short": "DAL",
+            "c1": "#00538C",
+            "c2": "#B8C4CA"
+          },
+          "espn": {
+            "league": "basketball/nba",
+            "date": "20261023"
+          },
+          "market": "Spelersprop",
+          "pick": "Cooper Flagg 25+ punten",
+          "odd": 1.91,
+          "prop": {
+            "player": "Cooper Flagg",
+            "stat": "pts",
+            "line": 24.5,
+            "side": "over"
+          },
+          "result": null
+        },
+        {
+          "match": "Heat - Pistons",
+          "sport": "basketbal",
+          "competition": "NBA",
+          "kickoff": "02:00 (nacht)",
+          "home": {
+            "name": "Heat",
+            "short": "MIA",
+            "c1": "#98002E",
+            "c2": "#F9A01B"
+          },
+          "away": {
+            "name": "Pistons",
+            "short": "DET",
+            "c1": "#C8102E",
+            "c2": "#1D42BA"
+          },
+          "espn": {
+            "league": "basketball/nba",
+            "date": "20261023"
+          },
+          "market": "Spelersprop",
+          "pick": "Cade Cunningham 25+ punten",
+          "odd": 1.89,
+          "prop": {
+            "player": "Cade Cunningham",
+            "stat": "pts",
+            "line": 24.5,
+            "side": "over"
+          },
+          "result": null
+        },
+        {
+          "match": "Spurs - Rockets",
+          "sport": "basketbal",
+          "competition": "NBA",
+          "kickoff": "03:30 (nacht)",
+          "home": {
+            "name": "Spurs",
+            "short": "SAS",
+            "c1": "#111111",
+            "c2": "#C4CED4"
+          },
+          "away": {
+            "name": "Rockets",
+            "short": "HOU",
+            "c1": "#CE1141",
+            "c2": "#111111"
+          },
+          "espn": {
+            "league": "basketball/nba",
+            "date": "20261023"
+          },
+          "market": "Spelersprop",
+          "pick": "Victor Wembanyama 12+ rebounds",
+          "odd": 2.12,
+          "prop": {
+            "player": "Victor Wembanyama",
+            "stat": "reb",
+            "line": 11.5,
+            "side": "over"
+          },
+          "result": null
+        }
+      ],
+      "reasoning": "Zes go-to-spelers die vannacht de bal krijgen, elk met een lijn waar previews of modellen over gaan.",
+      "keyFactors": [
+        "Dončić: FanDuel-pick, Clippers missen Ingram, Beal en Strus",
+        "Edwards: lijn 29.5, meerdere previews kiezen de over",
+        "Flagg scoorde 32 in zijn opener; Dallas mist Aldama en Lively",
+        "Wembanyama pakte 13 rebounds in de opener (Tony's Picks: over 11.5)"
+      ],
+      "analysis": [
+        "Deze jackpot draait om de spelers die vannacht het meeste volume krijgen. Dončić staat tegenover een Clippers-ploeg zonder Ingram, Beal en Strus; FanDuel kiest zijn over 32.5. Edwards en Giannis zijn bij hun team de eerste optie en zitten tegen lijnen die ze vorig seizoen regelmatig haalden.",
+        "Flagg en Cade Cunningham zijn de motor van hun aanval. Flagg maakte 32 punten in zijn eerste wedstrijd en Dallas mist twee rotatiespelers, wat nog meer schoten voor hem betekent. Bij Wembanyama nemen we bewust niet de punten (modellen zitten daar onder de lijn) maar de rebounds: 13 in de opener, en Houston speelt met een grote frontcourt die veel mist.",
+        "Eerlijke rekensom: zes legs van gemiddeld 50 tot 55 procent geeft samen ongeveer 1,5 tot 2 procent kans. Dat is een lot uit de loterij met een goede onderbouwing, geen verwachte winst."
+      ],
+      "risks": "Eén speler die vroeg in foutenproblemen komt of rust krijgt in een gelopen wedstrijd (vooral Dončić als de Lakers ver voor komen).",
+      "sources": [
+        {
+          "label": "FanDuel props",
+          "url": "https://www.fanduel.com/research/nba-props-today-3-best-nba-player-props-for-friday-october-23"
+        },
+        {
+          "label": "Tony's Picks Wembanyama",
+          "url": "https://www.tonyspicks.com/2026/10/23/rockets-vs-spurs-wembanyama-over-11-5-rebounds-10-23-26/"
+        },
+        {
+          "label": "Covers Mavericks-Pacers",
+          "url": "https://www.covers.com/nba/mavericks-vs-pacers-prediction-picks-odds-oct-23-2026"
+        },
+        {
+          "label": "Tony's Picks Pistons-Heat",
+          "url": "https://www.tonyspicks.com/2026/10/23/pistons-vs-heat-giannis-over-28-5-points-10-23-26/"
+        }
+      ],
+      "type": "combi",
+      "jackpot": true,
+      "odd": 55.47,
+      "oddNote": "2.02 × 1.95 × 1.84 × 1.91 × 1.89 × 2.12 = 55.47",
+      "confidence": 1,
+      "level": "hoger",
+      "winChance": 1.4,
+      "result": null
+    },
+    {
+      "id": "jp-borden",
+      "title": "Rebounds & assists",
+      "legs": [
+        {
+          "match": "Magic - Timberwolves",
+          "sport": "basketbal",
+          "competition": "NBA",
+          "kickoff": "ca. 01:00 (nacht)",
+          "home": {
+            "name": "Magic",
+            "short": "ORL",
+            "c1": "#0077C0",
+            "c2": "#C4CED4"
+          },
+          "away": {
+            "name": "Timberwolves",
+            "short": "MIN",
+            "c1": "#0C2340",
+            "c2": "#78BE20"
+          },
+          "espn": {
+            "league": "basketball/nba",
+            "date": "20261023"
+          },
+          "market": "Spelersprop",
+          "pick": "Rudy Gobert 12+ rebounds",
+          "odd": 1.88,
+          "prop": {
+            "player": "Rudy Gobert",
+            "stat": "reb",
+            "line": 11.5,
+            "side": "over"
+          },
+          "result": null
+        },
+        {
+          "match": "Spurs - Rockets",
+          "sport": "basketbal",
+          "competition": "NBA",
+          "kickoff": "03:30 (nacht)",
+          "home": {
+            "name": "Spurs",
+            "short": "SAS",
+            "c1": "#111111",
+            "c2": "#C4CED4"
+          },
+          "away": {
+            "name": "Rockets",
+            "short": "HOU",
+            "c1": "#CE1141",
+            "c2": "#111111"
+          },
+          "espn": {
+            "league": "basketball/nba",
+            "date": "20261023"
+          },
+          "market": "Spelersprop",
+          "pick": "Alperen Şengün 10+ rebounds",
+          "odd": 1.96,
+          "prop": {
+            "player": "Alperen Sengun",
+            "stat": "reb",
+            "line": 9.5,
+            "side": "over"
+          },
+          "result": null
+        },
+        {
+          "match": "Pacers - Mavericks",
+          "sport": "basketbal",
+          "competition": "NBA",
+          "kickoff": "02:00 (nacht)",
+          "home": {
+            "name": "Pacers",
+            "short": "IND",
+            "c1": "#002D62",
+            "c2": "#FDBB30"
+          },
+          "away": {
+            "name": "Mavericks",
+            "short": "DAL",
+            "c1": "#00538C",
+            "c2": "#B8C4CA"
+          },
+          "espn": {
+            "league": "basketball/nba",
+            "date": "20261023"
+          },
+          "market": "Spelersprop",
+          "pick": "Tyrese Haliburton 10+ assists",
+          "odd": 1.96,
+          "prop": {
+            "player": "Tyrese Haliburton",
+            "stat": "ast",
+            "line": 9.5,
+            "side": "over"
+          },
+          "result": null
+        },
+        {
+          "match": "Magic - Timberwolves",
+          "sport": "basketbal",
+          "competition": "NBA",
+          "kickoff": "ca. 01:00 (nacht)",
+          "home": {
+            "name": "Magic",
+            "short": "ORL",
+            "c1": "#0077C0",
+            "c2": "#C4CED4"
+          },
+          "away": {
+            "name": "Timberwolves",
+            "short": "MIN",
+            "c1": "#0C2340",
+            "c2": "#78BE20"
+          },
+          "espn": {
+            "league": "basketball/nba",
+            "date": "20261023"
+          },
+          "market": "Spelersprop",
+          "pick": "Paolo Banchero 6+ assists",
+          "odd": 2.14,
+          "prop": {
+            "player": "Paolo Banchero",
+            "stat": "ast",
+            "line": 5.5,
+            "side": "over"
+          },
+          "result": null
+        },
+        {
+          "match": "Kings - Trail Blazers",
+          "sport": "basketbal",
+          "competition": "NBA",
+          "kickoff": "04:00 (nacht)",
+          "home": {
+            "name": "Kings",
+            "short": "SAC",
+            "c1": "#5A2D81",
+            "c2": "#C4CED4"
+          },
+          "away": {
+            "name": "Trail Blazers",
+            "short": "POR",
+            "c1": "#E03A3E",
+            "c2": "#111111"
+          },
+          "espn": {
+            "league": "basketball/nba",
+            "date": "20261023"
+          },
+          "market": "Spelersprop",
+          "pick": "Deni Avdija 5+ assists",
+          "odd": 1.8,
+          "prop": {
+            "player": "Deni Avdija",
+            "stat": "ast",
+            "line": 4.5,
+            "side": "over"
+          },
+          "result": null
+        },
+        {
+          "match": "Hornets - Hawks",
+          "sport": "basketbal",
+          "competition": "NBA",
+          "kickoff": "01:00 (nacht)",
+          "home": {
+            "name": "Hornets",
+            "short": "CHA",
+            "c1": "#1D1160",
+            "c2": "#00788C"
+          },
+          "away": {
+            "name": "Hawks",
+            "short": "ATL",
+            "c1": "#E03A3E",
+            "c2": "#C1D32F"
+          },
+          "espn": {
+            "league": "basketball/nba",
+            "date": "20261023"
+          },
+          "market": "Spelersprop",
+          "pick": "Jalen Johnson 38+ punten+reb+ast",
+          "odd": 1.89,
+          "prop": {
+            "player": "Jalen Johnson",
+            "stat": "pra",
+            "line": 37.5,
+            "side": "over"
+          },
+          "result": null
+        }
+      ],
+      "reasoning": "Geen scorers maar het vuile werk: rebounds en assists zijn stabieler dan punten.",
+      "keyFactors": [
+        "Gobert: FanDuel-pick over 11.5",
+        "Şengün: TheLines-pick over 9.5; Steven Adams twijfelachtig (meer minuten)",
+        "Haliburton gaf 12 assists in zijn rentree",
+        "Jalen Johnson tegen een Hornets-ploeg zonder vier rotatiespelers"
+      ],
+      "analysis": [
+        "Rebounds en assists schommelen minder dan punten: een speler die slecht schiet, pakt vaak nog wel zijn rebounds. Gobert en Şengün zijn de reboundmachines van hun team; bij Houston is Steven Adams twijfelachtig, wat Şengün meer minuten onder de borden geeft.",
+        "Haliburton maakte zijn rentree met 12 assists en blijft de spelverdeler van Indiana; Dallas mist bovendien twee rotatiespelers in de frontcourt. Banchero en Avdija hebben een grotere spelmakersrol gekregen en zitten tegen lage lijnen.",
+        "Jalen Johnson is de all-round leg: tegen een Charlotte zonder Knueppel, Coby White, Grant Williams en Boswell wordt hij overal ingezet. CBS kiest zijn over 37.5. Samen zo'n 2 procent kans."
+      ],
+      "risks": "Assists hangen af van of teamgenoten raak schieten; een koude schietavond van Orlando of Portland kost Banchero of Avdija hun assists.",
+      "sources": [
+        {
+          "label": "FanDuel props",
+          "url": "https://www.fanduel.com/research/nba-props-today-3-best-nba-player-props-for-friday-october-23"
+        },
+        {
+          "label": "TheLines props",
+          "url": "https://www.thelines.com/nba/player-props/nba-player-props-today-5-best-bets-for-oct-23/"
+        },
+        {
+          "label": "Dimers props",
+          "url": "https://www.dimers.com/nba/news/nba-player-props-10-23-2026-ac"
+        },
+        {
+          "label": "CBS (Jalen Johnson)",
+          "url": "https://www.cbssports.com/betting/news/2026-nba-odds-picks-predictions-best-bets-player-props-experts-model-backing-spurs-more-friday/"
+        }
+      ],
+      "type": "combi",
+      "jackpot": true,
+      "odd": 52.58,
+      "oddNote": "1.88 × 1.96 × 1.96 × 2.14 × 1.80 × 1.89 = 52.58",
+      "confidence": 1,
+      "level": "hoger",
+      "winChance": 1.5,
+      "result": null
+    },
+    {
+      "id": "jp-rollen",
+      "title": "Tweede violen",
+      "legs": [
+        {
+          "match": "Kings - Trail Blazers",
+          "sport": "basketbal",
+          "competition": "NBA",
+          "kickoff": "04:00 (nacht)",
+          "home": {
+            "name": "Kings",
+            "short": "SAC",
+            "c1": "#5A2D81",
+            "c2": "#C4CED4"
+          },
+          "away": {
+            "name": "Trail Blazers",
+            "short": "POR",
+            "c1": "#E03A3E",
+            "c2": "#111111"
+          },
+          "espn": {
+            "league": "basketball/nba",
+            "date": "20261023"
+          },
+          "market": "Spelersprop",
+          "pick": "Ja Morant 18+ punten",
+          "odd": 1.91,
+          "prop": {
+            "player": "Ja Morant",
+            "stat": "pts",
+            "line": 17.5,
+            "side": "over"
+          },
+          "result": null
+        },
+        {
+          "match": "Warriors - Grizzlies",
+          "sport": "basketbal",
+          "competition": "NBA",
+          "kickoff": "04:00 (nacht)",
+          "home": {
+            "name": "Warriors",
+            "short": "GSW",
+            "c1": "#1D428A",
+            "c2": "#FFC72C"
+          },
+          "away": {
+            "name": "Grizzlies",
+            "short": "MEM",
+            "c1": "#5D76A9",
+            "c2": "#12173F"
+          },
+          "espn": {
+            "league": "basketball/nba",
+            "date": "20261023"
+          },
+          "market": "Spelersprop",
+          "pick": "Brandin Podziemski 16+ punten",
+          "odd": 1.89,
+          "prop": {
+            "player": "Brandin Podziemski",
+            "stat": "pts",
+            "line": 15.5,
+            "side": "over"
+          },
+          "result": null
+        },
+        {
+          "match": "Celtics - Knicks",
+          "sport": "basketbal",
+          "competition": "NBA",
+          "kickoff": "01:00 (nacht)",
+          "home": {
+            "name": "Celtics",
+            "short": "BOS",
+            "c1": "#007A33",
+            "c2": "#FFFFFF"
+          },
+          "away": {
+            "name": "Knicks",
+            "short": "NYK",
+            "c1": "#006BB6",
+            "c2": "#F58426"
+          },
+          "espn": {
+            "league": "basketball/nba",
+            "date": "20261023"
+          },
+          "market": "Spelersprop",
+          "pick": "Paul George 18+ punten",
+          "odd": 2.0,
+          "prop": {
+            "player": "Paul George",
+            "stat": "pts",
+            "line": 17.5,
+            "side": "over"
+          },
+          "result": null
+        },
+        {
+          "match": "Heat - Pistons",
+          "sport": "basketbal",
+          "competition": "NBA",
+          "kickoff": "02:00 (nacht)",
+          "home": {
+            "name": "Heat",
+            "short": "MIA",
+            "c1": "#98002E",
+            "c2": "#F9A01B"
+          },
+          "away": {
+            "name": "Pistons",
+            "short": "DET",
+            "c1": "#C8102E",
+            "c2": "#1D42BA"
+          },
+          "espn": {
+            "league": "basketball/nba",
+            "date": "20261023"
+          },
+          "market": "Spelersprop",
+          "pick": "Bam Adebayo 17+ punten",
+          "odd": 1.8,
+          "prop": {
+            "player": "Bam Adebayo",
+            "stat": "pts",
+            "line": 16.5,
+            "side": "over"
+          },
+          "result": null
+        },
+        {
+          "match": "Warriors - Grizzlies",
+          "sport": "basketbal",
+          "competition": "NBA",
+          "kickoff": "04:00 (nacht)",
+          "home": {
+            "name": "Warriors",
+            "short": "GSW",
+            "c1": "#1D428A",
+            "c2": "#FFC72C"
+          },
+          "away": {
+            "name": "Grizzlies",
+            "short": "MEM",
+            "c1": "#5D76A9",
+            "c2": "#12173F"
+          },
+          "espn": {
+            "league": "basketball/nba",
+            "date": "20261023"
+          },
+          "market": "Spelersprop",
+          "pick": "Stephen Curry 5+ driepunters",
+          "odd": 2.3,
+          "prop": {
+            "player": "Stephen Curry",
+            "stat": "3pm",
+            "line": 4.5,
+            "side": "over"
+          },
+          "result": null
+        }
+      ],
+      "reasoning": "Spelers met een lage lijn ten opzichte van hun rol, plus één Curry-schot op de jackpot.",
+      "keyFactors": [
+        "Morant: Dimers-model ziet value op over 17.5",
+        "George 18+: SportsBettingDime's beste prop (+100)",
+        "Adebayo: Dimers projecteert 18.0 bij lijn 16.5",
+        "Curry 5+ driepunters @ 2.30 (FanDuel-pick)"
+      ],
+      "analysis": [
+        "Hier zitten spelers waarvan de lijn lager ligt dan hun rol doet vermoeden. Ja Morant is bij Portland vaak tweede of derde optie, maar met Sharpe geblesseerd krijgt hij meer schoten. Dimers' model ziet waarde in zijn over 17.5.",
+        "Adebayo wordt door Dimers op 18 punten geprojecteerd tegen een lijn van 16.5, en Paul George 18+ is de favoriete prop van SportsBettingDime. Podziemski kreeg een grotere rol en zit met 15.5 laag.",
+        "Curry 5+ driepunters is de dure leg (2.30): FanDuel kiest hem, en tegen Memphis wordt traditioneel veel van buiten geschoten. Vijf legs, totaal rond de 30, zo'n 3 procent kans."
+      ],
+      "risks": "Curry's driepunters zijn de wildcard; één koude avond en de bet is weg.",
+      "sources": [
+        {
+          "label": "Dimers props",
+          "url": "https://www.dimers.com/nba/news/nba-player-props-10-23-2026-ac"
+        },
+        {
+          "label": "SportsBettingDime",
+          "url": "https://www.sportsbettingdime.com/news/nba/new-york-knicks-vs-boston-celtics-odds-picks-predictions/"
+        },
+        {
+          "label": "Sportsgambler Grizzlies-Warriors",
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/memphis-grizzlies-vs-golden-state-warriors-prediction-odds-6019660/"
+        },
+        {
+          "label": "bet365 Pistons-Heat",
+          "url": "https://news.bet365.com/en-us/article/pistons-vs-heat-preview-odds-start-time-and-how-to-watch/2026102118304266051"
+        }
+      ],
+      "type": "combi",
+      "jackpot": true,
+      "odd": 29.89,
+      "oddNote": "1.91 × 1.89 × 2.00 × 1.80 × 2.30 = 29.89",
+      "confidence": 1,
+      "level": "hoger",
+      "winChance": 2.7,
+      "result": null
+    },
+    {
+      "id": "jp-boston",
+      "title": "Klassieker in Boston",
+      "legs": [
+        {
+          "match": "Celtics - Knicks",
+          "sport": "basketbal",
+          "competition": "NBA",
+          "kickoff": "01:00 (nacht)",
+          "home": {
+            "name": "Celtics",
+            "short": "BOS",
+            "c1": "#007A33",
+            "c2": "#FFFFFF"
+          },
+          "away": {
+            "name": "Knicks",
+            "short": "NYK",
+            "c1": "#006BB6",
+            "c2": "#F58426"
+          },
+          "espn": {
+            "league": "basketball/nba",
+            "date": "20261023"
+          },
+          "market": "Spelersprop",
+          "pick": "Jayson Tatum 21+ punten",
+          "odd": 1.87,
+          "prop": {
+            "player": "Jayson Tatum",
+            "stat": "pts",
+            "line": 20.5,
+            "side": "over"
+          },
+          "result": null,
+          "oddNote": "Prijs indicatief"
+        },
+        {
+          "match": "Celtics - Knicks",
+          "sport": "basketbal",
+          "competition": "NBA",
+          "kickoff": "01:00 (nacht)",
+          "home": {
+            "name": "Celtics",
+            "short": "BOS",
+            "c1": "#007A33",
+            "c2": "#FFFFFF"
+          },
+          "away": {
+            "name": "Knicks",
+            "short": "NYK",
+            "c1": "#006BB6",
+            "c2": "#F58426"
+          },
+          "espn": {
+            "league": "basketball/nba",
+            "date": "20261023"
+          },
+          "market": "Spelersprop",
+          "pick": "Karl-Anthony Towns 11+ rebounds",
+          "odd": 1.87,
+          "prop": {
+            "player": "Karl-Anthony Towns",
+            "stat": "reb",
+            "line": 10.5,
+            "side": "over"
+          },
+          "result": null,
+          "oddNote": "Prijs indicatief"
+        },
+        {
+          "match": "Celtics - Knicks",
+          "sport": "basketbal",
+          "competition": "NBA",
+          "kickoff": "01:00 (nacht)",
+          "home": {
+            "name": "Celtics",
+            "short": "BOS",
+            "c1": "#007A33",
+            "c2": "#FFFFFF"
+          },
+          "away": {
+            "name": "Knicks",
+            "short": "NYK",
+            "c1": "#006BB6",
+            "c2": "#F58426"
+          },
+          "espn": {
+            "league": "basketball/nba",
+            "date": "20261023"
+          },
+          "market": "Spelersprop",
+          "pick": "Jalen Brunson 35+ punten+reb+ast",
+          "odd": 1.85,
+          "prop": {
+            "player": "Jalen Brunson",
+            "stat": "pra",
+            "line": 34.5,
+            "side": "over"
+          },
+          "result": null,
+          "oddNote": "Prijs indicatief"
+        },
+        {
+          "match": "Celtics - Knicks",
+          "sport": "basketbal",
+          "competition": "NBA",
+          "kickoff": "01:00 (nacht)",
+          "home": {
+            "name": "Celtics",
+            "short": "BOS",
+            "c1": "#007A33",
+            "c2": "#FFFFFF"
+          },
+          "away": {
+            "name": "Knicks",
+            "short": "NYK",
+            "c1": "#006BB6",
+            "c2": "#F58426"
+          },
+          "espn": {
+            "league": "basketball/nba",
+            "date": "20261023"
+          },
+          "market": "Spelersprop",
+          "pick": "Derrick White 3+ driepunters",
+          "odd": 1.8,
+          "prop": {
+            "player": "Derrick White",
+            "stat": "3pm",
+            "line": 2.5,
+            "side": "over"
+          },
+          "result": null,
+          "oddNote": "Prijs indicatief"
+        },
+        {
+          "match": "Lakers - Clippers",
+          "sport": "basketbal",
+          "competition": "NBA",
+          "kickoff": "ca. 04:30 (nacht)",
+          "home": {
+            "name": "Lakers",
+            "short": "LAL",
+            "c1": "#552583",
+            "c2": "#FDB927"
+          },
+          "away": {
+            "name": "Clippers",
+            "short": "LAC",
+            "c1": "#C8102E",
+            "c2": "#1D428A"
+          },
+          "espn": {
+            "league": "basketball/nba",
+            "date": "20261023"
+          },
+          "market": "Spelersprop",
+          "pick": "Rui Hachimura onder 5.5 rebounds",
+          "odd": 2.14,
+          "prop": {
+            "player": "Rui Hachimura",
+            "stat": "reb",
+            "line": 5.5,
+            "side": "under"
+          },
+          "result": null
+        },
+        {
+          "match": "Spurs - Rockets",
+          "sport": "basketbal",
+          "competition": "NBA",
+          "kickoff": "03:30 (nacht)",
+          "home": {
+            "name": "Spurs",
+            "short": "SAS",
+            "c1": "#111111",
+            "c2": "#C4CED4"
+          },
+          "away": {
+            "name": "Rockets",
+            "short": "HOU",
+            "c1": "#CE1141",
+            "c2": "#111111"
+          },
+          "espn": {
+            "league": "basketball/nba",
+            "date": "20261023"
+          },
+          "market": "Spelersprop",
+          "pick": "Fred VanVleet onder 6.5 assists",
+          "odd": 1.95,
+          "prop": {
+            "player": "Fred VanVleet",
+            "stat": "ast",
+            "line": 6.5,
+            "side": "under"
+          },
+          "result": null
+        }
+      ],
+      "reasoning": "Vier sterren uit Knicks - Celtics die elk een lijn hebben die previews aanraden, aangevuld met twee unders van Dimers.",
+      "keyFactors": [
+        "Tatum over 20.5 en Towns over 10.5 reb (Sportsmole)",
+        "Brunson 35+ PRA: Covers speelt hem tot 55%",
+        "White 3+ driepunters: Covers en een tweede analist",
+        "Hachimura onder 5.5 reb en VanVleet onder 6.5 ast: Dimers-model"
+      ],
+      "analysis": [
+        "Deze bet richt zich op de vroegste wedstrijd (01:00): Knicks tegen Celtics. Tatum, Towns, Brunson en White zijn allemaal door previews aangeraden. Let op: omdat vier legs uit dezelfde wedstrijd komen, rekenen bookmakers voor zo'n combinatie vaak een lagere totale odd dan de vermenigvuldiging. De prijzen van deze vier zijn bovendien indicatief; check de echte odds bij je bookmaker.",
+        "Twee unders van Dimers maken het af: Hachimura onder 5.5 rebounds (de Lakers spelen klein, Hachimura vooral aan de rand) en VanVleet onder 6.5 assists (model 5.3)."
+      ],
+      "risks": "Vier legs uit één wedstrijd: een lage-scorende pot (de under is daar ook een tip) kan meerdere overs tegelijk kosten.",
+      "sources": [
+        {
+          "label": "Covers Knicks-Celtics props",
+          "url": "https://www.covers.com/nba/knicks-vs-celtics-player-props-computer-projections-friday-oct-23-2026"
+        },
+        {
+          "label": "Sportsmole Knicks-Celtics",
+          "url": "https://www.sportsmole.co.uk/basketball/new-york-knicks/preview/new-york-knicks-vs-boston-celtics-player-props-injury-report-and-prediction--nba_607354.html"
+        },
+        {
+          "label": "Dimers props",
+          "url": "https://www.dimers.com/nba/news/nba-player-props-10-23-2026-ac"
+        }
+      ],
+      "type": "combi",
+      "jackpot": true,
+      "odd": 48.59,
+      "oddNote": "1.87 × 1.87 × 1.85 × 1.80 × 2.14 × 1.95 = 48.59",
+      "confidence": 1,
+      "level": "hoger",
+      "winChance": 1.6,
       "result": null
     }
   ],

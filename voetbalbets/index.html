@@ -214,6 +214,16 @@ details.lineups[open] summary::after{content:"↑"}
 .ranktable td.bettd small{display:block;color:var(--muted);font-size:12px}
 .ranktable tr.mine td{background:var(--pitch-soft)}
 .minetag{font-size:11px;font-weight:700;color:var(--pitch);text-transform:uppercase}
+.propbar{display:flex;flex-direction:column;gap:3px;font-size:12px}
+.plabel{display:flex;gap:8px;align-items:baseline}
+.plabel span{flex:1;min-width:0;color:var(--muted)}
+.plabel b{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.plabel em{font-style:normal;font-weight:700;color:var(--muted)}
+.ptrack{position:relative;height:6px;border-radius:3px;background:var(--card)}
+.pfill{position:absolute;left:0;top:0;bottom:0;border-radius:3px;background:var(--faint)}
+.pmark{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--fg)}
+.propbar.good .pfill,.propbar.won .pfill{background:var(--won)} .propbar.won em,.propbar.good em{color:var(--won)}
+.propbar.bad .pfill{background:var(--high)} .propbar.lost .pfill{background:var(--lost)} .propbar.lost em{color:var(--lost)}
 .risk{background:var(--lost-soft);border-radius:8px;padding:8px 10px;font-size:13px}
 .risk b{color:var(--lost)}
 .src{font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 10px}
@@ -369,13 +379,14 @@ footer{font-size:12px;color:var(--faint);text-align:center}
   const MIN = 1.5, MAX = 3.0, WIN = 3, LOSS = -5;
   const LEVEL = {kern:"Kern", hoger:"Hoger", lager:"Lager"};
   const RESULT = {won:"Goed · +3", lost:"Fout · −5", void:"Geannuleerd"};
-  const SPORT = {combi:"Combi's", voetbal:"Voetbal", basketbal:"Basketbal", ijshockey:"IJshockey", tennis:"Tennis", "american-football":"American football", honkbal:"Honkbal", darts:"Darts", handbal:"Handbal", volleybal:"Volleybal", f1:"Formule 1", mma:"MMA", boksen:"Boksen", rugby:"Rugby", wielrennen:"Wielrennen"};
+  const SPORT = {jackpot:"Jackpots", combi:"Combi's", voetbal:"Voetbal", basketbal:"Basketbal", ijshockey:"IJshockey", tennis:"Tennis", "american-football":"American football", honkbal:"Honkbal", darts:"Darts", handbal:"Handbal", volleybal:"Volleybal", f1:"Formule 1", mma:"MMA", boksen:"Boksen", rugby:"Rugby", wielrennen:"Wielrennen"};
   const DOW = ["zo","ma","di","wo","do","vr","za"];
   const MONTHS = ["januari","februari","maart","april","mei","juni","juli","augustus","september","oktober","november","december"];
   const ESPN = "https://site.api.espn.com/apis/site/v2/sports/";
   const DAYS_FOR_SCORE = 60;
   let days = [], selected = null, sport = "alles", view = "tips";
-  let live = {};          // pick key -> matched ESPN event summary
+  let live = {};
+  let box = {};           // ESPN event id -> {normalized player name: {pts, reb, ast, 3pm, stl, blk, min}}          // pick key -> matched ESPN event summary
   let pollTimer = null, lastFetch = null;
 
   function todayAms(){
@@ -386,7 +397,7 @@ footer{font-size:12px;color:var(--faint);text-align:center}
   function el(tag, cls, text){ const n = document.createElement(tag); if(cls) n.className = cls; if(text != null) n.textContent = text; return n; }
   function svg(tag, attrs){ const n = document.createElementNS("http://www.w3.org/2000/svg", tag); for (const k in attrs) n.setAttribute(k, attrs[k]); return n; }
   function levelOf(p){ return LEVEL[p.level] ? p.level : p.odd > 2.2 ? "hoger" : p.odd < 1.8 ? "lager" : "kern"; }
-  function sportOf(p){ return isCombi(p) ? "combi" : (p.sport || "voetbal"); }
+  function sportOf(p){ return p.jackpot ? "jackpot" : isCombi(p) ? "combi" : (p.sport || "voetbal"); }
   function sportName(s){ return SPORT[s] || (s.charAt(0).toUpperCase() + s.slice(1)); }
   function pos(v){ return Math.min(100, Math.max(0, (v - MIN) / (MAX - MIN) * 100)); }
   function color(c, fallback){ return /^#[0-9a-fA-F]{3,8}$/.test(c || "") ? c : fallback; }
@@ -480,6 +491,16 @@ footer{font-size:12px;color:var(--faint);text-align:center}
         live[p._key] = s;
       }
     });
+    // Player props: pull the box score of every started game that has one.
+    const need = {};
+    picks.forEach(p => { const sm = live[p._key]; if (p.prop && sm && sm.id && sm.state !== "pre") need[sm.id] = p.espn.league; });
+    await Promise.all(Object.keys(need).map(async id => {
+      try {
+        const r = await fetch(ESPN + need[id] + "/summary?event=" + encodeURIComponent(id), {cache:"no-store"});
+        if (!r.ok) throw new Error(r.status);
+        box[id] = parseBox(await r.json());
+      } catch(e){}
+    }));
     lastFetch = new Date();
     $("feed").textContent = fail && !ok ? "Live scores konden niet geladen worden. Probeer het later opnieuw." :
       "Live scores bijgewerkt om " + lastFetch.toLocaleTimeString("nl-NL", {hour:"2-digit", minute:"2-digit", second:"2-digit"});
@@ -548,7 +569,7 @@ footer{font-size:12px;color:var(--faint);text-align:center}
   }
   function legsFromTip(p){
     const games = isCombi(p) ? (p.legs || []) : [p];
-    return games.map(g => Object.assign(gameInfo(g), {outcome: outcomeOf(g, g.pick, g.market), pick: g.pick || "", odd: Number(g.odd) || null}));
+    return games.map(g => Object.assign(gameInfo(g), {outcome: g.prop ? "text" : outcomeOf(g, g.pick, g.market), pick: g.pick || "", odd: Number(g.odd) || null}, g.prop ? {prop: g.prop} : {}));
   }
   function isPlaced(day, p){ return mineOf(day.date).some(b => b.fromPick === tipId(p)); }
   function togglePlaced(day, p){
@@ -625,10 +646,49 @@ footer{font-size:12px;color:var(--faint);text-align:center}
     }));
     if (changed){ saveMineAll(mineStore()); try { localStorage.setItem("bvdd-mine-seen", JSON.stringify(seen)); } catch(e){} }
   }
+  // ---------- player props ----------
+  const STAT = {pts:"punten", reb:"rebounds", ast:"assists", "3pm":"driepunters", stl:"steals", blk:"blocks",
+    pra:"punten+reb+ast", pr:"punten+reb", pa:"punten+ast", ra:"reb+ast", sb:"steals+blocks"};
+  function parseBox(data){
+    const out = {};
+    ((data.boxscore && data.boxscore.players) || []).forEach(team => (team.statistics || []).forEach(st => {
+      const labels = (st.labels || st.names || []).map(x => String(x).toUpperCase());
+      const at = (lab) => labels.indexOf(lab);
+      (st.athletes || []).forEach(a => {
+        const v = a.stats || [];
+        const num = (lab) => { const i = at(lab); if (i < 0 || v[i] == null) return 0; return parseInt(String(v[i]).split("-")[0], 10) || 0; };
+        const name = norm((a.athlete && a.athlete.displayName) || "");
+        if (!name) return;
+        out[name] = {pts: num("PTS"), reb: num("REB"), ast: num("AST"), "3pm": num("3PT"), stl: num("STL"), blk: num("BLK"), min: (v[at("MIN")] || "0"), dnp: !!a.didNotPlay};
+      });
+    }));
+    return out;
+  }
+  function playerLine(pr, s){
+    const b = s && s.id && box[s.id];
+    if (!b) return null;
+    const want = norm(pr.player), wt = want.split(" ");
+    let row = b[want];
+    if (!row){ const k = Object.keys(b).find(n => { const t = n.split(" "); return t[t.length - 1] === wt[wt.length - 1] && t[0][0] === wt[0][0]; }); row = k && b[k]; }
+    if (!row) return null;
+    const v = {pts: row.pts, reb: row.reb, ast: row.ast, "3pm": row["3pm"], stl: row.stl, blk: row.blk,
+      pra: row.pts + row.reb + row.ast, pr: row.pts + row.reb, pa: row.pts + row.ast, ra: row.reb + row.ast, sb: row.stl + row.blk}[pr.stat];
+    return v == null ? null : {value: v, dnp: row.dnp};
+  }
+  // ok / bad for a prop: an over is won the moment it passes the line, an under is lost then.
+  function propState(l, s){
+    const pr = l.prop; if (!pr || !s || s.state === "pre") return null;
+    const pl = playerLine(pr, s); if (!pl) return null;
+    const over = pr.side !== "under", hit = pl.value > pr.line;
+    if (over) return {final: hit || s.state === "post", ok: hit, value: pl.value};
+    return {final: !hit ? s.state === "post" : true, ok: !hit, value: pl.value};
+  }
+
   function totalOdd(b){ const os = (b.legs || []).map(l => Number(l.odd)); return os.length && os.every(o => o > 1) ? os.reduce((a, o) => a * o, 1) : null; }
   // Where a leg stands right now, from the live score: ok / bad, live or final.
   function legState(l, s){
     if (l.result === "won" || l.result === "lost") return {final: true, ok: l.result === "won"};
+    if (l.prop) return propState(l, s);
     if (!s || s.state === "pre" || !["home","away","draw"].includes(l.outcome)) return null;
     const h = parseInt(s.home && s.home.score, 10), a = parseInt(s.away && s.away.score, 10);
     if (isNaN(h) || isNaN(a)) return null;
@@ -805,7 +865,7 @@ footer{font-size:12px;color:var(--faint);text-align:center}
   }
   function evOf(p){ return chanceOf(p) * Number(p.odd) - 1; }
   function ranked(day){
-    const picks = (day.picks || []).filter(p => !(p.lineupCheck && p.lineupCheck.status === "ingetrokken"));
+    const picks = (day.picks || []).filter(p => !p.jackpot && !(p.lineupCheck && p.lineupCheck.status === "ingetrokken"));
     const byEv = picks.slice().sort((a, b) => evOf(b) - evOf(a) || chanceOf(b) - chanceOf(a));
     if (!Array.isArray(day.top) || !day.top.length) return byEv.map(p => ({p, why: ""}));
     const out = [];
@@ -910,7 +970,7 @@ footer{font-size:12px;color:var(--faint);text-align:center}
     const card = el("article", "pick" + ((s && s.state === "in") || anyLegLive ? " is-live" : ""));
     const meta = el("div", "meta");
     if (combi){
-      meta.append(el("span", null, "Combi · " + (p.legs || []).length + " wedstrijden"), el("span", null, (p.legs || []).map(l => Number(l.odd).toFixed(2)).join(" × ")));
+      meta.append(el("span", null, (p.jackpot ? "Jackpot · " + (p.legs || []).length + " legs" : "Combi · " + (p.legs || []).length + " wedstrijden")), el("span", null, p.jackpot ? "buiten scorebord" : (p.legs || []).map(l => Number(l.odd).toFixed(2)).join(" × ")));
       card.append(meta);
       if (p.title) card.append(el("h3", "combititle", p.title));
       const legs = el("ol", "legs");
@@ -950,7 +1010,7 @@ footer{font-size:12px;color:var(--faint);text-align:center}
     scale.append(el("div", "track"), band, dot);
     const ticks = el("div", "ticks");
     ["1.50","2.00","2.50","3.00"].forEach(t => ticks.append(el("span", null, t)));
-    card.append(scale, ticks);
+    if (!p.jackpot) card.append(scale, ticks);
     if (p.oddNote) card.append(el("div", "oddnote", p.oddNote));
 
     const row = el("div", "row");
@@ -1078,6 +1138,21 @@ footer{font-size:12px;color:var(--faint);text-align:center}
     bet.append(el("span", null, (l.competition ? l.competition + " · " : "") + (l.pick || "")), el("b", null, Number(l.odd).toFixed(2)));
     if (RESULT[l.result]) bet.append(el("span", "result " + l.result, l.result === "won" ? "Goed" : l.result === "lost" ? "Fout" : "Void"));
     li.append(top, bet);
+    if (l.prop){
+      const ps = propState(l, s), line = Number(l.prop.line);
+      const pg = el("div", "propbar" + (ps ? (ps.ok ? (ps.final ? " won" : " good") : (ps.final ? " lost" : " bad")) : ""));
+      const val = ps ? ps.value : 0;
+      const track = el("div", "ptrack"), fill = el("div", "pfill");
+      fill.style.width = Math.min(100, (val / Math.max(line + 1, 1)) * 100) + "%";
+      const mark = el("div", "pmark"); mark.style.left = Math.min(100, (line / Math.max(line + 1, 1)) * 100) + "%";
+      track.append(fill, mark);
+      const lbl = el("div", "plabel");
+      lbl.append(el("span", null, l.prop.player + " · " + (STAT[l.prop.stat] || l.prop.stat)),
+        el("b", null, (ps ? val : "–") + " / " + (l.prop.side === "under" ? "onder " : "") + line));
+      if (ps) lbl.append(el("em", null, ps.final ? (ps.ok ? "Gehaald" : "Mis") : (l.prop.side === "under" ? "nog onder" : "nog " + Math.max(0, Math.floor(line) + 1 - val) + " nodig")));
+      pg.append(lbl, track);
+      li.append(pg);
+    }
     return li;
   }
 
@@ -1146,7 +1221,7 @@ footer{font-size:12px;color:var(--faint);text-align:center}
     const rows = [];
     asc.forEach(d => {
       let w = 0, l = 0;
-      (d.picks || []).forEach(p => { if (p.result === "won") w++; else if (p.result === "lost") l++; });
+      (d.picks || []).forEach(p => { if (p.jackpot) return; if (p.result === "won") w++; else if (p.result === "lost") l++; });
       if (!w && !l) return;
       const pts = w * WIN + l * LOSS;
       total += pts; won += w; lost += l;

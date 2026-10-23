@@ -112,6 +112,26 @@ Zo kan de gebruiker zien of er een betere bet is dan de bet die hij al gezet hee
 ]
 ```
 
+## Jackpots: hoge odds met spelersprops
+
+Naast de gewone tips zet de app **jackpots**: combi's met een totale odd van ongeveer
+**30 tot 55**, waar de gebruiker een klein bedrag op zet. Regels:
+
+- Vooral NBA (of NFL/NHL): **spelersprops** als punten, rebounds, assists, driepunters,
+  punten+reb+ast. Elke leg tussen ongeveer **1.70 en 2.30**; 5 tot 7 legs.
+- **Geen speler in twee jackpots.** Teams en wedstrijden mogen wel terugkomen.
+- Kies per leg een lijn die een preview of model ondersteunt (bijv. projectie boven de lijn,
+  afwezigen bij de tegenstander, meer minuten door blessures). Niet tegen een model in.
+- Elke leg krijgt `prop`: `{"player": "Luka Doncic", "stat": "pts", "line": 32.5, "side": "over"}`.
+  `stat` is een van `pts`, `reb`, `ast`, `3pm`, `stl`, `blk`, `pra`, `pr`, `pa`, `ra`, `sb`.
+  De app volgt de stand live via de ESPN-boxscore ("24 / 32.5, nog 9 nodig").
+- De jackpot krijgt `"type": "combi"`, `"jackpot": true`, een `title`, `confidence: 1`,
+  `level: "hoger"` en een eerlijke `winChance` (meestal 1-3%). Prijzen die je niet kon
+  vinden: zet `oddNote: "Prijs indicatief"` op die leg.
+- Jackpots tellen **niet** mee voor het scorebord en staan niet in de Top 3. Bij de
+  uitslagen vul je wel `result` per leg en per jackpot in.
+- Zeg in de analyse eerlijk dat het een lot met lage kans is (1 op 30-70).
+
 ## Puntensysteem (Claude's scorebord)
 
 - Elke tip die **goed** is: **+3 punten**. Elke tip die **fout** is: **−5 punten**.
