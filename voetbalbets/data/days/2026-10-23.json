@@ -88,7 +88,8 @@
           "note": "Machino waarschijnlijk in de spits"
         },
         "impact": "Gladbach mist zijn topscorer Kleindienst én vervanger Lidberg: zonder echte spits wordt scoren lastig. Bij Stuttgart valt vooral linksback Mittelstädt mogelijk weg, wat de opbouw iets verzwakt maar de favorietenrol niet verandert. Per saldo versterkt de ziekenboeg van Gladbach deze bet."
-      }
+      },
+      "winChance": 53
     },
     {
       "id": "torino-monza",
@@ -109,7 +110,7 @@
       "competition": "Serie A",
       "kickoff": "20:45",
       "market": "Beide teams scoren",
-      "pick": "Ja",
+      "pick": "Beide teams scoren: ja",
       "odd": 1.78,
       "oddNote": "1.75-1.80 bij meerdere bookmakers.",
       "confidence": 4,
@@ -172,7 +173,8 @@
           "note": "Lucchesi terug na schorsing; Varela in de spits"
         },
         "impact": "Beide teams spelen met drie centrale verdedigers en vleugelverdedigers, wat vaak open wedstrijden geeft. Monza mist met Pessina zijn creatiefste middenvelder; dat is het grootste risico voor beide teams scoren. Torino's aanval (Simeone, Adams) is fit."
-      }
+      },
+      "winChance": 60
     },
     {
       "id": "alaves-malaga",
@@ -256,7 +258,8 @@
           "note": "Niño, Chupe en Larrubia verwacht"
         },
         "impact": "Málaga mist met Muñoz, Lobete en Ochoa drie aanvallende krachten; de Málaga-aanval is daardoor erg dun. Alavés mist twee verdedigers, maar Ángel Pérez keert terug. De absenties wegen zwaarder aan Málaga-kant, wat de thuiszege ondersteunt."
-      }
+      },
+      "winChance": 57
     },
     {
       "id": "blazers-kings",
@@ -338,7 +341,8 @@
           "note": "Starters volgens projectie: Lillard, Morant, Avdija, Camara, Clingan"
         },
         "impact": "Portland mist Sharpe, maar heeft met Lillard, Morant en Avdija genoeg scorend vermogen. Bij Sacramento is de grote vraag of Sabonis en LaVine spelen; berichten spreken elkaar tegen. Spelen ze allebei niet, dan wordt −7.5 veel kansrijker; spelen ze wel, dan is dit een krappe bet."
-      }
+      },
+      "winChance": 50
     },
     {
       "id": "combi-stuttgart-blazers",
@@ -426,7 +430,8 @@
           "url": "https://www.dimers.com/nba/predictions/2026_4_sac_por"
         }
       ],
-      "result": null
+      "result": null,
+      "winChance": 51
     }
   ],
   "quiet": [
@@ -436,5 +441,19 @@
     "Bucks - Bulls (NBA): Bucks rond 1.88, maar modellen geven maar 57%. Te dicht bij een muntworp.",
     "Canadiens - Blackhawks (NHL): Montreal 1.65 zonder aanvoerder Suzuki. Te onzeker.",
     "KKD (9 duels om 20:00): geen betrouwbare wedstrijdodds gevonden."
+  ],
+  "top": [
+    {
+      "id": "torino-monza",
+      "why": "Grootste voorsprong op de bookmaker: wij schatten 60% kans, de odd van 1.78 rekent met 56%. Monza scoorde in alle 7 duels en Torino houdt bijna nooit de nul."
+    },
+    {
+      "id": "stuttgart-gladbach",
+      "why": "Gladbach mist 9 spelers, onder wie beide spitsen. Een Stuttgart-zege met drie goals of meer is het meest waarschijnlijke scenario, en de odd 1.95 betaalt daar goed voor."
+    },
+    {
+      "id": "alaves-malaga",
+      "why": "Málaga mist drie aanvallers en won nog niets. Met de beste odd (1.80) heb je een kleine plus; bij 1.75 is hij dat niet meer."
+    }
   ]
 }

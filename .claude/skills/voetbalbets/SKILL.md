@@ -86,6 +86,32 @@ nog kloppen met de analyse, en zet `lineupCheck`:
   niet mee op het scorebord. Alleen bij harde nieuwsfeiten, nooit op gevoel, en altijd vóór
   de aftrap. Benoem het in de `review` van de volgende dag.
 
+## Top 3 van de dag
+
+De app heeft een scherm "Top 3" met de bets die op de lange termijn het meeste opleveren.
+Zo kan de gebruiker zien of er een betere bet is dan de bet die hij al gezet heeft.
+
+- Geef elke tip (ook combi's) een eerlijke **`winChance`** in procenten: jouw eigen
+  inschatting van de kans dat hij goed gaat, op basis van modellen, odds, vorm en
+  opstellingen. Niet de kans van de bookmaker (1/odd) overnemen.
+- De app rekent de verwachte winst uit: `winChance × odd − 1`. Positief betekent dat de odd
+  hoger is dan de echte kans rechtvaardigt (value).
+- Zet in de dag een veld **`top`**: de 3 beste tips op volgorde, met per tip een `why`
+  (1-2 zinnen: waarom deze bet bovenaan staat, met de kans en wat hem sterk maakt).
+  Rangschik vooral op verwachte winst; bij gelijke stand gaat de hoogste kans voor.
+  Neem geen tip met negatieve verwachte winst in de top 3, tenzij er niets beters is
+  (zeg dat dan in `why`).
+- De opstellingscheck werkt `winChance` en `top` bij als het nieuws daar aanleiding toe
+  geeft. Een ingetrokken tip valt automatisch uit de top 3.
+
+```json
+"top": [
+  { "id": "torino-monza", "why": "Wij schatten 60% kans, de odd 1.78 rekent met 56%." },
+  { "id": "stuttgart-gladbach", "why": "..." },
+  { "id": "alaves-malaga", "why": "..." }
+]
+```
+
 ## Puntensysteem (Claude's scorebord)
 
 - Elke tip die **goed** is: **+3 punten**. Elke tip die **fout** is: **−5 punten**.
@@ -169,6 +195,7 @@ Werk uitslagen bij in de bestanden van eerdere dagen. Commit alles in één comm
       "odd": 1.80,
       "oddNote": "Betfred en William Hill 1.80, 21 okt",
       "confidence": 4,
+      "winChance": 57,
       "level": "kern",
       "reasoning": "De kern van de bet in één zin.",
       "keyFactors": ["Feit 1", "Feit 2", "Feit 3"],

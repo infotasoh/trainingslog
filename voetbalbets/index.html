@@ -58,7 +58,7 @@ header{display:flex;flex-direction:column;gap:2px}
 h1{font-family:var(--display);font-weight:800;font-size:40px;line-height:1;margin:0;letter-spacing:.005em;text-wrap:balance}
 .lede{color:var(--muted);margin:6px 0 0;text-wrap:pretty}
 
-.views{display:grid;grid-template-columns:1fr 1fr;background:var(--sunk);border-radius:12px;padding:4px;gap:4px}
+.views{display:grid;grid-template-columns:repeat(3,1fr);background:var(--sunk);border-radius:12px;padding:4px;gap:4px}
 .views button{border:0;background:transparent;border-radius:9px;padding:8px 10px;font-weight:600;font-size:14px;color:var(--muted)}
 .views button[aria-selected="true"]{background:var(--card);color:var(--fg);box-shadow:0 1px 2px rgba(0,0,0,.08)}
 .views .pts{font-family:var(--mono);margin-left:6px}
@@ -183,6 +183,37 @@ details.lineups[open] summary::after{content:"↑"}
 .checknote{margin:0;font-size:13px;border-radius:8px;padding:8px 10px;background:var(--sunk)}
 .checknote.ingetrokken{background:var(--lost-soft)}
 .pick.withdrawn .slip,.pick.withdrawn .scale,.pick.withdrawn .ticks{opacity:.45}
+.top3{display:flex;flex-direction:column;gap:14px}
+.topintro h2{font-family:var(--display);font-size:26px;font-weight:800;margin:0;text-transform:uppercase;letter-spacing:.02em}
+.topintro p{margin:4px 0 0;color:var(--muted);font-size:14px}
+.toplist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.topcard{background:var(--card);border:1px solid var(--edge);border-radius:14px;padding:14px 16px;display:flex;flex-direction:column;gap:10px}
+.topcard.rank1{border:2px solid var(--pitch)}
+.tophead{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center}
+.rank{font-family:var(--display);font-weight:800;font-size:34px;line-height:1;width:40px;height:40px;border-radius:10px;background:var(--sunk);display:grid;place-items:center}
+.rank1 .rank{background:var(--pitch);color:var(--pitch-ink)}
+.toptitle{min-width:0}
+.topmatch{font-family:var(--display);font-weight:700;font-size:19px;line-height:1.1}
+.topbet{font-size:14px;color:var(--muted)}
+.topfacts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.fact{background:var(--sunk);border-radius:10px;padding:6px 10px;min-width:0}
+.fact small{display:block;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.fact b{font-family:var(--mono);font-size:15px;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.fact.pos b{color:var(--won)} .fact.neg b{color:var(--lost)}
+.topwhy{margin:0;font-size:14px}
+.topact{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.linkish{border:0;background:none;padding:0;color:var(--pitch);font-weight:600;font-size:14px}
+.placed{border:1px solid var(--edge);background:var(--card);border-radius:99px;padding:5px 12px;font-size:13px;font-weight:600;color:var(--fg)}
+.placed.on{background:var(--pitch);border-color:var(--pitch);color:var(--pitch-ink)}
+.toptag{font-size:12px;font-weight:700;color:var(--pitch);text-transform:uppercase;letter-spacing:.05em}
+.swapnote{background:var(--high-soft);border-radius:12px;padding:12px 14px;font-size:14px}
+.swapnote b{color:var(--high)}
+.subhead{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:4px 0 8px}
+.ranktable th:nth-child(2){text-align:left}
+.ranktable td.bettd{text-align:left;white-space:normal;font-family:var(--body);min-width:150px}
+.ranktable td.bettd small{display:block;color:var(--muted);font-size:12px}
+.ranktable tr.mine td{background:var(--pitch-soft)}
+.minetag{font-size:11px;font-weight:700;color:var(--pitch);text-transform:uppercase}
 .risk{background:var(--lost-soft);border-radius:8px;padding:8px 10px;font-size:13px}
 .risk b{color:var(--lost)}
 .src{font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 10px}
@@ -232,7 +263,8 @@ footer{font-size:12px;color:var(--faint);text-align:center}
 
   <div class="views" role="tablist" aria-label="Weergave">
     <button type="button" role="tab" id="tab-tips" aria-selected="true">Tips &amp; live</button>
-    <button type="button" role="tab" id="tab-score" aria-selected="false">Scorebord Claude<span class="pts" id="tabpts"></span></button>
+    <button type="button" role="tab" id="tab-top" aria-selected="false">Top 3</button>
+    <button type="button" role="tab" id="tab-score" aria-selected="false">Scorebord<span class="pts" id="tabpts"></span></button>
   </div>
 
   <div id="view-tips" class="group" style="gap:18px">
@@ -256,6 +288,25 @@ footer{font-size:12px;color:var(--faint);text-align:center}
 
     <section class="quiet" id="quiet" hidden></section>
     <div class="feed" id="feed"></div>
+  </div>
+
+  <div id="view-top" class="top3" hidden>
+    <section class="topintro">
+      <h2>Top 3 van <span id="topday">vandaag</span></h2>
+      <p>De drie bets met de beste verhouding tussen winkans en odd. Zo zie je in één oogopslag welke bet het meest oplevert op de lange termijn. Na de opstellingscheck kan de volgorde nog veranderen.</p>
+    </section>
+    <div class="swapnote" id="swapnote" hidden></div>
+    <ol class="toplist" id="toplist"></ol>
+    <section>
+      <h3 class="subhead">Alle tips van de dag, op volgorde</h3>
+      <div class="tablewrap">
+        <table class="ranktable">
+          <thead><tr><th>#</th><th>Bet</th><th>Odd</th><th>Kans</th><th>Per €10</th></tr></thead>
+          <tbody id="rankrows"></tbody>
+        </table>
+      </div>
+      <p class="ruletext" style="margin-top:8px"><b>Kans</b> is Claude's eigen inschatting op basis van modellen, odds en opstellingen. <b>Per €10</b> is wat je gemiddeld wint of verliest als je deze bet heel vaak met €10 zou zetten. Een plus betekent dat de odd hoger is dan de echte kans doet vermoeden. Het blijft een schatting, geen garantie.</p>
+    </section>
   </div>
 
   <div id="view-score" class="score" hidden>
@@ -401,7 +452,7 @@ footer{font-size:12px;color:var(--faint);text-align:center}
     lastFetch = new Date();
     $("feed").textContent = fail && !ok ? "Live scores konden niet geladen worden. Probeer het later opnieuw." :
       "Live scores bijgewerkt om " + lastFetch.toLocaleTimeString("nl-NL", {hour:"2-digit", minute:"2-digit", second:"2-digit"});
-    renderTips();
+    renderTips(); renderTop();
     schedule();
   }
   function schedule(){
@@ -440,13 +491,107 @@ footer{font-size:12px;color:var(--faint);text-align:center}
     view = v;
     $("tab-tips").setAttribute("aria-selected", String(v === "tips"));
     $("tab-score").setAttribute("aria-selected", String(v === "score"));
+    $("tab-top").setAttribute("aria-selected", String(v === "top"));
     $("view-tips").hidden = v !== "tips";
     $("view-score").hidden = v !== "score";
+    $("view-top").hidden = v !== "top";
     try { history.replaceState(null, "", "#" + v); } catch(e){}
   }
   $("tab-tips").addEventListener("click", () => setView("tips"));
   $("tab-score").addEventListener("click", () => setView("score"));
+  $("tab-top").addEventListener("click", () => setView("top"));
   if (location.hash === "#score") setView("score");
+  if (location.hash === "#top") setView("top");
+
+  // ---------- bets the viewer marked as placed (this device only) ----------
+  function loadPlaced(){ try { return JSON.parse(localStorage.getItem("bvdd-placed") || "{}"); } catch(e){ return {}; } }
+  function isPlaced(day, p){ const all = loadPlaced(); return (all[day.date] || []).includes(p.id || p.match); }
+  function togglePlaced(day, p){
+    const all = loadPlaced(), id = p.id || p.match, list = all[day.date] || [];
+    all[day.date] = list.includes(id) ? list.filter(x => x !== id) : list.concat(id);
+    try { localStorage.setItem("bvdd-placed", JSON.stringify(all)); } catch(e){}
+    renderTips(); renderTop();
+  }
+  function placedButton(day, p){
+    const on = isPlaced(day, p);
+    const b = el("button", "placed" + (on ? " on" : ""), on ? "✓ Gezet" : "Ik heb deze gezet");
+    b.type = "button"; b.setAttribute("aria-pressed", String(on));
+    b.addEventListener("click", () => togglePlaced(day, p));
+    return b;
+  }
+
+  // ---------- ranking ----------
+  function chanceOf(p){
+    const c = Number(p.winChance);
+    if (c > 0 && c < 100) return c / 100;
+    return Math.min(0.9, 1 / Number(p.odd) + ((p.confidence || 3) - 3) * 0.02); // no estimate given: bookmaker's chance, nudged by confidence
+  }
+  function evOf(p){ return chanceOf(p) * Number(p.odd) - 1; }
+  function ranked(day){
+    const picks = (day.picks || []).filter(p => !(p.lineupCheck && p.lineupCheck.status === "ingetrokken"));
+    const byEv = picks.slice().sort((a, b) => evOf(b) - evOf(a) || chanceOf(b) - chanceOf(a));
+    if (!Array.isArray(day.top) || !day.top.length) return byEv.map(p => ({p, why: ""}));
+    const out = [];
+    day.top.forEach(t => { const p = picks.find(x => x.id === (t.id || t)); if (p && !out.some(o => o.p === p)) out.push({p, why: t.why || ""}); });
+    byEv.forEach(p => { if (!out.some(o => o.p === p)) out.push({p, why: ""}); });
+    return out;
+  }
+  function euro(n){ return (n >= 0 ? "+€" : "−€") + Math.abs(n).toFixed(2).replace(".", ","); }
+
+  function renderTop(){
+    const day = days.find(d => d.date === selected);
+    const list = $("toplist"), rows = $("rankrows"), note = $("swapnote");
+    list.replaceChildren(); rows.replaceChildren(); note.hidden = true;
+    if (!day){ list.append(Object.assign(el("div", "empty"), {textContent: "Nog geen tips voor deze dag."})); return; }
+    $("topday").textContent = day.date === todayAms() ? "vandaag" : fmtDate(day.date);
+    const r = ranked(day);
+    r.slice(0, 3).forEach((o, i) => {
+      const p = o.p, s = isCombi(p) ? null : live[keyOf(day, p)];
+      const li = el("li", "topcard rank" + (i + 1));
+      const head = el("div", "tophead");
+      head.append(el("span", "rank", String(i + 1)));
+      const title = el("div", "toptitle");
+      title.append(el("div", "topmatch", isCombi(p) ? (p.title || "Combi") : (p.match || "")),
+        el("div", "topbet", isCombi(p) ? (p.legs || []).map(l => l.pick).join(" + ") : (p.pick || "")));
+      head.append(title, el("span", "odd", Number(p.odd).toFixed(2)));
+      li.append(head);
+      const facts = el("div", "topfacts");
+      const f = (label, val, cls) => { const d = el("div", "fact" + (cls ? " " + cls : "")); d.append(el("small", null, label), el("b", null, val)); return d; };
+      const ev = evOf(p);
+      facts.append(f("Kans", Math.round(chanceOf(p) * 100) + "%"), f("Per €10", euro(ev * 10), ev >= 0 ? "pos" : "neg"),
+        f(s && s.state !== "pre" ? (s.state === "in" ? "Live" : "Eind") : "Aftrap", s && s.state !== "pre" ? ((s.home ? s.home.score : "") + "–" + (s.away ? s.away.score : "") + (s.state === "in" ? " · " + (s.detail || "") : "")) : (p.kickoff || (p.legs && p.legs[0] && p.legs[0].kickoff) || "")));
+      li.append(facts);
+      if (o.why || p.reasoning) li.append(el("p", "topwhy", o.why || p.reasoning));
+      const act = el("div", "topact");
+      act.append(placedButton(day, p));
+      const more = el("button", "linkish", "Hele analyse"); more.type = "button";
+      more.addEventListener("click", () => { setView("tips"); sport = "alles"; renderTips(); const det = document.querySelector('details.analysis[data-key="' + CSS.escape(keyOf(day, p) + ":analysis") + '"]'); if (det){ det.open = true; det.closest(".pick").scrollIntoView({behavior:"smooth", block:"start"}); } });
+      act.append(more);
+      li.append(act);
+      list.append(li);
+    });
+    r.forEach((o, i) => {
+      const p = o.p, ev = evOf(p);
+      const tr = el("tr", isPlaced(day, p) ? "mine" : "");
+      const bet = el("td", "bettd");
+      bet.append(el("div", null, isCombi(p) ? (p.title || "Combi") : (p.match || "")), el("small", null, isCombi(p) ? (p.legs || []).length + " wedstrijden" : (p.pick || "")));
+      if (isPlaced(day, p)) bet.append(el("span", "minetag", "gezet"));
+      tr.append(el("td", null, String(i + 1)), bet, el("td", null, Number(p.odd).toFixed(2)), el("td", null, Math.round(chanceOf(p) * 100) + "%"), el("td", ev >= 0 ? "pos" : "neg", euro(ev * 10)));
+      rows.append(tr);
+    });
+    // Placed a bet outside the top 3? Point at a better one.
+    const placed = r.map((o, i) => ({o, i})).filter(x => isPlaced(day, x.o.p));
+    const weaker = placed.filter(x => x.i >= 3);
+    const freeTop = r.slice(0, 3).find(o => !isPlaced(day, o.p));
+    if (weaker.length && freeTop){
+      const w = weaker[0].o.p;
+      note.hidden = false;
+      note.replaceChildren(el("b", null, "Er is een betere bet. "),
+        document.createTextNode("Je hebt " + (w.match || w.title) + " gezet (plek " + (weaker[0].i + 1) + "). " +
+          (freeTop.p.match || freeTop.p.title) + " (" + (isCombi(freeTop.p) ? "combi" : freeTop.p.pick) + " @ " + Number(freeTop.p.odd).toFixed(2) + ") heeft " + Math.round(chanceOf(freeTop.p) * 100) +
+          "% kans tegen " + Math.round(chanceOf(w) * 100) + "%. Kun je je bet nog weghalen, dan is wisselen het overwegen waard."));
+    }
+  }
 
   function renderDays(){
     const nav = $("days"); nav.replaceChildren();
@@ -546,6 +691,12 @@ footer{font-size:12px;color:var(--faint);text-align:center}
     card.append(row);
 
     if (chk && chk.note) card.append(el("p", "checknote " + (chk.status || ""), chk.note));
+    const rankIdx = ranked(day).findIndex(o => o.p === p);
+    const pr = el("div", "row");
+    pr.append(placedButton(day, p));
+    if (rankIdx >= 0 && rankIdx < 3) pr.append(el("span", "toptag", "Top " + (rankIdx + 1) + " van vandaag"));
+    pr.append(el("span", "conflabel", "kans " + Math.round(chanceOf(p) * 100) + "%"));
+    card.append(pr);
     if (p.reasoning) card.append(el("p", "why", p.reasoning));
     if (Array.isArray(p.keyFactors) && p.keyFactors.length){
       const ul = el("ul", "factors"); p.keyFactors.forEach(f => ul.append(el("li", null, f))); card.append(ul);
@@ -771,7 +922,7 @@ footer{font-size:12px;color:var(--faint);text-align:center}
     } else rv.hidden = true;
   }
 
-  function render(){ renderDays(); renderTips(); renderScore(); }
+  function render(){ renderDays(); renderTips(); renderTop(); renderScore(); }
 
   (async () => {
     try { await loadDays(); }
