@@ -106,6 +106,23 @@ h1{font-family:var(--display);font-weight:800;font-size:40px;line-height:1;margi
 .pulse{width:7px;height:7px;border-radius:50%;background:var(--live);animation:pulse 1.4s ease-in-out infinite}
 @keyframes pulse{50%{opacity:.25}}
 @media (prefers-reduced-motion: reduce){.pulse{animation:none}}
+.combititle{font-family:var(--display);font-size:22px;font-weight:700;line-height:1.1;margin:0}
+.legs{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.leg{background:var(--sunk);border-radius:10px;padding:8px 10px;display:flex;flex-direction:column;gap:6px;border:1px solid transparent}
+.leg.live{border-color:var(--live)}
+.legtop{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:6px}
+.legteam{display:flex;align-items:center;gap:6px;min-width:0;font-weight:600;font-size:14px;line-height:1.2}
+.legteam:last-child{flex-direction:row-reverse;text-align:right}
+.legteam span{min-width:0;overflow-wrap:break-word}
+.logo.sm,.badge.sm{width:24px;height:24px;flex:0 0 auto}
+.legsc{display:flex;flex-direction:column;align-items:center;min-width:52px}
+.legsc b{font-family:var(--mono);font-size:17px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.legsc small{font-size:11px;font-weight:700;color:var(--muted);white-space:nowrap}
+.legsc small.live{color:var(--live)}
+.legbet{display:flex;align-items:baseline;gap:8px;font-size:13px;color:var(--muted)}
+.legbet span:first-child{flex:1;min-width:0}
+.legbet b{font-family:var(--mono);color:var(--fg)}
+.legbet .result{margin-left:0}
 .events{list-style:none;margin:0;padding:8px 10px;background:var(--sunk);border-radius:10px;font-size:13px;display:flex;flex-direction:column;gap:2px}
 .events li{display:grid;grid-template-columns:44px 1fr;gap:6px}
 .events li.away{text-align:right;grid-template-columns:1fr 44px}
@@ -245,7 +262,7 @@ footer{font-size:12px;color:var(--faint);text-align:center}
   const MIN = 1.5, MAX = 3.0, WIN = 3, LOSS = -5;
   const LEVEL = {kern:"Kern", hoger:"Hoger", lager:"Lager"};
   const RESULT = {won:"Goed · +3", lost:"Fout · −5", void:"Geannuleerd"};
-  const SPORT = {voetbal:"Voetbal", basketbal:"Basketbal", ijshockey:"IJshockey", tennis:"Tennis", "american-football":"American football", honkbal:"Honkbal", darts:"Darts", handbal:"Handbal", volleybal:"Volleybal", f1:"Formule 1", mma:"MMA", boksen:"Boksen", rugby:"Rugby", wielrennen:"Wielrennen"};
+  const SPORT = {combi:"Combi's", voetbal:"Voetbal", basketbal:"Basketbal", ijshockey:"IJshockey", tennis:"Tennis", "american-football":"American football", honkbal:"Honkbal", darts:"Darts", handbal:"Handbal", volleybal:"Volleybal", f1:"Formule 1", mma:"MMA", boksen:"Boksen", rugby:"Rugby", wielrennen:"Wielrennen"};
   const DOW = ["zo","ma","di","wo","do","vr","za"];
   const MONTHS = ["januari","februari","maart","april","mei","juni","juli","augustus","september","oktober","november","december"];
   const ESPN = "https://site.api.espn.com/apis/site/v2/sports/";
@@ -262,12 +279,22 @@ footer{font-size:12px;color:var(--faint);text-align:center}
   function el(tag, cls, text){ const n = document.createElement(tag); if(cls) n.className = cls; if(text != null) n.textContent = text; return n; }
   function svg(tag, attrs){ const n = document.createElementNS("http://www.w3.org/2000/svg", tag); for (const k in attrs) n.setAttribute(k, attrs[k]); return n; }
   function levelOf(p){ return LEVEL[p.level] ? p.level : p.odd > 2.2 ? "hoger" : p.odd < 1.8 ? "lager" : "kern"; }
-  function sportOf(p){ return p.sport || "voetbal"; }
+  function sportOf(p){ return isCombi(p) ? "combi" : (p.sport || "voetbal"); }
   function sportName(s){ return SPORT[s] || (s.charAt(0).toUpperCase() + s.slice(1)); }
   function pos(v){ return Math.min(100, Math.max(0, (v - MIN) / (MAX - MIN) * 100)); }
   function color(c, fallback){ return /^#[0-9a-fA-F]{3,8}$/.test(c || "") ? c : fallback; }
   function fmtDate(d){ const dt = parse(d); return DOW[dt.getDay()] + " " + dt.getDate() + " " + MONTHS[dt.getMonth()].slice(0,3); }
   function keyOf(day, p){ return day.date + "/" + (p.id || p.match); }
+  function isCombi(p){ return p.type === "combi" || Array.isArray(p.legs); }
+  // Every single game on a day: a single tip, or each leg of a combi.
+  function units(day){
+    const out = [];
+    (day.picks || []).forEach(p => {
+      if (isCombi(p)) (p.legs || []).forEach((l, i) => out.push({key: keyOf(day, p) + "#" + i, p: l}));
+      else out.push({key: keyOf(day, p), p});
+    });
+    return out;
+  }
   function hhmm(iso){ try { return new Intl.DateTimeFormat("nl-NL",{timeZone:"Europe/Amsterdam",hour:"2-digit",minute:"2-digit"}).format(new Date(iso)); } catch(e){ return ""; } }
 
   // ---------- data from the repo ----------
@@ -317,7 +344,7 @@ footer{font-size:12px;color:var(--faint);text-align:center}
   async function refreshLive(){
     const day = days.find(d => d.date === selected);
     if (!day) return;
-    const picks = (day.picks || []).filter(p => p.espn && p.espn.league);
+    const picks = units(day).filter(u => u.p.espn && u.p.espn.league).map(u => Object.assign({}, u.p, {_key: u.key}));
     const boards = {};
     picks.forEach(p => { const k = p.espn.league + "|" + (p.espn.date || day.date.replace(/-/g, "")); boards[k] = true; });
     let ok = 0, fail = 0;
@@ -342,7 +369,7 @@ footer{font-size:12px;color:var(--faint);text-align:center}
         const cs = ev.competitions[0].competitors;
         const pickHomeIsEspnAway = teamMatches(p.home, cs.find(c => c.homeAway === "away")) && !teamMatches(p.home, cs.find(c => c.homeAway === "home"));
         if (pickHomeIsEspnAway){ const t = s.home; s.home = s.away; s.away = t; }
-        live[keyOf(day, p)] = s;
+        live[p._key] = s;
       }
     });
     lastFetch = new Date();
@@ -355,9 +382,10 @@ footer{font-size:12px;color:var(--faint);text-align:center}
     clearTimeout(pollTimer);
     const day = days.find(d => d.date === selected);
     if (!day) return;
-    const states = (day.picks || []).map(p => live[keyOf(day, p)]).filter(Boolean).map(s => s.state);
+    const us = units(day);
+    const states = us.map(u => live[u.key]).filter(Boolean).map(s => s.state);
     const anyLive = states.includes("in");
-    const anyPre = states.includes("pre") || (day.picks || []).some(p => p.espn && !live[keyOf(day, p)]);
+    const anyPre = states.includes("pre") || us.some(u => u.p.espn && !live[u.key]);
     const wait = anyLive ? 20000 : anyPre ? 120000 : 0;
     if (wait && !document.hidden) pollTimer = setTimeout(refreshLive, wait);
   }
@@ -378,7 +406,7 @@ footer{font-size:12px;color:var(--faint);text-align:center}
     const src = (liveSide && liveSide.logo) || (t && t.logo);
     if (!src) return badge(t);
     const img = el("img", "logo"); img.alt = ""; img.loading = "lazy"; img.src = src;
-    img.addEventListener("error", () => img.replaceWith(badge(t)));
+    img.addEventListener("error", () => { const b = badge(t); if (img.classList.contains("sm")) b.classList.add("sm"); img.replaceWith(b); });
     return img;
   }
 
@@ -428,14 +456,24 @@ footer{font-size:12px;color:var(--faint);text-align:center}
 
   function pickCard(day, p){
     const lvl = levelOf(p);
-    const s = live[keyOf(day, p)];
-    const card = el("article", "pick" + (s && s.state === "in" ? " is-live" : ""));
+    const combi = isCombi(p);
+    const s = combi ? null : live[keyOf(day, p)];
+    const anyLegLive = combi && (p.legs || []).some((l, i) => (live[keyOf(day, p) + "#" + i] || {}).state === "in");
+    const card = el("article", "pick" + ((s && s.state === "in") || anyLegLive ? " is-live" : ""));
     const meta = el("div", "meta");
-    meta.append(el("span", null, p.competition || ""), el("span", null, p.kickoff || ""));
-    card.append(meta);
-
-    if (p.home && p.away) card.append(scoreboard(p, s));
-    else card.append(el("h3", "team name", p.match || ""));
+    if (combi){
+      meta.append(el("span", null, "Combi · " + (p.legs || []).length + " wedstrijden"), el("span", null, (p.legs || []).map(l => Number(l.odd).toFixed(2)).join(" × ")));
+      card.append(meta);
+      if (p.title) card.append(el("h3", "combititle", p.title));
+      const legs = el("ol", "legs");
+      (p.legs || []).forEach((l, i) => legs.append(legRow(l, live[keyOf(day, p) + "#" + i])));
+      card.append(legs);
+    } else {
+      meta.append(el("span", null, p.competition || ""), el("span", null, p.kickoff || ""));
+      card.append(meta);
+      if (p.home && p.away) card.append(scoreboard(p, s));
+      else card.append(el("h3", "team name", p.match || ""));
+    }
 
     if (s && s.plays && s.plays.length && s.state !== "pre"){
       const ul = el("ul", "events");
@@ -450,7 +488,8 @@ footer{font-size:12px;color:var(--faint);text-align:center}
 
     const slip = el("div", "slip");
     const what = el("div", "what");
-    what.append(el("div", "market", p.market || ""), el("div", "choice", p.pick || ""));
+    if (combi) what.append(el("div", "market", "Totale odd"), el("div", "choice", "Alle " + (p.legs || []).length + " moeten goed zijn"));
+    else what.append(el("div", "market", p.market || ""), el("div", "choice", p.pick || ""));
     slip.append(what, el("div", "odd", Number(p.odd).toFixed(2)));
     card.append(slip);
 
@@ -499,6 +538,26 @@ footer{font-size:12px;color:var(--faint);text-align:center}
     return card;
   }
 
+  // One leg of a combi: logos, live score and the leg's own bet.
+  function legRow(l, s){
+    const li = el("li", "leg" + (s && s.state === "in" ? " live" : ""));
+    const top = el("div", "legtop");
+    const side = (t, sd) => { const w = el("span", "legteam"); const lg = logoFor(t, sd); lg.classList.add("sm"); w.append(lg, el("span", null, (t && t.name) || "")); return w; };
+    const mid = el("span", "legsc");
+    if (s && s.state !== "pre"){
+      mid.append(el("b", null, (s.home ? s.home.score : "") + "–" + (s.away ? s.away.score : "")));
+      const c = el("small", s.state === "in" ? "live" : null, s.detail || (s.state === "in" ? "Live" : "Afgelopen"));
+      mid.append(c);
+    } else mid.append(el("small", null, s && s.date ? hhmm(s.date) : (l.kickoff || "")));
+    if (l.home && l.away) top.append(side(l.home, s && s.home), mid, side(l.away, s && s.away));
+    else top.append(el("span", "legteam", l.match || ""), mid);
+    const bet = el("div", "legbet");
+    bet.append(el("span", null, (l.competition ? l.competition + " · " : "") + (l.pick || "")), el("b", null, Number(l.odd).toFixed(2)));
+    if (RESULT[l.result]) bet.append(el("span", "result " + l.result, l.result === "won" ? "Goed" : l.result === "lost" ? "Fout" : "Void"));
+    li.append(top, bet);
+    return li;
+  }
+
   // Keep open analyses open across live re-renders.
   function openKeys(){ return new Set([...document.querySelectorAll("details.analysis[open]")].map(d => d.dataset.key)); }
 
@@ -516,7 +575,7 @@ footer{font-size:12px;color:var(--faint);text-align:center}
     $("intro").textContent = day.intro || "";
 
     const picks = day.picks || [];
-    const nLive = picks.filter(p => (live[keyOf(day, p)] || {}).state === "in").length;
+    const nLive = new Set(units(day).map(u => live[u.key]).filter(x => x && x.state === "in").map(x => x.date + "|" + (x.home && x.home.id))).size;
     $("livecount").hidden = !nLive;
     $("livecount-n").textContent = nLive + " live";
 

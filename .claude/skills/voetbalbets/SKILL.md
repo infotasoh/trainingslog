@@ -21,7 +21,19 @@ Geen garanties, wel goed onderbouwde ideeën die passen bij hoe ik graag wed.
   - Binnen 1.80 - 2.20 is het label `kern`.
 - Als een favoriet te laag staat (bijv. 1.35), zoek een markt die richting 2.00 brengt
   zonder veel extra risico: winst + over 1.5, handicap, winst + BTTS nee, enz.
-  Of een **kleine combi van twee** sterke, lage odds. Nooit combi's van meer dan twee.
+- **Combi-bets zijn welkom.** Meerdere lage, zeer waarschijnlijke uitkomsten samen naar
+  een totaal rond de 2.00, bijvoorbeeld drie keer ongeveer 1.25 (1.25 × 1.25 × 1.25 = 1.95).
+  Regels voor een combi:
+  - **2 tot 4 wedstrijden**, elk tussen ongeveer **1.15 en 1.50**.
+  - Elke leg moet een **modelkans van minstens 75-80%** hebben. Eén twijfelgeval maakt
+    de hele combi fout, dus liever een leg weglaten dan een gok erbij.
+  - Totale odd = het product van de legs, afgerond op 2 decimalen; label zoals bij losse
+    tips (`kern` 1.80-2.20, `lager`, `hoger`).
+  - Geen twee legs uit dezelfde wedstrijd, en reken eerlijk: drie keer 80% is samen
+    ongeveer 51%. Zet die gecombineerde kans in de analyse.
+  - Een combi telt op het scorebord als **één** voorspelling: goed alleen als alle legs
+    goed zijn (void-legs vallen weg).
+  - Mik op 1 à 2 combi's per dag naast de losse tips.
 - **4 tot 8 tips per dag**, verdeeld over zoveel mogelijk sporten waar het aanbod goed is
   (streef naar minstens 3 sporten). Kwaliteit gaat
   voor aantal: is er weinig te halen, geef dan minder tips en zeg dat eerlijk.
@@ -29,7 +41,8 @@ Geen garanties, wel goed onderbouwde ideeën die passen bij hoe ik graag wed.
 
 ## Sporten
 
-Waarde voor `sport` (de app groepeert hierop): `voetbal`, `basketbal` (NBA, EuroLeague),
+Een combi krijgt `"type": "combi"` en verschijnt in de app onder "Combi's" (zie het
+voorbeeld onderaan). Waarde voor `sport` bij losse tips en per combi-leg (de app groepeert hierop): `voetbal`, `basketbal` (NBA, EuroLeague),
 `ijshockey` (NHL), `tennis`, `american-football` (NFL), `honkbal` (MLB), `darts`,
 `handbal`, `volleybal`, `f1`, `mma`, `boksen`, `rugby`, `wielrennen`.
 Voetbal blijft de basis. Kijk daarnaast elke dag actief naar wat er speelt: NBA en NHL
@@ -132,6 +145,36 @@ Werk uitslagen bij in de bestanden van eerdere dagen. Commit alles in één comm
   "quiet": ["Wedstrijden die je bekeek maar bewust oversloeg, met reden (kort)."]
 }
 ```
+
+Een combi in `picks` (zelfde velden als een losse tip, maar met `legs` in plaats van
+`match`/`home`/`away`/`market`/`pick`; `odd` is de totale odd):
+
+```json
+{
+  "id": "combi-3-thuisfavorieten",
+  "type": "combi",
+  "title": "Drie thuisfavorieten",
+  "odd": 1.95,
+  "oddNote": "1.25 × 1.22 × 1.28 = 1.95",
+  "confidence": 4,
+  "level": "kern",
+  "legs": [
+    {
+      "match": "PSV - Heracles", "sport": "voetbal", "competition": "Eredivisie", "kickoff": "20:00",
+      "home": { "name": "PSV", "short": "PSV", "c1": "#ED1C24", "c2": "#FFFFFF" },
+      "away": { "name": "Heracles", "short": "HER", "c1": "#000000", "c2": "#FFFFFF" },
+      "espn": { "league": "soccer/ned.1", "date": "20261024" },
+      "market": "Uitslag (1X2)", "pick": "PSV wint", "odd": 1.25, "result": null
+    }
+  ],
+  "reasoning": "...", "keyFactors": ["..."], "analysis": ["..."], "risks": "...",
+  "sources": [{ "label": "...", "url": "https://..." }],
+  "result": null
+}
+```
+
+Bij de uitslagen: zet `result` per leg én op de combi zelf (`won` alleen als alle legs
+`won`/`void` zijn en minstens één `won`; anders `lost`).
 
 ## Toon
 

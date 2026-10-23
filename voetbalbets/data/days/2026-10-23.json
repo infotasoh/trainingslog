@@ -1,7 +1,7 @@
 {
   "date": "2026-10-23",
   "headline": "Vrijdagavond: Europa en de NBA",
-  "intro": "Rustige vrijdag met één wedstrijd per grote voetbalcompetitie en een volle NBA-nacht. Vier tips rond de 2.00. Elke tip telt mee voor Claude's scorebord: +3 als hij goed is, −5 als hij fout is.",
+  "intro": "Rustige vrijdag met één wedstrijd per grote voetbalcompetitie en een volle NBA-nacht. Vier losse tips en één combi rond de 2.00. Elke tip, ook de combi, telt mee voor Claude's scorebord: +3 als hij goed is, −5 als hij fout is.",
   "generatedAt": "2026-10-23T16:00:00+02:00",
   "picks": [
     {
@@ -235,6 +235,94 @@
         "league": "basketball/nba",
         "date": "20261023"
       }
+    },
+    {
+      "id": "combi-stuttgart-blazers",
+      "type": "combi",
+      "title": "Twee duidelijke thuisfavorieten",
+      "odd": 1.78,
+      "oddNote": "1.36 × 1.31 = 1.78. Losse odds van 21-22 okt.",
+      "confidence": 3,
+      "level": "lager",
+      "legs": [
+        {
+          "match": "VfB Stuttgart - Mönchengladbach",
+          "sport": "voetbal",
+          "competition": "Bundesliga",
+          "kickoff": "20:30",
+          "home": {
+            "name": "VfB Stuttgart",
+            "short": "VFB",
+            "c1": "#E32219",
+            "c2": "#FFFFFF"
+          },
+          "away": {
+            "name": "Mönchengladbach",
+            "short": "BMG",
+            "c1": "#111111",
+            "c2": "#00A859"
+          },
+          "espn": {
+            "league": "soccer/ger.1",
+            "date": "20261023"
+          },
+          "market": "Uitslag (1X2)",
+          "pick": "Stuttgart wint",
+          "odd": 1.36,
+          "result": null
+        },
+        {
+          "match": "Portland Trail Blazers - Sacramento Kings",
+          "sport": "basketbal",
+          "competition": "NBA",
+          "kickoff": "ca. 04:00 (nacht)",
+          "home": {
+            "name": "Trail Blazers",
+            "short": "POR",
+            "c1": "#E03A3E",
+            "c2": "#111111"
+          },
+          "away": {
+            "name": "Kings",
+            "short": "SAC",
+            "c1": "#5A2D81",
+            "c2": "#C4CED4"
+          },
+          "espn": {
+            "league": "basketball/nba",
+            "date": "20261023"
+          },
+          "market": "Winnaar (moneyline)",
+          "pick": "Trail Blazers winnen",
+          "odd": 1.31,
+          "result": null
+        }
+      ],
+      "reasoning": "Twee thuisploegen die elk rond 70% winkans hebben, samen goed voor een odd van bijna 1.80 zonder dat er een marge gehaald hoeft te worden.",
+      "keyFactors": [
+        "Stuttgart: bookmakers ca. 70% winkans, Gladbach 0 punten",
+        "Portland: Dimers-model 72,7% winkans",
+        "Geen handicap of goals nodig: gewoon winnen",
+        "Twee verschillende sporten, dus de uitslagen hangen niet van elkaar af"
+      ],
+      "analysis": [
+        "Deze combi is het alternatief voor wie de losse tips op Stuttgart (winst + over 2.5) en Portland (−7.5) te spannend vindt. In plaats van een marge of veel doelpunten nodig te hebben, hoeven beide favorieten hier alleen maar te winnen.",
+        "Stuttgart speelt thuis tegen de nummer laatst van de Bundesliga, die onder trainer Blessin nog geen punt pakte en mogelijk zonder spits Kleindienst speelt. Bookmakers geven Stuttgart ongeveer 70 procent kans, AccuScore zelfs 84 procent.",
+        "Portland is thuis tegen Sacramento een duidelijke favoriet met een moneyline van ongeveer −325. Het model van Dimers komt op 72,7 procent winkans en meerdere voorspellers verwachten een overwinning met ruim tien punten verschil.",
+        "Eerlijk gerekend: twee keer zo'n 70 tot 75 procent geeft samen rond de 50 tot 55 procent kans dat beide winnen. Dat past bij een odd van 1.78, maar het is geen zekerheidje. Daarom vertrouwen 3 en het label lager. Let op: deze combi overlapt met de losse Stuttgart- en Portland-tips. Kies er liever één van de twee dan allebei."
+      ],
+      "risks": "Eén verrassing is genoeg: een gelijkspel in Stuttgart of een Kings-zege in de nacht en de hele combi is fout.",
+      "sources": [
+        {
+          "label": "bet365 News",
+          "url": "https://news.bet365.com/en-gb/article/football-stuttgart-borussia-monchengladbach-prediction-and-tips/2026102211465568660"
+        },
+        {
+          "label": "Dimers",
+          "url": "https://www.dimers.com/nba/predictions/2026_4_sac_por"
+        }
+      ],
+      "result": null
     }
   ],
   "quiet": [
