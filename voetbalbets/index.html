@@ -251,6 +251,34 @@ td.neg{color:var(--lost)} td.pos{color:var(--won)}
 .review h3{font-family:var(--display);font-size:18px;margin:0 0 4px;text-transform:uppercase;letter-spacing:.03em}
 .review p{margin:0}
 footer{font-size:12px;color:var(--faint);text-align:center}
+
+/* mijn bets */
+.mybets{display:flex;flex-direction:column;gap:10px}
+.myhead{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.myhead h2{font-family:var(--display);font-size:22px;font-weight:700;margin:0;text-transform:uppercase;letter-spacing:.03em}
+.addbtn{border:1px solid var(--pitch);background:none;color:var(--pitch);border-radius:99px;padding:5px 12px;font-size:13px;font-weight:700}
+.mycard{border-color:var(--pitch)}
+.mycard.st-won{border-color:var(--won)} .mycard.st-lost{border-color:var(--lost)}
+.gezet{display:inline-flex;align-items:center;gap:4px;background:var(--pitch);color:var(--pitch-ink);border-radius:99px;padding:2px 10px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+.legstate{font-size:12px;font-weight:700;white-space:nowrap}
+.legstate.ok{color:var(--won)} .legstate.bad{color:var(--lost)}
+.mystatus{font-weight:700;font-size:14px}
+.mystatus.won{color:var(--won)} .mystatus.lost{color:var(--lost)} .mystatus.open{color:var(--muted)}
+.myfacts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.myact{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.linkish.danger{color:var(--lost)}
+.myform{background:var(--card);border:1px solid var(--pitch);border-radius:14px;padding:14px 16px;display:flex;flex-direction:column;gap:12px}
+.myform h3{font-family:var(--display);font-size:20px;margin:0;text-transform:uppercase;letter-spacing:.02em}
+.fleg{background:var(--sunk);border-radius:10px;padding:10px;display:flex;flex-direction:column;gap:8px}
+.fleg .fl{display:flex;gap:8px;align-items:center}
+.fleg label,.myform label{font-size:12px;color:var(--muted);font-weight:600}
+.myform select,.myform input{font:inherit;font-size:16px;color:var(--fg);background:var(--card);border:1px solid var(--edge);border-radius:8px;padding:7px 9px;width:100%;min-width:0}
+.myform .oddin{max-width:96px;font-family:var(--mono)}
+.ftotal{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-size:14px}
+.ftotal b{font-family:var(--mono);font-size:20px}
+.fbtns{display:flex;gap:10px;flex-wrap:wrap}
+.primary{background:var(--pitch);color:var(--pitch-ink);border:0;border-radius:10px;padding:10px 16px;font-weight:700}
+.secondary{background:none;border:1px solid var(--edge);border-radius:10px;padding:10px 14px;font-weight:600}
 </style>
 </head>
 <body>
@@ -269,6 +297,8 @@ footer{font-size:12px;color:var(--faint);text-align:center}
 
   <div id="view-tips" class="group" style="gap:18px">
     <nav class="days" id="days" aria-label="Kies een dag"></nav>
+
+    <section class="mybets" id="mybets" aria-live="polite"></section>
 
     <section class="rule" aria-labelledby="rule-h">
       <h2 id="rule-h">Spelregel: odd rond 2.00</h2>
@@ -370,6 +400,7 @@ footer{font-size:12px;color:var(--faint);text-align:center}
       if (isCombi(p)) (p.legs || []).forEach((l, i) => out.push({key: keyOf(day, p) + "#" + i, p: l}));
       else out.push({key: keyOf(day, p), p});
     });
+    mineOf(day.date).forEach(b => (b.legs || []).forEach((l, i) => { if (l.espn && l.espn.league) out.push({key: mineKey(day, b, i), p: l}); }));
     return out;
   }
   function hhmm(iso){ try { return new Intl.DateTimeFormat("nl-NL",{timeZone:"Europe/Amsterdam",hour:"2-digit",minute:"2-digit"}).format(new Date(iso)); } catch(e){ return ""; } }
@@ -452,7 +483,7 @@ footer{font-size:12px;color:var(--faint);text-align:center}
     lastFetch = new Date();
     $("feed").textContent = fail && !ok ? "Live scores konden niet geladen worden. Probeer het later opnieuw." :
       "Live scores bijgewerkt om " + lastFetch.toLocaleTimeString("nl-NL", {hour:"2-digit", minute:"2-digit", second:"2-digit"});
-    renderTips(); renderTop();
+    renderTips(); renderTop(); if (!editing) renderMine();
     schedule();
   }
   function schedule(){
@@ -518,6 +549,215 @@ footer{font-size:12px;color:var(--faint);text-align:center}
     b.type = "button"; b.setAttribute("aria-pressed", String(on));
     b.addEventListener("click", () => togglePlaced(day, p));
     return b;
+  }
+
+
+  // ---------- own bets the viewer placed (this device; the day file can pre-fill them) ----------
+  const OUTCOME = {home:"wint", away:"wint", draw:"Gelijkspel"};
+  function loadMineAll(){ try { return JSON.parse(localStorage.getItem("bvdd-mine") || "{}") || {}; } catch(e){ return {}; } }
+  function saveMineAll(all){ try { localStorage.setItem("bvdd-mine", JSON.stringify(all)); } catch(e){} }
+  let mineMem = null;   // fallback when storage is blocked
+  function mineStore(){ if (!mineMem) mineMem = loadMineAll(); return mineMem; }
+  function mineOf(date){ return (mineStore()[date] || []); }
+  function setMine(date, list){ const all = mineStore(); all[date] = list; saveMineAll(all); }
+  function mineKey(day, b, i){ return day.date + "/mine:" + b.id + "#" + i; }
+  // Games of the day that a leg can point at: every single tip and every combi leg, once.
+  function gamesOf(day){
+    const seen = new Set(), out = [];
+    (day.picks || []).forEach(p => (isCombi(p) ? (p.legs || []) : [p]).forEach(g => {
+      const k = norm(g.match); if (!g.match || seen.has(k)) return; seen.add(k);
+      out.push({match: g.match, home: g.home, away: g.away, competition: g.competition, kickoff: g.kickoff, sport: g.sport, espn: g.espn});
+    }));
+    return out;
+  }
+  function gameInfo(g){ return {match: g.match, home: g.home, away: g.away, competition: g.competition, kickoff: g.kickoff, sport: g.sport, espn: g.espn}; }
+  function pickText(l){
+    if (l.outcome === "home") return ((l.home && l.home.name) || "Thuis") + " wint";
+    if (l.outcome === "away") return ((l.away && l.away.name) || "Uit") + " wint";
+    if (l.outcome === "draw") return "Gelijkspel";
+    return l.pick || "";
+  }
+  // Bets written into the day file ("mine") are copied in once; deleting one keeps it gone.
+  function seedMine(){
+    let seen; try { seen = JSON.parse(localStorage.getItem("bvdd-mine-seen") || "[]"); } catch(e){ seen = []; }
+    let changed = false;
+    days.forEach(day => (day.mine || []).forEach(b => {
+      if (!b || !b.id || seen.includes(day.date + "/" + b.id)) return;
+      const games = gamesOf(day);
+      const legs = (b.legs || []).map(l => {
+        const refPick = (day.picks || []).find(p => p.id === l.ref && !isCombi(p));
+        const want = norm(l.match || (refPick && refPick.match) || "");
+        const g = games.find(x => norm(x.match) === want);
+        return Object.assign({}, g ? gameInfo(g) : {match: l.match || ""}, {outcome: l.outcome || "text", pick: l.pick || "", odd: Number(l.odd) || null});
+      });
+      const list = mineOf(day.date).filter(x => x.id !== b.id);
+      list.push({id: b.id, legs, stake: Number(b.stake) || null, note: b.note || "", fromFile: true});
+      mineStore()[day.date] = list;
+      seen.push(day.date + "/" + b.id); changed = true;
+    }));
+    if (changed){ saveMineAll(mineStore()); try { localStorage.setItem("bvdd-mine-seen", JSON.stringify(seen)); } catch(e){} }
+  }
+  function totalOdd(b){ const os = (b.legs || []).map(l => Number(l.odd)); return os.length && os.every(o => o > 1) ? os.reduce((a, o) => a * o, 1) : null; }
+  // Where a leg stands right now, from the live score: ok / bad, live or final.
+  function legState(l, s){
+    if (l.result === "won" || l.result === "lost") return {final: true, ok: l.result === "won"};
+    if (!s || s.state === "pre" || !["home","away","draw"].includes(l.outcome)) return null;
+    const h = parseInt(s.home && s.home.score, 10), a = parseInt(s.away && s.away.score, 10);
+    if (isNaN(h) || isNaN(a)) return null;
+    const ok = l.outcome === "home" ? h > a : l.outcome === "away" ? a > h : h === a;
+    return {final: s.state === "post", ok};
+  }
+  function betState(day, b){
+    if (b.result === "won" || b.result === "lost") return b.result;
+    const st = (b.legs || []).map((l, i) => legState(l, live[mineKey(day, b, i)]));
+    if (st.some(x => x && x.final && !x.ok)) return "lost";
+    if (st.length && st.every(x => x && x.final && x.ok)) return "won";
+    return "open";
+  }
+  function money(n){ return "€" + n.toFixed(2).replace(".", ","); }
+
+  let editing = null;   // {date, id|null, legs, stake}
+  function renderMine(){
+    const box = $("mybets");
+    const day = days.find(d => d.date === selected);
+    box.replaceChildren();
+    if (!day) return;
+    const bets = mineOf(day.date);
+    const head = el("div", "myhead");
+    head.append(el("h2", null, "Mijn bets"));
+    if (!editing){
+      const add = el("button", "addbtn", "+ Eigen bet"); add.type = "button";
+      add.addEventListener("click", () => { editing = {date: day.date, id: null, legs: [newLeg(day)], stake: ""}; renderMine(); });
+      head.append(add);
+    }
+    box.append(head);
+    if (editing && editing.date === day.date) box.append(formFor(day));
+    if (!bets.length && !editing){
+      box.append(el("p", "ruletext", "Heb je zelf iets anders gezet dan de tips? Voeg het toe, dan volg je het hier live mee."));
+    }
+    bets.forEach(b => box.append(myCard(day, b)));
+  }
+  function myCard(day, b){
+    const st = betState(day, b);
+    const odd = totalOdd(b), n = (b.legs || []).length;
+    const anyLive = (b.legs || []).some((l, i) => (live[mineKey(day, b, i)] || {}).state === "in");
+    const card = el("article", "pick mycard st-" + st + (anyLive && st === "open" ? " is-live" : ""));
+    const meta = el("div", "meta");
+    const tag = el("span", "gezet", "✓ Gezet");
+    meta.append(tag, el("span", null, n > 1 ? "Combi · " + n + " wedstrijden" : "Enkele bet"));
+    card.append(meta);
+    const legs = el("ol", "legs");
+    (b.legs || []).forEach((l, i) => {
+      const s = live[mineKey(day, b, i)];
+      const row = legRow(Object.assign({}, l, {pick: pickText(l), odd: l.odd || 0, result: null}), s);
+      if (!l.odd){ const ob = row.querySelector(".legbet b"); if (ob) ob.textContent = "–"; }
+      const ls = legState(l, s);
+      if (ls) row.querySelector(".legbet").append(el("span", "legstate " + (ls.ok ? "ok" : "bad"), ls.final ? (ls.ok ? "Goed" : "Fout") : (ls.ok ? "Staat goed" : "Staat fout")));
+      legs.append(row);
+    });
+    card.append(legs);
+    const facts = el("div", "myfacts");
+    const f = (label, val, cls) => { const d = el("div", "fact" + (cls ? " " + cls : "")); d.append(el("small", null, label), el("b", null, val)); return d; };
+    facts.append(f(n > 1 ? "Totale odd" : "Odd", odd ? odd.toFixed(2) : "–"),
+      f("Inzet", b.stake ? money(b.stake) : "–"),
+      f(st === "won" ? "Gewonnen" : st === "lost" ? "Verloren" : "Mogelijk", b.stake && odd ? (st === "lost" ? "−" + money(b.stake) : money(b.stake * odd)) : "–", st === "won" ? "pos" : st === "lost" ? "neg" : ""));
+    card.append(facts);
+    if (b.note) card.append(el("div", "oddnote", b.note));
+    const act = el("div", "myact");
+    act.append(el("span", "mystatus " + st, st === "won" ? "Gewonnen" : st === "lost" ? "Verloren" : anyLive ? "Bezig" : "Loopt nog"));
+    const edit = el("button", "linkish", "Wijzig"); edit.type = "button";
+    edit.addEventListener("click", () => { editing = {date: day.date, id: b.id, legs: JSON.parse(JSON.stringify(b.legs || [])), stake: b.stake || ""}; renderMine(); $("mybets").scrollIntoView({behavior:"smooth", block:"start"}); });
+    const del = el("button", "linkish danger", "Verwijder"); del.type = "button";
+    del.addEventListener("click", () => { if (!confirm("Deze bet verwijderen?")) return; setMine(day.date, mineOf(day.date).filter(x => x.id !== b.id)); renderMine(); });
+    act.append(edit, del);
+    card.append(act);
+    return card;
+  }
+  function newLeg(day){ const g = gamesOf(day)[0]; return Object.assign(g ? gameInfo(g) : {match: ""}, {outcome: "home", pick: "", odd: null}); }
+  function formFor(day){
+    const ed = editing, games = gamesOf(day);
+    const form = el("form", "myform");
+    form.append(el("h3", null, ed.id ? "Bet wijzigen" : "Eigen bet toevoegen"));
+    const total = el("b", null, "–"), pay = el("span", null, "");
+    const update = () => {
+      const odd = totalOdd(ed);
+      total.textContent = odd ? odd.toFixed(2) : "–";
+      const st = Number(String(ed.stake).replace(",", "."));
+      pay.textContent = odd && st > 0 ? "Mogelijke uitbetaling " + money(st * odd) : "";
+    };
+    ed.legs.forEach((l, i) => {
+      const box = el("div", "fleg");
+      const sel = el("select"); sel.setAttribute("aria-label", "Wedstrijd " + (i + 1));
+      games.forEach((g, gi) => { const o = el("option", null, g.match + (g.kickoff ? " · " + g.kickoff : "")); o.value = String(gi); if (norm(g.match) === norm(l.match)) o.selected = true; sel.append(o); });
+      const other = el("option", null, "Andere wedstrijd…"); other.value = "other"; sel.append(other);
+      const known = games.findIndex(g => norm(g.match) === norm(l.match));
+      if (known < 0) other.selected = true;
+      const lab = el("label", null, "Wedstrijd " + (i + 1)); box.append(lab, sel);
+      if (known < 0){
+        const mi = el("input"); mi.placeholder = "Bijv. Ajax - PSV"; mi.value = l.match || ""; mi.setAttribute("aria-label", "Naam wedstrijd");
+        mi.addEventListener("input", () => { l.match = mi.value; });
+        box.append(mi);
+      }
+      sel.addEventListener("change", () => {
+        if (sel.value === "other") Object.assign(l, {match: "", home: null, away: null, espn: null, competition: "", kickoff: "", outcome: "text"});
+        else Object.assign(l, gameInfo(games[Number(sel.value)]), l.outcome === "text" ? {outcome: "home"} : {});
+        renderMine();
+      });
+      const fl = el("div", "fl");
+      if (known >= 0){
+        const out = el("select"); out.setAttribute("aria-label", "Jouw keuze");
+        const opts = [["home", ((l.home && l.home.name) || "Thuis") + " wint"]];
+        if ((l.sport || "voetbal") !== "basketbal") opts.push(["draw", "Gelijkspel"]);
+        opts.push(["away", ((l.away && l.away.name) || "Uit") + " wint"], ["text", "Iets anders…"]);
+        opts.forEach(([v, t]) => { const o = el("option", null, t); o.value = v; if (l.outcome === v) o.selected = true; out.append(o); });
+        out.addEventListener("change", () => { l.outcome = out.value; renderMine(); });
+        fl.append(out);
+      }
+      if (l.outcome === "text" || known < 0){
+        const pi = el("input"); pi.placeholder = "Jouw bet, bijv. over 2.5 goals"; pi.value = l.pick || ""; pi.setAttribute("aria-label", "Jouw bet");
+        pi.addEventListener("input", () => { l.pick = pi.value; });
+        box.append(pi);
+      }
+      const oi = el("input", "oddin"); oi.inputMode = "decimal"; oi.placeholder = "odd"; oi.value = l.odd ? String(l.odd) : ""; oi.setAttribute("aria-label", "Odd");
+      oi.addEventListener("input", () => { const v = Number(oi.value.replace(",", ".")); l.odd = v > 1 ? v : null; update(); });
+      fl.append(oi);
+      box.append(fl);
+      if (ed.legs.length > 1){
+        const rm = el("button", "linkish danger", "Haal deze wedstrijd weg"); rm.type = "button";
+        rm.addEventListener("click", () => { ed.legs.splice(i, 1); renderMine(); });
+        box.append(rm);
+      }
+      form.append(box);
+    });
+    const addLeg = el("button", "linkish", "+ Wedstrijd toevoegen (combi)"); addLeg.type = "button";
+    addLeg.addEventListener("click", () => { const used = new Set(ed.legs.map(l => norm(l.match))); const g = games.find(x => !used.has(norm(x.match))); ed.legs.push(Object.assign(g ? gameInfo(g) : {match: ""}, {outcome: g ? "home" : "text", pick: "", odd: null})); renderMine(); });
+    form.append(addLeg);
+    const sl = el("label", null, "Inzet in euro");
+    const si = el("input"); si.inputMode = "decimal"; si.placeholder = "bijv. 10"; si.value = ed.stake ? String(ed.stake).replace(".", ",") : ""; si.setAttribute("aria-label", "Inzet in euro");
+    si.addEventListener("input", () => { ed.stake = si.value; update(); });
+    form.append(sl, si);
+    const tot = el("div", "ftotal"); const tl = el("span", null, ed.legs.length > 1 ? "Totale odd " : "Odd "); tl.append(total);
+    tot.append(tl, pay); form.append(tot);
+    const btns = el("div", "fbtns");
+    const save = el("button", "primary", "✓ Opslaan als gezet"); save.type = "submit";
+    const cancel = el("button", "secondary", "Annuleer"); cancel.type = "button";
+    cancel.addEventListener("click", () => { editing = null; renderMine(); });
+    btns.append(save, cancel); form.append(btns);
+    form.addEventListener("submit", ev => {
+      ev.preventDefault();
+      const legs = ed.legs.filter(l => (l.match || "").trim());
+      if (!legs.length){ alert("Kies minstens één wedstrijd."); return; }
+      if (legs.some(l => l.outcome === "text" && !(l.pick || "").trim())){ alert("Vul bij elke wedstrijd in wat je gezet hebt."); return; }
+      const stake = Number(String(ed.stake).replace(",", "."));
+      const list = mineOf(day.date);
+      const prev = list.find(x => x.id === ed.id);
+      const bet = Object.assign({}, prev || {}, {id: ed.id || ("b" + Date.now().toString(36)), legs, stake: stake > 0 ? stake : null});
+      if (prev && prev.fromFile) bet.note = "";
+      setMine(day.date, prev ? list.map(x => x.id === bet.id ? bet : x) : list.concat(bet));
+      editing = null; renderMine(); refreshLive();
+    });
+    update();
+    return form;
   }
 
   // ---------- ranking ----------
@@ -922,10 +1162,10 @@ footer{font-size:12px;color:var(--faint);text-align:center}
     } else rv.hidden = true;
   }
 
-  function render(){ renderDays(); renderTips(); renderTop(); renderScore(); }
+  function render(){ renderDays(); if (editing && editing.date !== selected) editing = null; renderMine(); renderTips(); renderTop(); renderScore(); }
 
   (async () => {
-    try { await loadDays(); }
+    try { await loadDays(); seedMine(); }
     catch(e){
       $("picks").replaceChildren(Object.assign(el("div", "empty"), {textContent: "De tips konden niet geladen worden. Controleer je verbinding en herlaad de pagina."}));
       return;

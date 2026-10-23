@@ -455,5 +455,24 @@
       "id": "alaves-malaga",
       "why": "Málaga mist drie aanvallers en won nog niets. Met de beste odd (1.80) heb je een kleine plus; bij 1.75 is hij dat niet meer."
     }
+  ],
+  "mine": [
+    {
+      "id": "combi-stuttgart-alaves",
+      "legs": [
+        {
+          "ref": "stuttgart-gladbach",
+          "outcome": "home",
+          "odd": 1.36
+        },
+        {
+          "ref": "alaves-malaga",
+          "outcome": "home",
+          "odd": 1.8
+        }
+      ],
+      "stake": null,
+      "note": "Odds zijn indicatief (1.36 × 1.80). Tik op Wijzig om je echte odds en inzet in te vullen."
+    }
   ]
 }
