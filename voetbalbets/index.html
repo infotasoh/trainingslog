@@ -1,0 +1,274 @@
+<title>Bets van de dag</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;700;800&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* Layout: one phone-width column like a betting slip; date strip on top, the odd-2 rule card, then one card per tip with its odd placed on a 1.50–3.00 scale. */
+:root{
+  --bg:#EEF2EE; --card:#FFFFFF; --sunk:#E3E9E4; --edge:rgba(20,52,36,.12);
+  --fg:#13231B; --muted:#56685E; --faint:#8A9A90;
+  --pitch:#11704A; --pitch-soft:rgba(17,112,74,.12); --pitch-ink:#FFFFFF;
+  --band:rgba(17,112,74,.18);
+  --high:#B4561A; --high-soft:rgba(180,86,26,.12);
+  --low:#2C62A8; --low-soft:rgba(44,98,168,.12);
+  --won:#11704A; --lost:#B23A3A; --void:#8A9A90;
+  --display:"Saira Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"Public Sans",-apple-system,"Segoe UI",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0E1512; --card:#16211C; --sunk:#1E2B25; --edge:rgba(160,210,185,.12);
+  --fg:#E6F0EA; --muted:#97AAA0; --faint:#66786E;
+  --pitch:#4CC38A; --pitch-soft:rgba(76,195,138,.14); --pitch-ink:#06170F;
+  --band:rgba(76,195,138,.2);
+  --high:#F0955A; --high-soft:rgba(240,149,90,.14);
+  --low:#7FB0F0; --low-soft:rgba(127,176,240,.14);
+  --won:#4CC38A; --lost:#F07A7A; --void:#66786E;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0E1512; --card:#16211C; --sunk:#1E2B25; --edge:rgba(160,210,185,.12);
+  --fg:#E6F0EA; --muted:#97AAA0; --faint:#66786E;
+  --pitch:#4CC38A; --pitch-soft:rgba(76,195,138,.14); --pitch-ink:#06170F;
+  --band:rgba(76,195,138,.2);
+  --high:#F0955A; --high-soft:rgba(240,149,90,.14);
+  --low:#7FB0F0; --low-soft:rgba(127,176,240,.14);
+  --won:#4CC38A; --lost:#F07A7A; --void:#66786E;
+  color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+.app{max-width:520px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 48px;display:flex;flex-direction:column;gap:18px}
+a{color:var(--pitch)}
+:focus-visible{outline:2px solid var(--pitch);outline-offset:2px}
+
+header{display:flex;flex-direction:column;gap:2px}
+.eyebrow{font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);font-weight:600}
+h1{font-family:var(--display);font-weight:800;font-size:40px;line-height:1;margin:0;letter-spacing:.005em;text-wrap:balance}
+.lede{color:var(--muted);margin:6px 0 0;text-wrap:pretty}
+
+.days{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px;scrollbar-width:none}
+.days::-webkit-scrollbar{display:none}
+.day{flex:0 0 auto;border:1px solid var(--edge);background:var(--card);border-radius:10px;padding:6px 10px;display:flex;flex-direction:column;align-items:center;min-width:52px;color:var(--muted)}
+.day b{font-family:var(--display);font-size:20px;line-height:1.1;color:var(--fg);font-weight:700}
+.day small{font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+.day[aria-current="true"]{background:var(--pitch);border-color:var(--pitch);color:var(--pitch-ink)}
+.day[aria-current="true"] b{color:var(--pitch-ink)}
+
+.rule{background:var(--sunk);border-radius:14px;padding:14px 16px;display:flex;flex-direction:column;gap:10px}
+.rule h2{font-family:var(--display);font-size:20px;font-weight:700;margin:0;letter-spacing:.02em;text-transform:uppercase}
+.rule p{margin:0;color:var(--muted);font-size:14px}
+.legend{display:flex;flex-wrap:wrap;gap:6px}
+
+.chip{font-size:12px;font-weight:600;border-radius:99px;padding:2px 9px;white-space:nowrap}
+.chip.kern{background:var(--pitch-soft);color:var(--pitch)}
+.chip.hoger{background:var(--high-soft);color:var(--high)}
+.chip.lager{background:var(--low-soft);color:var(--low)}
+
+.tally{display:flex;gap:14px;font-size:13px;color:var(--muted);flex-wrap:wrap}
+.tally b{font-family:var(--mono);color:var(--fg);font-variant-numeric:tabular-nums}
+
+.picks{display:flex;flex-direction:column;gap:12px}
+.pick{background:var(--card);border:1px solid var(--edge);border-radius:14px;padding:14px 16px;display:flex;flex-direction:column;gap:10px}
+.meta{display:flex;justify-content:space-between;gap:8px;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-weight:600}
+.meta span:last-child{font-family:var(--mono);letter-spacing:0}
+.match{font-family:var(--display);font-size:24px;font-weight:700;line-height:1.1;margin:0}
+.slip{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center}
+.slip .what{min-width:0}
+.slip .market{font-size:12px;color:var(--muted)}
+.slip .choice{font-weight:600;font-size:16px}
+.odd{font-family:var(--mono);font-weight:600;font-size:26px;font-variant-numeric:tabular-nums;line-height:1}
+.oddnote{font-size:12px;color:var(--faint)}
+
+.scale{position:relative;height:22px}
+.scale .track{position:absolute;left:0;right:0;top:9px;height:4px;border-radius:2px;background:var(--sunk)}
+.scale .band{position:absolute;top:5px;height:12px;border-radius:3px;background:var(--band)}
+.scale .dot{position:absolute;top:3px;width:16px;height:16px;margin-left:-8px;border-radius:50%;border:3px solid var(--card);background:var(--pitch)}
+.scale .dot.hoger{background:var(--high)} .scale .dot.lager{background:var(--low)}
+.ticks{display:flex;justify-content:space-between;font-family:var(--mono);font-size:10px;color:var(--faint);margin-top:-2px}
+
+.row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.conf{display:flex;gap:3px} .conf i{width:14px;height:6px;border-radius:2px;background:var(--sunk)} .conf i.on{background:var(--fg)}
+.conflabel{font-size:12px;color:var(--muted)}
+.result{margin-left:auto;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+.result.won{color:var(--won)} .result.lost{color:var(--lost)} .result.void{color:var(--void)}
+.why{margin:0;font-size:14px;text-wrap:pretty}
+.src{font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 10px}
+
+.quiet{font-size:13px;color:var(--muted)}
+.quiet h3{font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin:0 0 4px}
+.quiet ul{margin:0;padding-left:18px}
+.empty{background:var(--card);border:1px dashed var(--edge);border-radius:14px;padding:22px 16px;text-align:center;color:var(--muted)}
+.empty b{display:block;color:var(--fg);font-family:var(--display);font-size:22px}
+footer{font-size:12px;color:var(--faint);text-align:center}
+</style>
+
+<div class="app">
+  <header>
+    <div class="eyebrow" id="eyebrow">Elke ochtend nieuwe tips</div>
+    <h1 id="headline">Bets van de dag</h1>
+    <p class="lede" id="intro">Rond odd 2.00, niet te riskant.</p>
+  </header>
+
+  <nav class="days" id="days" aria-label="Kies een dag"></nav>
+
+  <section class="rule" aria-labelledby="rule-h">
+    <h2 id="rule-h">Spelregel: odd rond 2.00</h2>
+    <p>We zoeken bets tussen <b>1.80 en 2.20</b> zonder veel risico. Is het vertrouwen groot, dan mag de odd hoger. Is een bet extra veilig, dan mag hij wat lager. Uitschieters krijgen altijd een label.</p>
+    <div class="legend">
+      <span class="chip kern">Kern · 1.80–2.20</span>
+      <span class="chip hoger">Hoger · veel vertrouwen</span>
+      <span class="chip lager">Lager · extra veilig</span>
+    </div>
+    <div class="tally" id="tally" hidden></div>
+  </section>
+
+  <section class="picks" id="picks" aria-live="polite">
+    <div class="empty"><b>Tips laden…</b>Elke ochtend rond 09:45 verschijnen hier de bets van die dag.</div>
+  </section>
+
+  <section class="quiet" id="quiet" hidden></section>
+
+  <footer>Odds veranderen: check de prijs bij je eigen bookmaker. Geen garanties. 18+ · speel bewust · <a href="https://www.loketkansspel.nl" target="_blank" rel="noopener">loketkansspel.nl</a></footer>
+</div>
+
+<script>
+(function(){
+  const $ = (id) => document.getElementById(id);
+  const MIN = 1.5, MAX = 3.0;
+  const LEVEL = {kern:"Kern", hoger:"Hoger", lager:"Lager"};
+  const RESULT = {won:"Gewonnen", lost:"Verloren", void:"Geannuleerd"};
+  const DOW = ["zo","ma","di","wo","do","vr","za"];
+  const MONTHS = ["januari","februari","maart","april","mei","juni","juli","augustus","september","oktober","november","december"];
+  let days = [];
+  let selected = null;
+
+  function todayAms(){
+    try { return new Intl.DateTimeFormat("en-CA",{timeZone:"Europe/Amsterdam"}).format(new Date()); }
+    catch(e){ return new Date().toISOString().slice(0,10); }
+  }
+  function parse(d){ const [y,m,dd] = d.split("-").map(Number); return new Date(y, m-1, dd); }
+  function el(tag, cls, text){ const n = document.createElement(tag); if(cls) n.className = cls; if(text != null) n.textContent = text; return n; }
+  function levelOf(p){
+    if (LEVEL[p.level]) return p.level;
+    return p.odd > 2.2 ? "hoger" : p.odd < 1.8 ? "lager" : "kern";
+  }
+  function pos(v){ return Math.min(100, Math.max(0, (v - MIN) / (MAX - MIN) * 100)); }
+
+  function renderDays(){
+    const nav = $("days"); nav.replaceChildren();
+    const today = todayAms();
+    days.slice(0, 21).forEach(d => {
+      const dt = parse(d.date);
+      const b = el("button", "day"); b.type = "button";
+      b.append(el("small", null, d.date === today ? "vandaag" : DOW[dt.getDay()]), el("b", null, String(dt.getDate())));
+      b.setAttribute("aria-current", String(d.date === selected));
+      b.setAttribute("aria-label", dt.getDate() + " " + MONTHS[dt.getMonth()]);
+      b.addEventListener("click", () => { selected = d.date; render(); });
+      nav.append(b);
+    });
+  }
+
+  function renderTally(){
+    let won = 0, lost = 0, stake = 0, ret = 0;
+    days.forEach(d => (d.picks || []).forEach(p => {
+      if (p.result === "won"){ won++; stake++; ret += Number(p.odd) || 0; }
+      else if (p.result === "lost"){ lost++; stake++; }
+    }));
+    const t = $("tally");
+    if (!stake){ t.hidden = true; return; }
+    t.hidden = false; t.replaceChildren();
+    const item = (label, val) => { const s = el("span"); s.append(label + " ", el("b", null, val)); return s; };
+    const roi = ((ret - stake) / stake * 100);
+    t.append(item("Gewonnen", String(won)), item("Verloren", String(lost)), item("Rendement bij 1 inzet per tip", (roi >= 0 ? "+" : "") + roi.toFixed(0) + "%"));
+  }
+
+  function pickCard(p){
+    const lvl = levelOf(p);
+    const card = el("article", "pick");
+    const meta = el("div", "meta");
+    meta.append(el("span", null, p.competition || ""), el("span", null, p.kickoff || ""));
+    card.append(meta, el("h3", "match", p.match || ""));
+
+    const slip = el("div", "slip");
+    const what = el("div", "what");
+    what.append(el("div", "market", p.market || ""), el("div", "choice", p.pick || ""));
+    const oddBox = el("div");
+    oddBox.style.textAlign = "right";
+    oddBox.append(el("div", "odd", Number(p.odd).toFixed(2)));
+    slip.append(what, oddBox);
+    card.append(slip);
+
+    const scale = el("div", "scale");
+    scale.setAttribute("role", "img");
+    scale.setAttribute("aria-label", "Odd " + Number(p.odd).toFixed(2) + " op de schaal 1.50 tot 3.00, richtband 1.80 tot 2.20");
+    const band = el("div", "band"); band.style.left = pos(1.8) + "%"; band.style.width = (pos(2.2) - pos(1.8)) + "%";
+    const dot = el("div", "dot " + lvl); dot.style.left = pos(Number(p.odd)) + "%";
+    scale.append(el("div", "track"), band, dot);
+    const ticks = el("div", "ticks");
+    ["1.50","2.00","2.50","3.00"].forEach(t => ticks.append(el("span", null, t)));
+    card.append(scale, ticks);
+    if (p.oddNote) card.append(el("div", "oddnote", p.oddNote));
+
+    const row = el("div", "row");
+    row.append(el("span", "chip " + lvl, LEVEL[lvl]));
+    const conf = el("span", "conf"); conf.setAttribute("aria-hidden", "true");
+    for (let i = 1; i <= 5; i++) conf.append(el("i", i <= (p.confidence || 0) ? "on" : ""));
+    row.append(conf, el("span", "conflabel", "vertrouwen " + (p.confidence || "?") + "/5"));
+    if (RESULT[p.result]) row.append(el("span", "result " + p.result, RESULT[p.result]));
+    card.append(row);
+
+    if (p.reasoning) card.append(el("p", "why", p.reasoning));
+    if (Array.isArray(p.sources) && p.sources.length){
+      const src = el("div", "src"); src.append(el("span", null, "Bronnen:"));
+      p.sources.forEach(s => {
+        if (!s || !/^https?:\/\//.test(s.url || "")) return;
+        const a = el("a", null, s.label || "bron"); a.href = s.url; a.target = "_blank"; a.rel = "noopener";
+        src.append(a);
+      });
+      card.append(src);
+    }
+    return card;
+  }
+
+  function render(){
+    renderDays(); renderTally();
+    const list = $("picks"), quiet = $("quiet");
+    const day = days.find(d => d.date === selected);
+    if (!day){
+      list.replaceChildren();
+      const e = el("div", "empty");
+      e.append(el("b", null, "Nog geen tips"), document.createTextNode("Elke ochtend rond 09:45 verschijnen hier de bets van die dag, en krijg je een melding."));
+      list.append(e); quiet.hidden = true; return;
+    }
+    const dt = parse(day.date);
+    $("eyebrow").textContent = (day.date === todayAms() ? "Vandaag · " : "") + DOW[dt.getDay()] + " " + dt.getDate() + " " + MONTHS[dt.getMonth()];
+    $("headline").textContent = day.headline || "Bets van de dag";
+    $("intro").textContent = day.intro || "";
+    list.replaceChildren(...(day.picks || []).map(pickCard));
+    if (!(day.picks || []).length){
+      const e = el("div", "empty"); e.append(el("b", null, "Vandaag geen bets"), document.createTextNode("Niets gevonden dat goed genoeg is. Morgen weer."));
+      list.append(e);
+    }
+    if (Array.isArray(day.quiet) && day.quiet.length){
+      quiet.hidden = false; quiet.replaceChildren(el("h3", null, "Bekeken en overgeslagen"));
+      const ul = el("ul"); day.quiet.forEach(q => ul.append(el("li", null, q))); quiet.append(ul);
+    } else quiet.hidden = true;
+  }
+
+  (async () => {
+    const db = window.claude ? await window.claude.use("db") : null;
+    if (!db){
+      $("picks").replaceChildren(Object.assign(el("div", "empty"), {textContent: "Log in op claude.ai om de tips te zien."}));
+      return;
+    }
+    db.collection("days").onSnapshot(snap => {
+      days = snap.docs.map(d => Object.assign({date: d.id}, d.data())).sort((a, b) => b.date.localeCompare(a.date));
+      const today = todayAms();
+      if (!selected || !days.some(d => d.date === selected)){
+        selected = days.some(d => d.date === today) ? today : (days[0] && days[0].date);
+      }
+      render();
+    }, () => {
+      $("picks").replaceChildren(Object.assign(el("div", "empty"), {textContent: "De tips konden niet geladen worden. Herlaad de pagina."}));
+    });
+  })();
+})();
+</script>
