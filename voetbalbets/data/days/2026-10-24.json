@@ -84,7 +84,12 @@
           "url": "https://www.espn.com/nba/recap/_/gameId/401909843"
         }
       ],
-      "result": null
+      "result": null,
+      "lineupCheck": {
+        "at": "13:10",
+        "status": "bevestigd",
+        "note": "Er is geen nieuw blessurenieuws na het rapport van vrijdag. Om 19:10 checken we opnieuw, als het officiële injury report er is."
+      }
     },
     {
       "id": "arsenal-everton",
@@ -135,19 +140,16 @@
         "home": {
           "formation": "4-2-3-1",
           "missing": [
-            "Saka (dij)",
-            "Saliba",
-            "Tzolis",
-            "Hincapié (twijfel, enkel)"
+            "Saka (dij, nieuwe MRI)",
+            "Saliba (rug)",
+            "Tzolis (dij)"
           ],
-          "note": "Raya; White, Konsa, Gabriel, Calafiori; Rice, Lewis-Skelly; Madueke, Ødegaard, Eze; Havertz"
+          "note": "Raya; White, Konsa, Gabriel, Calafiori; Rice, Lewis-Skelly; Madueke, Ødegaard, Eze; Havertz; Hincapié is terug na zijn enkelblessure"
         },
         "away": {
           "formation": "4-2-3-1",
-          "missing": [
-            "Mykolenko (twijfel)"
-          ],
-          "note": "Pickford; Maitland-Niles, Tarkowski, Branthwaite, Mykolenko; Barry voorin; Nørgaard terug na debuut"
+          "missing": [],
+          "note": "Pickford; Maitland-Niles, Tarkowski, Branthwaite, Mykolenko; Barry voorin. Volgens de previews geen afwezigen, Mykolenko is fit"
         },
         "impact": "Zonder Saka mist Arsenal zijn gevaarlijkste rechtsbuiten, maar Madueke en Eze zijn volwaardige vervangers. Everton heeft niemand die het verschil kan maken voorin, en dat drukt de kans op een tegengoal."
       },
@@ -165,7 +167,12 @@
           "url": "https://statsultra.com/forecasts/premier-league/"
         }
       ],
-      "result": null
+      "result": null,
+      "lineupCheck": {
+        "at": "13:10",
+        "status": "bevestigd",
+        "note": "Saka, Saliba en Tzolis ontbreken zoals verwacht, Hincapié is terug. Everton heeft geen afwezigen. De tip blijft staan op 70%."
+      }
     },
     {
       "id": "combi-leipzig-sixers",
@@ -254,19 +261,20 @@
         "home": {
           "formation": "Leipzig 4-2-3-1 / Sixers: Maxey, Embiid",
           "missing": [
+            "Leipzig: Nkunku (twijfel)",
+            "Ouédraogo",
+            "Guiu",
             "Sixers: LeBron James (twijfel, rug)",
             "Barlow (rug)",
             "Hukporti (achilles, seizoen)"
           ],
-          "note": "Leipzig zonder bekende afwezigen; Embiid speelt naar verwachting zaterdag en rust zondag"
+          "note": "Leipzig verwacht: Vandevoordt; Baku, Orbán, Lukeba, Raum; Banzuzi, El Aynaoui; Gruda, Nkunku/Baumgartner, Nusa; Gomis. Embiid staat niet op de blessurelijst"
         },
         "away": {
           "formation": "Elversberg 4-2-3-1 / Bucks zonder Giannis",
           "missing": [
-            "Elversberg: Onyeka",
-            "Seifert",
-            "Campbell",
-            "Zimmerschied (twijfel)"
+            "Elversberg: Zimmerschied (enkel)",
+            "Campbell, Darvich en Onyeka (twijfel)"
           ],
           "note": "Bucks melden geen blessures, maar missen het niveau van een vertrokken superster"
         },
@@ -290,7 +298,12 @@
           "url": "https://libertyballers.com/76ers-injury-report/99739/lebron-james-questionable-for-sixers-first-of-a-back-to-back-vs-bucks"
         }
       ],
-      "result": null
+      "result": null,
+      "lineupCheck": {
+        "at": "13:10",
+        "status": "bevestigd",
+        "note": "Leipzig verwacht in 4-2-3-1 met Gomis voorin, Nkunku is twijfelachtig. Bij Elversberg ontbreekt Zimmerschied. Embiid speelt, LeBron is twijfelachtig maar speelt waarschijnlijk. Om 19:10 checken we de NBA-leg opnieuw."
+      }
     }
   ],
   "top": [
