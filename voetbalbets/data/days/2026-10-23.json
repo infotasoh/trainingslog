@@ -60,7 +60,7 @@
           "url": "https://www.sportsmole.co.uk/football/stuttgart/preview/stuttgart-vs-borussia-mbach-prediction-team-news-lineups_607392.html"
         }
       ],
-      "result": null,
+      "result": "lost",
       "espn": {
         "league": "soccer/ger.1",
         "date": "20261023"
@@ -147,7 +147,7 @@
           "url": "https://www.whoscored.com/matches/1981038/preview/italy-serie-a-2026-2027-torino-monza"
         }
       ],
-      "result": null,
+      "result": "won",
       "espn": {
         "league": "soccer/ita.1",
         "date": "20261023"
@@ -232,7 +232,7 @@
           "url": "https://www.sportsmole.co.uk/football/malaga/preview/alaves-vs-malaga-prediction-team-news-lineups_607364.html"
         }
       ],
-      "result": null,
+      "result": "lost",
       "espn": {
         "league": "soccer/esp.1",
         "date": "20261023"
@@ -317,7 +317,7 @@
           "url": "https://ripcityradio.iheart.com/content/2026-10-23-trail-blazers-vs-kings-injury-report-oct-23/"
         }
       ],
-      "result": null,
+      "result": "won",
       "espn": {
         "league": "basketball/nba",
         "date": "20261023"
@@ -382,7 +382,7 @@
           "market": "Uitslag (1X2)",
           "pick": "Stuttgart wint",
           "odd": 1.36,
-          "result": null
+          "result": "lost"
         },
         {
           "match": "Sacramento Kings - Portland Trail Blazers",
@@ -408,7 +408,7 @@
           "market": "Winnaar (moneyline)",
           "pick": "Trail Blazers winnen",
           "odd": 1.31,
-          "result": null
+          "result": "won"
         }
       ],
       "reasoning": "Twee favorieten die elk rond 70% winkans hebben, samen goed voor een odd van bijna 1.80 zonder dat er een marge gehaald hoeft te worden.",
@@ -435,7 +435,7 @@
           "url": "https://www.dimers.com/nba/predictions/2026_4_sac_por"
         }
       ],
-      "result": null,
+      "result": "lost",
       "winChance": 48
     },
     {
@@ -514,7 +514,7 @@
           "url": "https://winnersandwhiners.com/free-picks/nba/atlanta-hawks-vs-charlotte-hornets-picks-prediction-odds-and-line-movement-for-friday-october-23-2026"
         }
       ],
-      "result": null
+      "result": "won"
     },
     {
       "id": "nba-knicks-celtics-under",
@@ -586,7 +586,7 @@
           "url": "https://www.predictem.com/nba/knicks-vs-celtics-prediction-friday-best-bet-at-td-garden/"
         }
       ],
-      "result": null
+      "result": "won"
     },
     {
       "id": "combi-lakers-raptors",
@@ -622,7 +622,7 @@
           "market": "Winnaar (moneyline)",
           "pick": "Raptors winnen",
           "odd": 1.32,
-          "result": null
+          "result": "won"
         },
         {
           "match": "Los Angeles Lakers - LA Clippers",
@@ -648,7 +648,7 @@
           "market": "Winnaar (moneyline)",
           "pick": "Lakers winnen",
           "odd": 1.25,
-          "result": null
+          "result": "won"
         }
       ],
       "reasoning": "De twee duidelijkste favorieten van de nacht, allebei tegen een tegenstander met belangrijke afwezigen.",
@@ -679,7 +679,7 @@
           "url": "https://sports.yahoo.com/articles/lakers-vs-clippers-injury-report-021750845.html"
         }
       ],
-      "result": null
+      "result": "won"
     },
     {
       "id": "jp-sterren",
@@ -715,7 +715,7 @@
             "line": 32.5,
             "side": "over"
           },
-          "result": null
+          "result": "lost"
         },
         {
           "match": "Magic - Timberwolves",
@@ -747,7 +747,7 @@
             "line": 29.5,
             "side": "over"
           },
-          "result": null
+          "result": "lost"
         },
         {
           "match": "Heat - Pistons",
@@ -779,7 +779,7 @@
             "line": 28.5,
             "side": "over"
           },
-          "result": null
+          "result": "won"
         },
         {
           "match": "Pacers - Mavericks",
@@ -811,7 +811,7 @@
             "line": 24.5,
             "side": "over"
           },
-          "result": null
+          "result": "lost"
         },
         {
           "match": "Heat - Pistons",
@@ -843,7 +843,7 @@
             "line": 24.5,
             "side": "over"
           },
-          "result": null
+          "result": "lost"
         },
         {
           "match": "Spurs - Rockets",
@@ -875,7 +875,7 @@
             "line": 11.5,
             "side": "over"
           },
-          "result": null
+          "result": "won"
         }
       ],
       "reasoning": "Zes go-to-spelers die vannacht de bal krijgen, elk met een lijn waar previews of modellen over gaan.",
@@ -916,7 +916,7 @@
       "confidence": 1,
       "level": "hoger",
       "winChance": 1.4,
-      "result": null
+      "result": "lost"
     },
     {
       "id": "jp-borden",
@@ -952,7 +952,7 @@
             "line": 11.5,
             "side": "over"
           },
-          "result": null
+          "result": "lost"
         },
         {
           "match": "Spurs - Rockets",
@@ -984,7 +984,7 @@
             "line": 9.5,
             "side": "over"
           },
-          "result": null
+          "result": "lost"
         },
         {
           "match": "Pacers - Mavericks",
@@ -1016,7 +1016,7 @@
             "line": 9.5,
             "side": "over"
           },
-          "result": null
+          "result": "lost"
         },
         {
           "match": "Magic - Timberwolves",
@@ -1080,7 +1080,7 @@
             "line": 4.5,
             "side": "over"
           },
-          "result": null
+          "result": "won"
         },
         {
           "match": "Hornets - Hawks",
@@ -1112,7 +1112,7 @@
             "line": 37.5,
             "side": "over"
           },
-          "result": null
+          "result": "lost"
         }
       ],
       "reasoning": "Geen scorers maar het vuile werk: rebounds en assists zijn stabieler dan punten.",
@@ -1153,7 +1153,7 @@
       "confidence": 1,
       "level": "hoger",
       "winChance": 1.5,
-      "result": null
+      "result": "lost"
     },
     {
       "id": "jp-rollen",
@@ -1189,7 +1189,7 @@
             "line": 17.5,
             "side": "over"
           },
-          "result": null
+          "result": "lost"
         },
         {
           "match": "Warriors - Grizzlies",
@@ -1221,7 +1221,7 @@
             "line": 15.5,
             "side": "over"
           },
-          "result": null
+          "result": "won"
         },
         {
           "match": "Celtics - Knicks",
@@ -1285,7 +1285,7 @@
             "line": 16.5,
             "side": "over"
           },
-          "result": null
+          "result": "lost"
         },
         {
           "match": "Warriors - Grizzlies",
@@ -1317,7 +1317,7 @@
             "line": 4.5,
             "side": "over"
           },
-          "result": null
+          "result": "lost"
         }
       ],
       "reasoning": "Spelers met een lage lijn ten opzichte van hun rol, plus één Curry-schot op de jackpot.",
@@ -1358,7 +1358,7 @@
       "confidence": 1,
       "level": "hoger",
       "winChance": 2.7,
-      "result": null
+      "result": "lost"
     },
     {
       "id": "jp-boston",
@@ -1394,7 +1394,7 @@
             "line": 20.5,
             "side": "over"
           },
-          "result": null,
+          "result": "won",
           "oddNote": "Prijs indicatief"
         },
         {
@@ -1427,7 +1427,7 @@
             "line": 10.5,
             "side": "over"
           },
-          "result": null,
+          "result": "lost",
           "oddNote": "Prijs indicatief"
         },
         {
@@ -1460,7 +1460,7 @@
             "line": 34.5,
             "side": "over"
           },
-          "result": null,
+          "result": "lost",
           "oddNote": "Prijs indicatief"
         },
         {
@@ -1493,7 +1493,7 @@
             "line": 2.5,
             "side": "over"
           },
-          "result": null,
+          "result": "lost",
           "oddNote": "Prijs indicatief"
         },
         {
@@ -1558,7 +1558,7 @@
             "line": 6.5,
             "side": "under"
           },
-          "result": null
+          "result": "won"
         }
       ],
       "reasoning": "Vier sterren uit Knicks - Celtics die elk een lijn hebben die previews aanraden, aangevuld met twee unders van Dimers.",
@@ -1594,7 +1594,7 @@
       "confidence": 1,
       "level": "hoger",
       "winChance": 1.6,
-      "result": null
+      "result": "lost"
     }
   ],
   "quiet": [

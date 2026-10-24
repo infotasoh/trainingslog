@@ -1,0 +1,318 @@
+{
+  "date": "2026-10-24",
+  "headline": "Zaterdag: streng na een min-dag, drie tips",
+  "intro": "Na een saldo van −8 werken we vandaag streng: drie tips met vertrouwen 4, verdeeld over voetbal en de NBA-nacht, en geen hogere odds. Geen jackpots vandaag. Odds zijn indicatief, check de prijs bij je eigen bookmaker. 18+, speel bewust.",
+  "generatedAt": "2026-10-24T09:50:00+02:00",
+  "review": "Vrijdag ging 4 van 8 goed: +12 −20 = −8 punten, en dat is ook het saldo van de laatste 7 dagen (alleen vrijdag telt mee). De NBA was 4 op 4: Blazers −7.5 (128-120), Hawks met 128-81 in Charlotte, de under in Boston (107-103, 210 punten) en de combi Raptors + Lakers. Het voetbal faalde: Stuttgart verloor thuis met 2-3 van Gladbach, dat alle zes eerdere duels had verloren, en Alavés kwam niet verder dan 1-1 tegen hekkensluiter Málaga. Daardoor ging ook de combi Stuttgart + Blazers onderuit. Torino - Monza (BTTS, 3-2) was wel raak. De les: een favoriet tegen een ploeg onderin is geen zekerheidje, zeker niet met een extra voorwaarde erbij (winst én over 2.5). De vier jackpots verloren zoals verwacht, onder meer door de 11 balverliezen van Dončić en de blessure van Flagg. Omdat het saldo onder nul staat, gaan we vandaag streng te werk: maximaal 4 tips, alleen vertrouwen 4 of 5, geen hoger-tips en geen combimarkten als winst + goals. Voetbal alleen bij topfavorieten met een modelkans van 70% of meer.",
+  "picks": [
+    {
+      "id": "nba-hawks-rockets",
+      "sport": "basketbal",
+      "match": "Atlanta Hawks - Houston Rockets",
+      "home": {
+        "name": "Hawks",
+        "espnName": "Atlanta Hawks",
+        "short": "ATL",
+        "c1": "#E03A3E",
+        "c2": "#C1D32F"
+      },
+      "away": {
+        "name": "Rockets",
+        "espnName": "Houston Rockets",
+        "short": "HOU",
+        "c1": "#CE1141",
+        "c2": "#000000"
+      },
+      "espn": {
+        "league": "basketball/nba",
+        "date": "20261024"
+      },
+      "competition": "NBA",
+      "kickoff": "02:30 (nacht)",
+      "market": "Winnaar (moneyline)",
+      "pick": "Hawks winnen",
+      "odd": 1.77,
+      "oddNote": "Hawks −130 (ca. 1.77) en −1.5 bij capperspicks/docsports, 24 okt; check je eigen bookmaker",
+      "confidence": 4,
+      "winChance": 59,
+      "level": "lager",
+      "reasoning": "Atlanta speelt thuis, kon vrijdag zijn basis sparen bij een ruime zege, en Dimers' model geeft de Hawks 58% tegen een Houston dat na een zware derby in Austin ook een back-to-back speelt.",
+      "keyFactors": [
+        "Hawks wonnen vrijdag met 128-81 in Charlotte; alle vijf basisspelers in dubbele cijfers met beperkte minuten",
+        "Rockets speelden vrijdag een fysieke derby tegen de Spurs (114-110), beslist in de laatste seconde",
+        "Dimers: Hawks 58,2% kans en hun beste bet van de avond (8,2% edge)",
+        "Rockets missen Reed Sheppard (knie); Hawks missen Gueye en Veesaar, geen basisspelers",
+        "Lijn: Hawks −1.5, total 230.5"
+      ],
+      "analysis": [
+        "Beide ploegen spelen vannacht hun tweede wedstrijd in twee dagen, maar die avond verliep heel verschillend. Atlanta stond in Charlotte al bij rust met 68-43 voor en won uiteindelijk met 128-81, de grootste zege uit de clubgeschiedenis. Jalen Johnson (19 punten, 8 assists) en de andere basisspelers konden in het laatste kwart rusten. Houston moest in Austin tot de laatste seconde knokken tegen de Spurs: het blok van Amen Thompson op Wembanyama besliste het duel, Şengün maakte 29 punten en VanVleet speelde ruim 31 minuten.",
+        "Daar zit voor ons het verschil. Bij een back-to-back telt hoeveel minuten de sleutelspelers de avond ervoor maakten, en Atlanta heeft hier een duidelijk voordeel. De Hawks spelen bovendien thuis in State Farm Arena, terwijl Houston weer moest reizen. Het model van Dimers komt uit op 58,2% voor Atlanta en noemt het de beste bet van de avond. Een AI-preview van capperspicks verwacht 124-117 voor de Hawks.",
+        "De bookmakers zijn het niet helemaal eens: de meeste zetten Atlanta op −1.5 en rond −130, maar één bron ziet Houston juist licht favoriet. Die spreiding in de markt geeft ons ruimte: wij schatten de kans op 59%, terwijl de odd van 1.77 met ongeveer 56% rekent. Daarom kiezen we de moneyline en niet de handicap: bij een verschil van maar 1,5 punt kost de handicap extra risico, terwijl de prijs nauwelijks hoger ligt.",
+        "Houston is met Durant, Şengün en Thompson een sterk team, dus dit is geen zekerheidje. We maken er een lager-tip van met vertrouwen 4: de NBA was vrijdag 4 op 4, en het schema valt vandaag duidelijk in het voordeel van Atlanta."
+      ],
+      "risks": "Durant en Şengün kunnen een wedstrijd in hun eentje beslissen, en als Atlanta op de back-to-back toch een basisspeler rust geeft, valt het voordeel weg. Check de blessurelijst vlak voor de tip-off.",
+      "lineups": {
+        "status": "verwacht",
+        "home": {
+          "formation": "Basis rond Jalen Johnson",
+          "missing": [
+            "Mouhamed Gueye (voet)",
+            "Henri Veesaar (knie)"
+          ],
+          "note": "Starters speelden vrijdag beperkte minuten; Aaron Wiggins (19 pt) sterk vanaf de bank"
+        },
+        "away": {
+          "formation": "Basis met VanVleet, Thompson, Durant en Şengün",
+          "missing": [
+            "Reed Sheppard (knie)"
+          ],
+          "note": "Zware minuten in de derby van vrijdag; de bank is dunner zonder Sheppard"
+        },
+        "impact": "De Hawks missen geen basisspelers en hebben frisse benen; bij Houston is de vermoeidheid van de vaste kern het grootste risico in het laatste kwart."
+      },
+      "sources": [
+        {
+          "label": "Dimers best bets 24/10",
+          "url": "https://www.dimers.com/nba/news/nba-best-bets-10-24-2026-ac"
+        },
+        {
+          "label": "Capperspicks Rockets - Hawks",
+          "url": "https://www.capperspicks.com/free-picks/ai/houston-rockets-at-atlanta-hawks-pick-nba-prediction-preview-odds-10-24-2026/"
+        },
+        {
+          "label": "ESPN Hawks 128-81 Hornets",
+          "url": "https://www.espn.com/nba/recap/_/gameId/401909843"
+        }
+      ],
+      "result": null
+    },
+    {
+      "id": "arsenal-everton",
+      "sport": "voetbal",
+      "match": "Arsenal - Everton",
+      "home": {
+        "name": "Arsenal",
+        "short": "ARS",
+        "c1": "#EF0107",
+        "c2": "#FFFFFF"
+      },
+      "away": {
+        "name": "Everton",
+        "short": "EVE",
+        "c1": "#003399",
+        "c2": "#FFFFFF"
+      },
+      "espn": {
+        "league": "soccer/eng.1",
+        "date": "20261024"
+      },
+      "competition": "Premier League",
+      "kickoff": "16:00",
+      "market": "Uitslag (1X2)",
+      "pick": "Arsenal wint",
+      "odd": 1.45,
+      "oddNote": "2/5 tot −220 (1.40-1.45) via Yahoo Sports en Racing Post, 23-24 okt",
+      "confidence": 4,
+      "winChance": 70,
+      "level": "lager",
+      "reasoning": "Arsenal won alle drie de thuisduels in de competitie, is al zeven duels ongeslagen tegen Everton, en de Toffees scoorden in zeven wedstrijden maar acht keer.",
+      "keyFactors": [
+        "Arsenal: 3 op 3 thuis in de Premier League dit seizoen",
+        "7 duels ongeslagen tegen Everton (5 zeges, 2 gelijk)",
+        "Everton scoorde dit seizoen maar 8 keer in 7 duels",
+        "Model (Statsultra): Arsenal 70% winst, xG 2.2 tegen 0.7",
+        "Arsenal mist Saka (dij), Saliba en Tzolis"
+      ],
+      "analysis": [
+        "Arsenal is thuis dit seizoen nog foutloos: drie competitieduels in het Emirates, drie zeges. Everton komt naar Londen met het zwakste aanvalscijfer van de middenmoot, acht doelpunten in zeven wedstrijden, en verloor vorige week van Chelsea. Arsenal is al zeven duels ongeslagen tegen Everton, met vijf zeges. Het voorspellingsmodel van Statsultra geeft Arsenal 70% winstkans, met een verwachte goalverhouding van 2.2 tegen 0.7.",
+        "Er zijn ook minpunten, en die nemen we mee. Bukayo Saka liep midweek in München tegen Bayern een dijblessure op en is er niet bij, en ook Saliba en Tzolis ontbreken. Verwacht wordt dat Konsa naast Gabriel staat en dat Madueke en Eze op de flanken spelen, achter Havertz. Arsenal heeft genoeg breedte om dat op te vangen, maar het scheelt aanvallend wel wat creativiteit. Juist daarom kiezen we gewoon de winst, en niet de handicap of winst zonder tegengoal.",
+        "Na vrijdag passen we bewust op. Stuttgart en Alavés stonden als favoriet tegen ploegen onderin en wonnen niet. Het verschil met vandaag: Arsenal is een topploeg met een veel hogere modelkans (70% tegen ongeveer 55-60% bij die twee), en we koppelen er geen extra voorwaarde als 'over 2.5' aan. De odd van rond de 1.45 rekent met 69%. Wij zitten daar net boven, dus dit is een tip voor wie een veilige basis zoekt, geen value-jacht.",
+        "Livescore, Squawka en Telecomasia voorspellen allemaal een Arsenal-zege, de meeste met 2-0. Everton kan het wel lastig maken met een laag blok rond Tarkowski en Branthwaite. Als het lang 0-0 blijft, wordt het spannend, maar Arsenal is bij standaardsituaties een van de sterkste ploegen van de competitie."
+      ],
+      "risks": "Vermoeidheid na het Champions League-duel in München en de afwezigheid van Saka en Saliba. Een vroege tegengoal of een rode kaart kan een moeizame middag opleveren.",
+      "lineups": {
+        "status": "verwacht",
+        "home": {
+          "formation": "4-2-3-1",
+          "missing": [
+            "Saka (dij)",
+            "Saliba",
+            "Tzolis",
+            "Hincapié (twijfel, enkel)"
+          ],
+          "note": "Raya; White, Konsa, Gabriel, Calafiori; Rice, Lewis-Skelly; Madueke, Ødegaard, Eze; Havertz"
+        },
+        "away": {
+          "formation": "4-2-3-1",
+          "missing": [
+            "Mykolenko (twijfel)"
+          ],
+          "note": "Pickford; Maitland-Niles, Tarkowski, Branthwaite, Mykolenko; Barry voorin; Nørgaard terug na debuut"
+        },
+        "impact": "Zonder Saka mist Arsenal zijn gevaarlijkste rechtsbuiten, maar Madueke en Eze zijn volwaardige vervangers. Everton heeft niemand die het verschil kan maken voorin, en dat drukt de kans op een tegengoal."
+      },
+      "sources": [
+        {
+          "label": "Yahoo Sports: Arsenal vs Everton",
+          "url": "https://sports.yahoo.com/articles/arsenal-vs-everton-prediction-pick-010205023.html"
+        },
+        {
+          "label": "Last Word on Sports: team news",
+          "url": "https://lastwordonsports.com/football/2026/10/23/arsenal-everton-team-news/"
+        },
+        {
+          "label": "Statsultra Premier League",
+          "url": "https://statsultra.com/forecasts/premier-league/"
+        }
+      ],
+      "result": null
+    },
+    {
+      "id": "combi-leipzig-sixers",
+      "type": "combi",
+      "title": "Leipzig en de Sixers",
+      "odd": 1.7,
+      "oddNote": "1.44 × 1.18 = 1.70 (Leipzig bet365/Statz, 76ers −567 Covers); check je eigen bookmaker",
+      "confidence": 4,
+      "winChance": 63,
+      "level": "lager",
+      "legs": [
+        {
+          "match": "RB Leipzig - Elversberg",
+          "sport": "voetbal",
+          "competition": "Bundesliga",
+          "kickoff": "15:30",
+          "home": {
+            "name": "RB Leipzig",
+            "espnName": "RB Leipzig",
+            "short": "RBL",
+            "c1": "#DD0741",
+            "c2": "#FFFFFF"
+          },
+          "away": {
+            "name": "Elversberg",
+            "espnName": "SV Elversberg",
+            "short": "SVE",
+            "c1": "#000000",
+            "c2": "#FFFFFF"
+          },
+          "espn": {
+            "league": "soccer/ger.1",
+            "date": "20261024"
+          },
+          "market": "Uitslag (1X2)",
+          "pick": "RB Leipzig wint",
+          "odd": 1.44,
+          "result": null
+        },
+        {
+          "match": "Philadelphia 76ers - Milwaukee Bucks",
+          "sport": "basketbal",
+          "competition": "NBA",
+          "kickoff": "01:30 (nacht)",
+          "home": {
+            "name": "76ers",
+            "espnName": "Philadelphia 76ers",
+            "short": "PHI",
+            "c1": "#006BB6",
+            "c2": "#ED174C"
+          },
+          "away": {
+            "name": "Bucks",
+            "espnName": "Milwaukee Bucks",
+            "short": "MIL",
+            "c1": "#00471B",
+            "c2": "#EEE1C6"
+          },
+          "espn": {
+            "league": "basketball/nba",
+            "date": "20261024"
+          },
+          "market": "Winnaar (moneyline)",
+          "pick": "76ers winnen",
+          "odd": 1.18,
+          "result": null
+        }
+      ],
+      "reasoning": "Twee grote thuisfavorieten met elk een modelkans van ongeveer 75-85%: Leipzig tegen promovendus Elversberg met drie geblesseerden, en de Sixers tegen een Bucks zonder Giannis.",
+      "keyFactors": [
+        "Leipzig: alle thuisduels gewonnen, drie keer de nul gehouden; AccuScore 78%, Statz 73%",
+        "Elversberg mist Onyeka, Seifert en Campbell; Zimmerschied is twijfelachtig",
+        "Sixers −12.5 thuis; Embiid staat niet op de blessurelijst",
+        "Milwaukee speelt voor het eerst in jaren zonder Giannis (nu bij Miami)",
+        "Gecombineerde kans: ongeveer 0,76 × 0,84 = 63%"
+      ],
+      "analysis": [
+        "Een combi van twee legs, beide duidelijk boven de 75%. RB Leipzig ontvangt Elversberg, dat in zijn eerste Bundesliga-seizoen zit, en won tot nu toe al zijn thuisduels, drie keer zonder tegengoal. AccuScore komt in zijn simulaties uit op 78% kans op een Leipzig-zege, Statz op 73%, en de prijs van ongeveer 1.44 rekent met 69%. Elversberg mist bovendien Onyeka, Seifert en Cole Campbell, en ook Zimmerschied is twijfelachtig.",
+        "In de NBA-nacht spelen de Sixers thuis tegen een Milwaukee dat voor het eerst zonder Giannis Antetokounmpo aan een seizoen begint. Hij speelt nu bij Miami en maakte vrijdag nog 36 punten. De bookmakers zetten Philadelphia op −12.5 en rond −567 op de moneyline. Embiid staat niet op de blessurelijst en speelt waarschijnlijk deze eerste wedstrijd van de back-to-back, de tweede (zondag in Detroit) slaat hij over. LeBron James is twijfelachtig met zijn rug, maar met Embiid en Maxey is Philadelphia ook zonder hem duidelijk de betere ploeg.",
+        "Waarom geen Arsenal of Dortmund in deze combi? Arsenal speelt al als losse tip, en Dortmund komt met ongeveer 61% niet aan onze ondergrens van 75% per leg. Na het verlies van de combi met Stuttgart houden we het bij twee legs, zodat één twijfelgeval de bet niet kan breken.",
+        "Eerlijk gerekend: 76% × 84% is samen ongeveer 63%, terwijl de totale odd van 1.70 met 59% rekent. Dat is een kleine maar positieve verwachte winst, en daarom staat deze combi bovenaan de top 3."
+      ],
+      "risks": "Elversberg scoort vaak uit counters (de meeste previews verwachten 2-1). In de NBA kan de rust van LeBron en een sterke avond van de Bucks-guards het verschil kleiner maken dan verwacht.",
+      "lineups": {
+        "status": "verwacht",
+        "home": {
+          "formation": "Leipzig 4-2-3-1 / Sixers: Maxey, Embiid",
+          "missing": [
+            "Sixers: LeBron James (twijfel, rug)",
+            "Barlow (rug)",
+            "Hukporti (achilles, seizoen)"
+          ],
+          "note": "Leipzig zonder bekende afwezigen; Embiid speelt naar verwachting zaterdag en rust zondag"
+        },
+        "away": {
+          "formation": "Elversberg 4-2-3-1 / Bucks zonder Giannis",
+          "missing": [
+            "Elversberg: Onyeka",
+            "Seifert",
+            "Campbell",
+            "Zimmerschied (twijfel)"
+          ],
+          "note": "Bucks melden geen blessures, maar missen het niveau van een vertrokken superster"
+        },
+        "impact": "In beide wedstrijden heeft de thuisploeg een groot kwaliteitsverschil en de uitploeg meer afwezigen. Het grootste risico zit in de defensie van Leipzig bij counters."
+      },
+      "sources": [
+        {
+          "label": "AccuScore Leipzig - Elversberg",
+          "url": "https://www.accuscore.com/game/cmufklnue4uazmn01qamb7jxr"
+        },
+        {
+          "label": "Statz Leipzig - Elversberg",
+          "url": "https://statz.ai/news/19735142-rb-leipzig-vs-elversberg-predictions-betting-tips"
+        },
+        {
+          "label": "NBC Sports: Embiid status",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-23/joel-embiid-not-listed-on-injury-report-saturday"
+        },
+        {
+          "label": "Liberty Ballers: LeBron twijfel",
+          "url": "https://libertyballers.com/76ers-injury-report/99739/lebron-james-questionable-for-sixers-first-of-a-back-to-back-vs-bucks"
+        }
+      ],
+      "result": null
+    }
+  ],
+  "top": [
+    {
+      "id": "combi-leipzig-sixers",
+      "why": "Twee grote thuisfavorieten, samen ongeveer 63% kans, terwijl de odd 1.70 met 59% rekent. Dat is de hoogste verwachte winst van de dag."
+    },
+    {
+      "id": "nba-hawks-rockets",
+      "why": "Atlanta speelt thuis en uitgerust, Houston komt uit een zware derby. Wij schatten 59% kans, de odd 1.77 rekent met 56%."
+    },
+    {
+      "id": "arsenal-everton",
+      "why": "De veiligste losse tip: 70% kans volgens het model, maar de odd 1.45 laat weinig value over (+1,5%)."
+    }
+  ],
+  "quiet": [
+    "Dortmund - Frankfurt: Dortmund is favoriet (ca. 61%), maar −1 en over 3.5 zijn te riskant voor een dag waarop we streng moeten zijn.",
+    "Chelsea - Tottenham: Chelsea 4/6, maar derby's zijn grillig en de prijs laat geen value over.",
+    "Aston Villa - Manchester City: markt en modellen spreken elkaar tegen; overgeslagen.",
+    "Freiburg - Bayern en Barcelona - Real Madrid: zondag, niet vandaag.",
+    "NHL: de keepers waren vanochtend nog grotendeels onbevestigd (1 van 24), dus geen tip zonder zekerheid over de keeper.",
+    "Jackpots met spelersprops: vandaag bewust overgeslagen na een min-dag."
+  ]
+}
