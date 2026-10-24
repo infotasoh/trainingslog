@@ -56,15 +56,16 @@
         "home": {
           "formation": "Basis rond Jalen Johnson",
           "missing": [
-            "Mouhamed Gueye (voet)",
-            "Henri Veesaar (knie)"
+            "Mouhamed Gueye (voetbreuk)",
+            "Henri Veesaar (kruisband, seizoen)"
           ],
           "note": "Starters speelden vrijdag beperkte minuten; Aaron Wiggins (19 pt) sterk vanaf de bank"
         },
         "away": {
           "formation": "Basis met VanVleet, Thompson, Durant en Şengün",
           "missing": [
-            "Reed Sheppard (knie)"
+            "Reed Sheppard (knie, twijfel)",
+            "Steven Adams (kuit, twijfel)"
           ],
           "note": "Zware minuten in de derby van vrijdag; de bank is dunner zonder Sheppard"
         },
@@ -86,9 +87,9 @@
       ],
       "result": null,
       "lineupCheck": {
-        "at": "13:10",
+        "at": "19:10",
         "status": "bevestigd",
-        "note": "Er is geen nieuw blessurenieuws na het rapport van vrijdag. Om 19:10 checken we opnieuw, als het officiële injury report er is."
+        "note": "Atlanta heeft geen twijfelgevallen: alleen Gueye en Veesaar ontbreken. Bij Houston zijn Sheppard en Adams twijfelachtig, en de kern rond Durant, Şengün en Thompson speelt. De tip blijft staan op 59%."
       }
     },
     {
@@ -300,9 +301,9 @@
       ],
       "result": null,
       "lineupCheck": {
-        "at": "13:10",
+        "at": "19:10",
         "status": "bevestigd",
-        "note": "Leipzig verwacht in 4-2-3-1 met Gomis voorin, Nkunku is twijfelachtig. Bij Elversberg ontbreekt Zimmerschied. Embiid speelt, LeBron is twijfelachtig maar speelt waarschijnlijk. Om 19:10 checken we de NBA-leg opnieuw."
+        "note": "De Leipzig-leg is al gespeeld. Voor de Sixers-leg is er geen nieuws: Embiid speelt, LeBron blijft twijfelachtig met zijn rug en de Bucks hebben geen blessures. De combi blijft staan."
       }
     }
   ],
