@@ -85,7 +85,7 @@
           "url": "https://www.espn.com/nba/recap/_/gameId/401909843"
         }
       ],
-      "result": null,
+      "result": "lost",
       "lineupCheck": {
         "at": "19:10",
         "status": "bevestigd",
@@ -168,7 +168,7 @@
           "url": "https://statsultra.com/forecasts/premier-league/"
         }
       ],
-      "result": null,
+      "result": "won",
       "lineupCheck": {
         "at": "13:10",
         "status": "bevestigd",
@@ -211,7 +211,7 @@
           "market": "Uitslag (1X2)",
           "pick": "RB Leipzig wint",
           "odd": 1.44,
-          "result": null
+          "result": "won"
         },
         {
           "match": "Philadelphia 76ers - Milwaukee Bucks",
@@ -239,7 +239,7 @@
           "market": "Winnaar (moneyline)",
           "pick": "76ers winnen",
           "odd": 1.18,
-          "result": null
+          "result": "won"
         }
       ],
       "reasoning": "Twee grote thuisfavorieten met elk een modelkans van ongeveer 75-85%: Leipzig tegen promovendus Elversberg met drie geblesseerden, en de Sixers tegen een Bucks zonder Giannis.",
@@ -299,7 +299,7 @@
           "url": "https://libertyballers.com/76ers-injury-report/99739/lebron-james-questionable-for-sixers-first-of-a-back-to-back-vs-bucks"
         }
       ],
-      "result": null,
+      "result": "won",
       "lineupCheck": {
         "at": "19:10",
         "status": "bevestigd",

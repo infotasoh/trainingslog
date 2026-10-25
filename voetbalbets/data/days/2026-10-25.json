@@ -1,0 +1,256 @@
+{
+  "date": "2026-10-25",
+  "headline": "Zondag: goals bij Liverpool en in de Clásico",
+  "intro": "Een volle zondag, maar we blijven streng (saldo −7): twee tips met vertrouwen 4, allebei rond 'beide teams scoren', plus een NBA-leg in de nacht. De klok is vannacht teruggezet: alle tijden zijn wintertijd. Odds zijn indicatief, check de prijs bij je eigen bookmaker. 18+, speel bewust.",
+  "generatedAt": "2026-10-25T08:55:00+01:00",
+  "review": "Zaterdag ging 2 van 3 goed: +6 −5 = +1. Arsenal won met 2-0 van Everton (Konsa en Gabriel), en de combi Leipzig (4-0) + Sixers (127-116) zat er ruim in, zelfs zonder LeBron. De Hawks verloren thuis met 114-121 van Houston: ons argument over de vermoeidheid na de back-to-back klopte niet, want Houston stond al snel 20 punten voor. Het saldo van de laatste 7 dagen is nu −7 (vrijdag −8, zaterdag +1), dus we blijven streng: maximaal 4 tips, alleen vertrouwen 4 of 5 en geen hoger-tips. Losse NBA-moneylines op basis van het speelschema laten we vandaag liggen. We kiezen markten met een duidelijke statistische basis (scorende ploegen, lange blessurelijsten in de verdediging) en een NBA-favoriet alleen als combi-leg, bij een harde absentie aan de andere kant.",
+  "picks": [
+    {
+      "id": "liverpool-brighton-btts",
+      "sport": "voetbal",
+      "match": "Liverpool - Brighton",
+      "home": {
+        "name": "Liverpool",
+        "short": "LIV",
+        "c1": "#C8102E",
+        "c2": "#FFFFFF"
+      },
+      "away": {
+        "name": "Brighton",
+        "espnName": "Brighton & Hove Albion",
+        "short": "BHA",
+        "c1": "#0057B8",
+        "c2": "#FFFFFF"
+      },
+      "espn": {
+        "league": "soccer/eng.1",
+        "date": "20261025"
+      },
+      "competition": "Premier League",
+      "kickoff": "15:00",
+      "market": "Beide teams scoren",
+      "pick": "Beide teams scoren: ja",
+      "odd": 1.5,
+      "oddNote": "1/2 (1.50) volgens Football365, over 2.5 op 8/15 bij bet365 (Squawka), 24-25 okt",
+      "confidence": 4,
+      "winChance": 70,
+      "level": "lager",
+      "reasoning": "Brighton scoorde in elke competitiewedstrijd, en Liverpool speelt met een noodverdediging zonder Frimpong en Bradley, terwijl het thuis zelf ook makkelijk tot scoren komt.",
+      "keyFactors": [
+        "Brighton is een van de drie ploegen die in elk Premier League-duel scoorden",
+        "Liverpool mist Frimpong, Szoboszlai (hamstring), Bradley, Ekitike en Leoni; Muñoz twijfelt",
+        "Araújo noodgedwongen op rechtsback",
+        "Liverpool won in de competitie nog niet thuis",
+        "Rotowire en Livescore voorspellen 2-2, Sports Mole 3-2"
+      ],
+      "analysis": [
+        "Brighton komt in topvorm naar Anfield: vier competitiezeges op rij, en de ploeg is een van de drie teams die dit seizoen in elke Premier League-wedstrijd scoorden. Brighton staat derde met 16 punten. Liverpool is thuis nog zonder competitiezege en zit in een blessurecrisis: Frimpong en Szoboszlai liepen vorige week tegen Brentford een hamstringblessure op, Bradley, Ekitike en Leoni zijn langdurig weg, en Muñoz twijfelt met een knieblessure. Daardoor staat Araújo op rechtsback.",
+        "Voor deze markt is dat precies de combinatie die we zoeken. Een gehavende achterhoede tegenover een ploeg die altijd scoort maakt een goal van Brighton waarschijnlijk. Liverpool heeft thuis met Gravenberch terug na zijn schorsing genoeg aanvallende kwaliteit om zelf te scoren, ook tegen een Brighton dat de laatste weken goed verdedigde. Brighton mist zelf Mitoma en de spitsen Tzimas en Ferguson, maar Kostoulas is in vorm.",
+        "De previews zijn het opvallend eens: Rotowire en Livescore voorspellen 2-2, Sports Mole 3-2 voor Liverpool, en Football365 noemt beide teams scoren zijn beste bet. Bet365 zet de over 2.5 op 8/15 (ongeveer 1.53), dus de markt verwacht ook goals. Wij schatten de kans dat beide ploegen scoren op ongeveer 70%, iets hoger dan de 67% van de odd 1.50.",
+        "Waarom niet de winnaar? De markt is verdeeld (Liverpool rond 2.15, Brighton rond 3.25), en een uitslag kiezen past niet bij een dag waarop we streng moeten zijn. Beide teams scoren hangt minder af van wie er wint."
+      ],
+      "risks": "Brighton hield vier keer op rij de nul, en als Liverpool vroeg scoort en zich daarna terugtrekt, kan het 1-0 of 2-0 blijven. Een missend Brighton-spitsentrio maakt de aanval smaller.",
+      "lineups": {
+        "status": "verwacht",
+        "home": {
+          "formation": "4-2-3-1",
+          "missing": [
+            "Frimpong (hamstring)",
+            "Szoboszlai (hamstring)",
+            "Bradley",
+            "Ekitike",
+            "Leoni",
+            "Muñoz (twijfel, knie)"
+          ],
+          "note": "Gravenberch terug na schorsing; Araújo op rechtsback"
+        },
+        "away": {
+          "formation": "4-2-3-1",
+          "missing": [
+            "Mitoma",
+            "Yohanna",
+            "Tzimas",
+            "Ferguson",
+            "Minteh, Wieffer, Struijk en Azeez (twijfel)"
+          ],
+          "note": "Kostoulas als spits"
+        },
+        "impact": "Liverpools noodverdediging is de belangrijkste reden voor deze bet. Het grootste risico zit bij Brighton, dat zonder drie spitsen minder vuurkracht heeft."
+      },
+      "sources": [
+        {
+          "label": "Sports Mole: zondag in de Premier League",
+          "url": "https://www.sportsmole.co.uk/football/man-utd/premier-league-predictions/feature/bournemouth-blow-for-carrick-sundays-premier-league-predictions_607633.html"
+        },
+        {
+          "label": "Rotowire Liverpool - Brighton",
+          "url": "https://www.rotowire.com/soccer/article/liverpool-vs-brighton-prediction-predicted-lineups-team-news-143103"
+        },
+        {
+          "label": "Football365 preview",
+          "url": "https://www.football365.com/match-preview/liverpool-v-brighton-prediction-preview"
+        },
+        {
+          "label": "Squawka acca (odds)",
+          "url": "https://www.squawka.com/en/news/sunday-acca-tips-today-25-10-2026/"
+        }
+      ],
+      "result": null
+    },
+    {
+      "id": "combi-clasico-knicks",
+      "type": "combi",
+      "title": "Clásico-goals en de Knicks",
+      "odd": 1.66,
+      "oddNote": "1.25 × 1.33 = 1.66 (BTTS ja −370/−417, bookmakersreview/sportsgambler; Knicks −7.5, moneyline indicatief)",
+      "confidence": 4,
+      "winChance": 61,
+      "level": "lager",
+      "legs": [
+        {
+          "match": "Barcelona - Real Madrid",
+          "sport": "voetbal",
+          "competition": "La Liga",
+          "kickoff": "21:00",
+          "home": {
+            "name": "Barcelona",
+            "short": "BAR",
+            "c1": "#A50044",
+            "c2": "#004D98"
+          },
+          "away": {
+            "name": "Real Madrid",
+            "short": "RMA",
+            "c1": "#FFFFFF",
+            "c2": "#00529F"
+          },
+          "espn": {
+            "league": "soccer/esp.1",
+            "date": "20261025"
+          },
+          "market": "Beide teams scoren",
+          "pick": "Beide teams scoren: ja",
+          "odd": 1.25,
+          "result": null
+        },
+        {
+          "match": "New York Knicks - Orlando Magic",
+          "sport": "basketbal",
+          "competition": "NBA",
+          "kickoff": "00:00 (nacht)",
+          "home": {
+            "name": "Knicks",
+            "espnName": "New York Knicks",
+            "short": "NYK",
+            "c1": "#006BB6",
+            "c2": "#F58426"
+          },
+          "away": {
+            "name": "Magic",
+            "espnName": "Orlando Magic",
+            "short": "ORL",
+            "c1": "#0077C0",
+            "c2": "#000000"
+          },
+          "espn": {
+            "league": "basketball/nba",
+            "date": "20261025"
+          },
+          "market": "Winnaar (moneyline)",
+          "pick": "Knicks winnen",
+          "odd": 1.33,
+          "oddNote": "Prijs indicatief (afgeleid van −7.5)",
+          "result": null
+        }
+      ],
+      "reasoning": "In de Clásico scoorden beide ploegen in vijf van de laatste zes duels, en beide verdedigingen zijn gehavend. De Knicks spelen thuis tegen een Magic zonder Banchero en met nog drie andere afwezigen.",
+      "keyFactors": [
+        "BTTS in 5 van de laatste 6 Clásico's sinds 2025; bookmakers rekenen met ongeveer 79%",
+        "Barça mist Olmo, Eric García, Christensen en Bardghji, Koundé twijfelt; Real mist Vinícius (geschorst), Rodrygo en Asencio",
+        "Statz: BTTS 71%; Goal.com verwacht een 'Clásico goal fest'",
+        "Magic zonder Banchero (enkel, weken weg), Isaac, Penda en Nelson; Black twijfelt",
+        "Knicks −7.5 thuis; model verwacht 115-105. Gecombineerde kans: 0,80 × 0,76 = 61%"
+      ],
+      "analysis": [
+        "De eerste leg is beide teams scoren in de Clásico van vanavond (21:00). In vijf van de laatste zes duels sinds begin 2025 scoorden beide ploegen. Barcelona speelt hoog en laat ruimte achter de verdediging, en mist bovendien Eric García en Christensen, met Koundé als twijfelgeval. Real mist Vinícius (vier duels geschorst), Rodrygo en Asencio, maar heeft genoeg snelheid voorin om op de counter te scoren. De bookmakers rekenen met ongeveer 79% (odd 1.25), Statz komt uit op 71%, en de meeste previews verwachten 2-1 of 3-1.",
+        "De tweede leg is de Knicks thuis tegen Orlando, vannacht om 00:00. Beide ploegen staan op 0-2, maar het verschil in beschikbaarheid is groot. Paolo Banchero is weken uitgeschakeld met een hoge enkelverstuiking, en ook Isaac, Penda en Nelson ontbreken, terwijl Anthony Black twijfelt. Bij de Knicks staat niemand op de blessurelijst. Na een zaterdag met een nipte nederlaag in Boston moet de kampioen thuis een reactie geven. De lijn staat op Knicks −7.5, en een model verwacht 115-105.",
+        "Waarom deze combi en geen losse tips? Beide legs zijn te laag geprijsd om alleen te spelen, maar samen komen ze op 1.66. Dat is een lager-tip, wat past bij een strenge dag. Eerlijk gerekend is de kans 80% × 76%, dus ongeveer 61%, tegen 60% volgens de odd: weinig value, maar wel een bet met twee goed onderbouwde legs.",
+        "De moneyline van de Knicks hebben we niet bij een bookmaker kunnen bevestigen. De 1.33 is afgeleid van de spread van −7.5. Check de echte prijs: ligt die onder 1.25, dan zakt de combi onder de 1.60."
+      ],
+      "risks": "Een Clásico kan juist op slot gaan als Real zich zonder Vinícius terugtrekt. De Knicks zijn 0-2 en ongeslagen thuis is geen garantie; een sterke schutterspartij van Orlando kan de wedstrijd openhouden.",
+      "lineups": {
+        "status": "verwacht",
+        "home": {
+          "formation": "Barça 4-2-3-1 / Knicks volledig fit",
+          "missing": [
+            "Barça: Olmo",
+            "Eric García",
+            "Christensen",
+            "Bardghji",
+            "Koundé (twijfel, enkel)"
+          ],
+          "note": "Knicks: geen spelers op de blessurelijst"
+        },
+        "away": {
+          "formation": "Real 4-3-3 / Magic zonder Banchero",
+          "missing": [
+            "Real: Vinícius (geschorst)",
+            "Rodrygo",
+            "Asencio",
+            "Mendy (twijfel)",
+            "Magic: Banchero (enkel)",
+            "Isaac",
+            "Penda",
+            "Nelson",
+            "Black (twijfel)"
+          ],
+          "note": "Real speelt zonder zijn linksbuiten"
+        },
+        "impact": "Gehavende verdedigingen in de Clásico vergroten de kans dat beide ploegen scoren. Zonder Banchero mist Orlando zijn beste scorer en spelmaker."
+      },
+      "sources": [
+        {
+          "label": "Bookmakersreview: Clásico-odds",
+          "url": "https://www.bookmakersreview.com/industry/el-clasico-odds-barca-vs-real-madrid-team-news-trends/"
+        },
+        {
+          "label": "Goal.com Clásico-voorspelling",
+          "url": "https://www.goal.com/en-za/betting/tips/barcelona-vs-real-madrid-predictions-25-10-26/A%3Abltbefc9e617722778e"
+        },
+        {
+          "label": "Bet-Experts: afwezigen",
+          "url": "https://www.bet-experts.com/picks/bet-of-the-day/barcelona-vs-real-madrid-prediction-betting-tips-25-10-2026"
+        },
+        {
+          "label": "ESPN: Banchero weken weg",
+          "url": "https://www.espn.com/nba/story/_/id/50266620/sources-magic-banchero-multiple-weeks-ankle-sprain"
+        },
+        {
+          "label": "Yahoo: Knicks - Magic preview",
+          "url": "https://sports.yahoo.com/articles/game-preview-knicks-vs-magic-035628469.html"
+        }
+      ],
+      "result": null
+    }
+  ],
+  "top": [
+    {
+      "id": "liverpool-brighton-btts",
+      "why": "Brighton scoort altijd en Liverpool speelt met een noodverdediging. Wij schatten 70% kans, de odd 1.50 rekent met 67%."
+    },
+    {
+      "id": "combi-clasico-knicks",
+      "why": "Twee goed onderbouwde legs, samen ongeveer 61% kans bij odd 1.66 (60%). Er is weinig value, maar wel een stevige basis."
+    }
+  ],
+  "quiet": [
+    "Freiburg - Bayern: Bayern mist Kimmich, Musiala, Pavlović, Díaz, Kim en Neuer, en coach Kompany ligt in het ziekenhuis. Een odd van 1.40 is daarvoor te laag.",
+    "Inter - Fiorentina: Inter wint met ongeveer 71% kans (1.33), maar zonder Lautaro is de prijs te laag voor een losse tip en de kans te klein voor een combi-leg.",
+    "PSV - Feyenoord (14:30): een topper met een kleine marge (PSV rond 2.05), geen duidelijke edge.",
+    "Sparta - Ajax: Ajax 1.41-1.50, maar met een lange blessurelijst (Dolberg, Caio Henrique, Gaaei, Edvardsen, Adingra), en het model van SlipsIQ geeft maar 44%.",
+    "Atalanta - Frosinone: Atalanta 1.80, maar zonder Hien, Kossounou en waarschijnlijk Kessié; niet overtuigend genoeg.",
+    "Sixers - Pistons: Duren is uit, Ausar Thompson twijfelt en Embiid rust mogelijk. Te veel onzekerheid.",
+    "NFL week 7: de lijnen liggen dicht bij elkaar en de blessurestatus (Lamar Jackson, Nacua) is onzeker. Overgeslagen.",
+    "Geen derde tip en geen jackpot: met een saldo onder nul kiezen we liever twee goede bets dan vier matige."
+  ]
+}
