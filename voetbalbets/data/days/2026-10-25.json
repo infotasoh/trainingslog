@@ -55,14 +55,14 @@
         "home": {
           "formation": "4-2-3-1",
           "missing": [
-            "Frimpong (hamstring)",
             "Szoboszlai (hamstring)",
+            "Frimpong (hamstring)",
             "Bradley",
             "Ekitike",
             "Leoni",
-            "Muñoz (twijfel, knie)"
+            "Muñoz (twijfel, knie, ca. 25% kans)"
           ],
-          "note": "Gravenberch terug na schorsing; Araújo op rechtsback"
+          "note": "Gravenberch terug na zijn schorsing, naast Mac Allister. Isak voorin en Barcola fit. Araújo op rechtsback"
         },
         "away": {
           "formation": "4-2-3-1",
@@ -95,7 +95,12 @@
           "url": "https://www.squawka.com/en/news/sunday-acca-tips-today-25-10-2026/"
         }
       ],
-      "result": null
+      "result": null,
+      "lineupCheck": {
+        "at": "13:10",
+        "status": "bevestigd",
+        "note": "Iraola bevestigt dat Szoboszlai er niet bij is en dat Muñoz twijfelt, en Barcola is fit. De Liverpool-verdediging blijft gehavend. Er is geen nieuws bij Brighton. De tip blijft staan op 70%."
+      }
     },
     {
       "id": "combi-clasico-knicks",
@@ -187,9 +192,10 @@
             "Eric García",
             "Christensen",
             "Bardghji",
-            "Koundé (twijfel, enkel)"
+            "Koundé (verwacht afwezig, enkel)",
+            "Knicks: Alvarado (twijfel, enkel)"
           ],
-          "note": "Knicks: geen spelers op de blessurelijst"
+          "note": "Barça verwacht: Joan García; Xavi Espart, Cubarsí, Gerard Martín, Cancelo; Rodri, Pedri, Fermín; Lamine Yamal, Raphinha, Gordon. De Knicks-kern speelt"
         },
         "away": {
           "formation": "Real 4-3-3 / Magic zonder Banchero",
@@ -197,14 +203,14 @@
             "Real: Vinícius (geschorst)",
             "Rodrygo",
             "Asencio",
-            "Mendy (twijfel)",
-            "Magic: Banchero (enkel)",
+            "Mendy",
+            "Magic: Banchero (enkel, 4-6 weken)",
             "Isaac",
             "Penda",
             "Nelson",
             "Black (twijfel)"
           ],
-          "note": "Real speelt zonder zijn linksbuiten"
+          "note": "Real verwacht: Courtois; Valverde, Rüdiger, Konaté, Cucurella; Camavinga, Tchouaméni, Güler; Bellingham, Diomande; Mbappé"
         },
         "impact": "Gehavende verdedigingen in de Clásico vergroten de kans dat beide ploegen scoren. Zonder Banchero mist Orlando zijn beste scorer en spelmaker."
       },
@@ -230,7 +236,12 @@
           "url": "https://sports.yahoo.com/articles/game-preview-knicks-vs-magic-035628469.html"
         }
       ],
-      "result": null
+      "result": null,
+      "lineupCheck": {
+        "at": "13:10",
+        "status": "bevestigd",
+        "note": "Barça mist Koundé naar verwachting, en Real is ook Mendy kwijt. Daardoor zijn beide verdedigingen gehavend, wat de BTTS-leg helpt. Bij de Knicks twijfelt alleen Alvarado, bij Orlando Black. De combi blijft staan."
+      }
     }
   ],
   "top": [
