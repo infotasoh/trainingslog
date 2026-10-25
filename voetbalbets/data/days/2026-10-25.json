@@ -668,6 +668,1205 @@
         "Dit is een fun-bet voor bij het kijken, op jouw verzoek. Hij staat buiten Claudes scorebord, net als de jackpots. Zet er een klein bedrag op."
       ],
       "risks": "Een ruime Barça-zege (3-1) of een gelijkspel en de bet gaat verloren."
+    },
+    {
+      "sport": "voetbal",
+      "match": "Barcelona - Real Madrid",
+      "home": {
+        "name": "Barcelona",
+        "short": "BAR",
+        "c1": "#A50044",
+        "c2": "#004D98"
+      },
+      "away": {
+        "name": "Real Madrid",
+        "short": "RMA",
+        "c1": "#FFFFFF",
+        "c2": "#00529F"
+      },
+      "espn": {
+        "league": "soccer/esp.1",
+        "date": "20261025"
+      },
+      "competition": "La Liga",
+      "kickoff": "21:00",
+      "jackpot": true,
+      "level": "hoger",
+      "lineups": {
+        "status": "verwacht",
+        "home": {
+          "formation": "4-3-3",
+          "missing": [
+            "Olmo",
+            "Eric García",
+            "Christensen",
+            "Bardghji",
+            "Koundé (twijfel, enkel)"
+          ],
+          "note": "Joan García; Xavi Espart, Cubarsí, Gerard Martín, Cancelo; Rodri, Pedri, Fermín; Lamine Yamal, Raphinha, Gordon"
+        },
+        "away": {
+          "formation": "4-4-2",
+          "missing": [
+            "Courtois (griep)",
+            "Vinícius (geschorst)",
+            "Rodrygo",
+            "Asencio",
+            "Mendy"
+          ],
+          "note": "Reservekeeper; Valverde, Rüdiger, Konaté, Cucurella; Camavinga, Tchouaméni, Güler; Bellingham, Diomande; Mbappé"
+        },
+        "impact": "Twee gehavende verdedigingen en bij Real een reservekeeper: de markt rekent op ongeveer 4,5 goals."
+      },
+      "sources": [
+        {
+          "label": "Sportsbettingdime: doelpuntenmakers",
+          "url": "https://www.sportsbettingdime.com/news/soccer/barcelona-vs-real-madrid-predictions-odds-oct-25/"
+        },
+        {
+          "label": "Goal.com: Clásico goal fest",
+          "url": "https://www.goal.com/en-us/betting/tips/barcelona-vs-real-madrid-predictions-10-25-26/A%3Abltbefc9e617722778e"
+        },
+        {
+          "label": "Bookmakersreview: odds",
+          "url": "https://www.bookmakersreview.com/industry/el-clasico-odds-barca-vs-real-madrid-team-news-trends/"
+        }
+      ],
+      "result": null,
+      "id": "clasico-over-4-5",
+      "market": "Aantal doelpunten",
+      "pick": "Over 4.5 doelpunten (5 of meer)",
+      "odd": 2.15,
+      "winChance": 45,
+      "confidence": 3,
+      "oddNote": "BetMGM +110 / BetRivers +118 (2.10-2.18)",
+      "reasoning": "De markt zet de lijn zelf op 4,5 goals, en met Courtois afwezig ligt de over een tikje beter.",
+      "keyFactors": [
+        "Over 4.5 op +110 (BetMGM) en +118 (BetRivers)",
+        "Courtois afwezig, Barça zonder drie centrale verdedigers",
+        "Onze kans: ongeveer 45%"
+      ],
+      "analysis": [
+        "Bookmakers rekenen in deze Clásico op ongeveer 4,5 goals: over 4.5 staat rond +110 tot +118 (2.10-2.18), Barcelona rond 1.61, gelijk 5.75 en Real 3.70. Barça mist Olmo, Eric García en Christensen en waarschijnlijk Koundé. Real speelt zonder Vinícius (geschorst), Rodrygo, Mendy en Asencio, en sinds vanmiddag ook zonder Courtois (griep).",
+        "Bij een verwachting van ongeveer 4,4 goals is de kans op vijf of meer ongeveer 45%. De bet blijft de hele wedstrijd spannend.",
+        "Een fun-bet voor bij het kijken, op jouw verzoek. Hij staat buiten Claudes scorebord. Zet er een klein bedrag op."
+      ],
+      "risks": "Een vroege 1-0 waarna Real zich ingraaft, en het blijft bij 2-1."
+    },
+    {
+      "sport": "voetbal",
+      "match": "Barcelona - Real Madrid",
+      "home": {
+        "name": "Barcelona",
+        "short": "BAR",
+        "c1": "#A50044",
+        "c2": "#004D98"
+      },
+      "away": {
+        "name": "Real Madrid",
+        "short": "RMA",
+        "c1": "#FFFFFF",
+        "c2": "#00529F"
+      },
+      "espn": {
+        "league": "soccer/esp.1",
+        "date": "20261025"
+      },
+      "competition": "La Liga",
+      "kickoff": "21:00",
+      "jackpot": true,
+      "level": "hoger",
+      "lineups": {
+        "status": "verwacht",
+        "home": {
+          "formation": "4-3-3",
+          "missing": [
+            "Olmo",
+            "Eric García",
+            "Christensen",
+            "Bardghji",
+            "Koundé (twijfel, enkel)"
+          ],
+          "note": "Joan García; Xavi Espart, Cubarsí, Gerard Martín, Cancelo; Rodri, Pedri, Fermín; Lamine Yamal, Raphinha, Gordon"
+        },
+        "away": {
+          "formation": "4-4-2",
+          "missing": [
+            "Courtois (griep)",
+            "Vinícius (geschorst)",
+            "Rodrygo",
+            "Asencio",
+            "Mendy"
+          ],
+          "note": "Reservekeeper; Valverde, Rüdiger, Konaté, Cucurella; Camavinga, Tchouaméni, Güler; Bellingham, Diomande; Mbappé"
+        },
+        "impact": "Twee gehavende verdedigingen en bij Real een reservekeeper: de markt rekent op ongeveer 4,5 goals."
+      },
+      "sources": [
+        {
+          "label": "Sportsbettingdime: doelpuntenmakers",
+          "url": "https://www.sportsbettingdime.com/news/soccer/barcelona-vs-real-madrid-predictions-odds-oct-25/"
+        },
+        {
+          "label": "Goal.com: Clásico goal fest",
+          "url": "https://www.goal.com/en-us/betting/tips/barcelona-vs-real-madrid-predictions-10-25-26/A%3Abltbefc9e617722778e"
+        },
+        {
+          "label": "Bookmakersreview: odds",
+          "url": "https://www.bookmakersreview.com/industry/el-clasico-odds-barca-vs-real-madrid-team-news-trends/"
+        }
+      ],
+      "result": null,
+      "id": "clasico-mbappe-scoort",
+      "market": "Doelpuntenmaker",
+      "pick": "Mbappé scoort (op elk moment)",
+      "odd": 2.05,
+      "winChance": 50,
+      "confidence": 3,
+      "oddNote": "Stake 2.05 / BetMGM -118 (1.85)",
+      "reasoning": "Zonder Vinícius gaat alles bij Real via Mbappé, en Barça speelt met een noodverdediging.",
+      "keyFactors": [
+        "Mbappé 1.85-2.05 als doelpuntenmaker",
+        "Vinícius geschorst, Rodrygo geblesseerd",
+        "Onze kans: ongeveer 50%"
+      ],
+      "analysis": [
+        "Bookmakers rekenen in deze Clásico op ongeveer 4,5 goals: over 4.5 staat rond +110 tot +118 (2.10-2.18), Barcelona rond 1.61, gelijk 5.75 en Real 3.70. Barça mist Olmo, Eric García en Christensen en waarschijnlijk Koundé. Real speelt zonder Vinícius (geschorst), Rodrygo, Mendy en Asencio, en sinds vanmiddag ook zonder Courtois (griep).",
+        "Mbappé is de enige echte afmaker die Real vanavond heeft. Tegen een hoge Barça-linie met Xavi Espart en Gerard Martín achterin krijgt hij ruimte op de counter.",
+        "Een fun-bet voor bij het kijken, op jouw verzoek. Hij staat buiten Claudes scorebord. Zet er een klein bedrag op."
+      ],
+      "risks": "Als Real weinig balbezit heeft, kan hij geïsoleerd raken."
+    },
+    {
+      "sport": "voetbal",
+      "match": "Barcelona - Real Madrid",
+      "home": {
+        "name": "Barcelona",
+        "short": "BAR",
+        "c1": "#A50044",
+        "c2": "#004D98"
+      },
+      "away": {
+        "name": "Real Madrid",
+        "short": "RMA",
+        "c1": "#FFFFFF",
+        "c2": "#00529F"
+      },
+      "espn": {
+        "league": "soccer/esp.1",
+        "date": "20261025"
+      },
+      "competition": "La Liga",
+      "kickoff": "21:00",
+      "jackpot": true,
+      "level": "hoger",
+      "lineups": {
+        "status": "verwacht",
+        "home": {
+          "formation": "4-3-3",
+          "missing": [
+            "Olmo",
+            "Eric García",
+            "Christensen",
+            "Bardghji",
+            "Koundé (twijfel, enkel)"
+          ],
+          "note": "Joan García; Xavi Espart, Cubarsí, Gerard Martín, Cancelo; Rodri, Pedri, Fermín; Lamine Yamal, Raphinha, Gordon"
+        },
+        "away": {
+          "formation": "4-4-2",
+          "missing": [
+            "Courtois (griep)",
+            "Vinícius (geschorst)",
+            "Rodrygo",
+            "Asencio",
+            "Mendy"
+          ],
+          "note": "Reservekeeper; Valverde, Rüdiger, Konaté, Cucurella; Camavinga, Tchouaméni, Güler; Bellingham, Diomande; Mbappé"
+        },
+        "impact": "Twee gehavende verdedigingen en bij Real een reservekeeper: de markt rekent op ongeveer 4,5 goals."
+      },
+      "sources": [
+        {
+          "label": "Sportsbettingdime: doelpuntenmakers",
+          "url": "https://www.sportsbettingdime.com/news/soccer/barcelona-vs-real-madrid-predictions-odds-oct-25/"
+        },
+        {
+          "label": "Goal.com: Clásico goal fest",
+          "url": "https://www.goal.com/en-us/betting/tips/barcelona-vs-real-madrid-predictions-10-25-26/A%3Abltbefc9e617722778e"
+        },
+        {
+          "label": "Bookmakersreview: odds",
+          "url": "https://www.bookmakersreview.com/industry/el-clasico-odds-barca-vs-real-madrid-team-news-trends/"
+        }
+      ],
+      "result": null,
+      "id": "clasico-yamal-scoort",
+      "market": "Doelpuntenmaker",
+      "pick": "Lamine Yamal scoort (op elk moment)",
+      "odd": 2.0,
+      "winChance": 50,
+      "confidence": 3,
+      "oddNote": "Stake 2.00 / -110 (1.91)",
+      "reasoning": "Real speelt met Cucurella en een reservekeeper tegenover de gevaarlijkste speler van Barça.",
+      "keyFactors": [
+        "Yamal 2.00 (Stake), -110 elders",
+        "Real zonder Mendy en met een reservekeeper",
+        "Onze kans: ongeveer 50%"
+      ],
+      "analysis": [
+        "Bookmakers rekenen in deze Clásico op ongeveer 4,5 goals: over 4.5 staat rond +110 tot +118 (2.10-2.18), Barcelona rond 1.61, gelijk 5.75 en Real 3.70. Barça mist Olmo, Eric García en Christensen en waarschijnlijk Koundé. Real speelt zonder Vinícius (geschorst), Rodrygo, Mendy en Asencio, en sinds vanmiddag ook zonder Courtois (griep).",
+        "Lamine Yamal is de spil van Barça's aanval en krijgt vanavond een reservekeeper tegenover zich. Een van de tipsters noemt hem de beste doelpuntenmakers-bet.",
+        "Een fun-bet voor bij het kijken, op jouw verzoek. Hij staat buiten Claudes scorebord. Zet er een klein bedrag op."
+      ],
+      "risks": "Real kan hem met twee man dekken. Dan scoren Raphinha of Gordon, en hij niet."
+    },
+    {
+      "sport": "voetbal",
+      "match": "Barcelona - Real Madrid",
+      "home": {
+        "name": "Barcelona",
+        "short": "BAR",
+        "c1": "#A50044",
+        "c2": "#004D98"
+      },
+      "away": {
+        "name": "Real Madrid",
+        "short": "RMA",
+        "c1": "#FFFFFF",
+        "c2": "#00529F"
+      },
+      "espn": {
+        "league": "soccer/esp.1",
+        "date": "20261025"
+      },
+      "competition": "La Liga",
+      "kickoff": "21:00",
+      "jackpot": true,
+      "level": "hoger",
+      "lineups": {
+        "status": "verwacht",
+        "home": {
+          "formation": "4-3-3",
+          "missing": [
+            "Olmo",
+            "Eric García",
+            "Christensen",
+            "Bardghji",
+            "Koundé (twijfel, enkel)"
+          ],
+          "note": "Joan García; Xavi Espart, Cubarsí, Gerard Martín, Cancelo; Rodri, Pedri, Fermín; Lamine Yamal, Raphinha, Gordon"
+        },
+        "away": {
+          "formation": "4-4-2",
+          "missing": [
+            "Courtois (griep)",
+            "Vinícius (geschorst)",
+            "Rodrygo",
+            "Asencio",
+            "Mendy"
+          ],
+          "note": "Reservekeeper; Valverde, Rüdiger, Konaté, Cucurella; Camavinga, Tchouaméni, Güler; Bellingham, Diomande; Mbappé"
+        },
+        "impact": "Twee gehavende verdedigingen en bij Real een reservekeeper: de markt rekent op ongeveer 4,5 goals."
+      },
+      "sources": [
+        {
+          "label": "Sportsbettingdime: doelpuntenmakers",
+          "url": "https://www.sportsbettingdime.com/news/soccer/barcelona-vs-real-madrid-predictions-odds-oct-25/"
+        },
+        {
+          "label": "Goal.com: Clásico goal fest",
+          "url": "https://www.goal.com/en-us/betting/tips/barcelona-vs-real-madrid-predictions-10-25-26/A%3Abltbefc9e617722778e"
+        },
+        {
+          "label": "Bookmakersreview: odds",
+          "url": "https://www.bookmakersreview.com/industry/el-clasico-odds-barca-vs-real-madrid-team-news-trends/"
+        }
+      ],
+      "result": null,
+      "id": "clasico-raphinha-scoort",
+      "market": "Doelpuntenmaker",
+      "pick": "Raphinha scoort (op elk moment)",
+      "odd": 1.9,
+      "winChance": 55,
+      "confidence": 3,
+      "oddNote": "Stake 1.87 / -135 (1.74)",
+      "reasoning": "Raphinha is de meest waarschijnlijke doelpuntenmaker van de avond en neemt ook de penalty's van Barça.",
+      "keyFactors": [
+        "Raphinha 1.87 (Stake), -135 tot -147 elders",
+        "Hoogste kans van alle doelpuntenmakers",
+        "Onze kans: ongeveer 55%"
+      ],
+      "analysis": [
+        "Bookmakers rekenen in deze Clásico op ongeveer 4,5 goals: over 4.5 staat rond +110 tot +118 (2.10-2.18), Barcelona rond 1.61, gelijk 5.75 en Real 3.70. Barça mist Olmo, Eric García en Christensen en waarschijnlijk Koundé. Real speelt zonder Vinícius (geschorst), Rodrygo, Mendy en Asencio, en sinds vanmiddag ook zonder Courtois (griep).",
+        "Raphinha staat bij alle bookmakers bovenaan de lijst met doelpuntenmakers. Met ongeveer 55% is dit de veiligste bet van deze extra vijf.",
+        "Een fun-bet voor bij het kijken, op jouw verzoek. Hij staat buiten Claudes scorebord. Zet er een klein bedrag op."
+      ],
+      "risks": "Een rustige avond van Raphinha, of de goals komen via Yamal en Gordon."
+    },
+    {
+      "sport": "voetbal",
+      "match": "Barcelona - Real Madrid",
+      "home": {
+        "name": "Barcelona",
+        "short": "BAR",
+        "c1": "#A50044",
+        "c2": "#004D98"
+      },
+      "away": {
+        "name": "Real Madrid",
+        "short": "RMA",
+        "c1": "#FFFFFF",
+        "c2": "#00529F"
+      },
+      "espn": {
+        "league": "soccer/esp.1",
+        "date": "20261025"
+      },
+      "competition": "La Liga",
+      "kickoff": "21:00",
+      "jackpot": true,
+      "level": "hoger",
+      "lineups": {
+        "status": "verwacht",
+        "home": {
+          "formation": "4-3-3",
+          "missing": [
+            "Olmo",
+            "Eric García",
+            "Christensen",
+            "Bardghji",
+            "Koundé (twijfel, enkel)"
+          ],
+          "note": "Joan García; Xavi Espart, Cubarsí, Gerard Martín, Cancelo; Rodri, Pedri, Fermín; Lamine Yamal, Raphinha, Gordon"
+        },
+        "away": {
+          "formation": "4-4-2",
+          "missing": [
+            "Courtois (griep)",
+            "Vinícius (geschorst)",
+            "Rodrygo",
+            "Asencio",
+            "Mendy"
+          ],
+          "note": "Reservekeeper; Valverde, Rüdiger, Konaté, Cucurella; Camavinga, Tchouaméni, Güler; Bellingham, Diomande; Mbappé"
+        },
+        "impact": "Twee gehavende verdedigingen en bij Real een reservekeeper: de markt rekent op ongeveer 4,5 goals."
+      },
+      "sources": [
+        {
+          "label": "Sportsbettingdime: doelpuntenmakers",
+          "url": "https://www.sportsbettingdime.com/news/soccer/barcelona-vs-real-madrid-predictions-odds-oct-25/"
+        },
+        {
+          "label": "Goal.com: Clásico goal fest",
+          "url": "https://www.goal.com/en-us/betting/tips/barcelona-vs-real-madrid-predictions-10-25-26/A%3Abltbefc9e617722778e"
+        },
+        {
+          "label": "Bookmakersreview: odds",
+          "url": "https://www.bookmakersreview.com/industry/el-clasico-odds-barca-vs-real-madrid-team-news-trends/"
+        }
+      ],
+      "result": null,
+      "id": "clasico-barca-wint-btts",
+      "market": "Uitslag + beide teams scoren",
+      "pick": "Barcelona wint én beide teams scoren",
+      "odd": 2.3,
+      "winChance": 43,
+      "confidence": 3,
+      "oddNote": "Prijs indicatief (bet builder rond 2.20-2.40)",
+      "reasoning": "De meest waarschijnlijke uitslag van de previews (2-1, 3-1 of 5-3): Barça wint, maar Real scoort ook.",
+      "keyFactors": [
+        "Barça ongeveer 60% winstkans",
+        "BTTS ongeveer 79%",
+        "Previews: 2-1, 3-1, 5-3",
+        "Onze kans: ongeveer 43%"
+      ],
+      "analysis": [
+        "Bookmakers rekenen in deze Clásico op ongeveer 4,5 goals: over 4.5 staat rond +110 tot +118 (2.10-2.18), Barcelona rond 1.61, gelijk 5.75 en Real 3.70. Barça mist Olmo, Eric García en Christensen en waarschijnlijk Koundé. Real speelt zonder Vinícius (geschorst), Rodrygo, Mendy en Asencio, en sinds vanmiddag ook zonder Courtois (griep).",
+        "Als Barça wint, scoort Real volgens ons in ongeveer 72% van de gevallen. Dat komt samen op ongeveer 43%. Deze bet is spannend tot het einde, want je moet een Real-goal krijgen én de zege van Barça vasthouden.",
+        "Een fun-bet voor bij het kijken, op jouw verzoek. Hij staat buiten Claudes scorebord. Zet er een klein bedrag op."
+      ],
+      "risks": "Een 2-0 voor Barça of een gelijkspel."
+    },
+    {
+      "id": "jp-clasico-barca-feest",
+      "type": "combi",
+      "jackpot": true,
+      "title": "Barça-feest",
+      "odd": 24.46,
+      "oddNote": "1.61 × 2.00 × 1.87 × 3.25 × 1.25 = 24.46. Als bet builder in één wedstrijd geeft je bookmaker meestal een lagere prijs, omdat de legs samenhangen.",
+      "confidence": 1,
+      "level": "hoger",
+      "winChance": 4,
+      "legs": [
+        {
+          "match": "Barcelona - Real Madrid",
+          "sport": "voetbal",
+          "competition": "La Liga",
+          "kickoff": "21:00",
+          "home": {
+            "name": "Barcelona",
+            "short": "BAR",
+            "c1": "#A50044",
+            "c2": "#004D98"
+          },
+          "away": {
+            "name": "Real Madrid",
+            "short": "RMA",
+            "c1": "#FFFFFF",
+            "c2": "#00529F"
+          },
+          "espn": {
+            "league": "soccer/esp.1",
+            "date": "20261025"
+          },
+          "market": "Uitslag (1X2)",
+          "pick": "Barcelona wint",
+          "odd": 1.61,
+          "oddNote": "Prijs indicatief",
+          "result": null
+        },
+        {
+          "match": "Barcelona - Real Madrid",
+          "sport": "voetbal",
+          "competition": "La Liga",
+          "kickoff": "21:00",
+          "home": {
+            "name": "Barcelona",
+            "short": "BAR",
+            "c1": "#A50044",
+            "c2": "#004D98"
+          },
+          "away": {
+            "name": "Real Madrid",
+            "short": "RMA",
+            "c1": "#FFFFFF",
+            "c2": "#00529F"
+          },
+          "espn": {
+            "league": "soccer/esp.1",
+            "date": "20261025"
+          },
+          "market": "Doelpuntenmaker",
+          "pick": "Lamine Yamal scoort",
+          "odd": 2.0,
+          "oddNote": "Prijs indicatief",
+          "result": null
+        },
+        {
+          "match": "Barcelona - Real Madrid",
+          "sport": "voetbal",
+          "competition": "La Liga",
+          "kickoff": "21:00",
+          "home": {
+            "name": "Barcelona",
+            "short": "BAR",
+            "c1": "#A50044",
+            "c2": "#004D98"
+          },
+          "away": {
+            "name": "Real Madrid",
+            "short": "RMA",
+            "c1": "#FFFFFF",
+            "c2": "#00529F"
+          },
+          "espn": {
+            "league": "soccer/esp.1",
+            "date": "20261025"
+          },
+          "market": "Doelpuntenmaker",
+          "pick": "Raphinha scoort",
+          "odd": 1.87,
+          "oddNote": "Prijs indicatief",
+          "result": null
+        },
+        {
+          "match": "Barcelona - Real Madrid",
+          "sport": "voetbal",
+          "competition": "La Liga",
+          "kickoff": "21:00",
+          "home": {
+            "name": "Barcelona",
+            "short": "BAR",
+            "c1": "#A50044",
+            "c2": "#004D98"
+          },
+          "away": {
+            "name": "Real Madrid",
+            "short": "RMA",
+            "c1": "#FFFFFF",
+            "c2": "#00529F"
+          },
+          "espn": {
+            "league": "soccer/esp.1",
+            "date": "20261025"
+          },
+          "market": "Aantal doelpunten",
+          "pick": "Over 5.5 doelpunten",
+          "odd": 3.25,
+          "oddNote": "Prijs indicatief",
+          "result": null
+        },
+        {
+          "match": "Barcelona - Real Madrid",
+          "sport": "voetbal",
+          "competition": "La Liga",
+          "kickoff": "21:00",
+          "home": {
+            "name": "Barcelona",
+            "short": "BAR",
+            "c1": "#A50044",
+            "c2": "#004D98"
+          },
+          "away": {
+            "name": "Real Madrid",
+            "short": "RMA",
+            "c1": "#FFFFFF",
+            "c2": "#00529F"
+          },
+          "espn": {
+            "league": "soccer/esp.1",
+            "date": "20261025"
+          },
+          "market": "Beide teams scoren",
+          "pick": "Beide teams scoren: ja",
+          "odd": 1.25,
+          "oddNote": "Prijs indicatief",
+          "result": null
+        }
+      ],
+      "reasoning": "Barcelona wint een doelpuntenfestijn, met goals van Yamal en Raphinha en een Real-goal erbij.",
+      "keyFactors": [
+        "Barcelona wint",
+        "Lamine Yamal scoort",
+        "Raphinha scoort",
+        "Over 5.5 doelpunten",
+        "Beide teams scoren: ja",
+        "Onze kans: ongeveer 4% (1 op 25)"
+      ],
+      "analysis": [
+        "Bookmakers rekenen in deze Clásico op ongeveer 4,5 goals: over 4.5 staat rond +110 tot +118 (2.10-2.18), Barcelona rond 1.61, gelijk 5.75 en Real 3.70. Barça mist Olmo, Eric García en Christensen en waarschijnlijk Koundé. Real speelt zonder Vinícius (geschorst), Rodrygo, Mendy en Asencio, en sinds vanmiddag ook zonder Courtois (griep).",
+        "Barcelona wint een doelpuntenfestijn, met goals van Yamal en Raphinha en een Real-goal erbij. De legs hangen samen: in een wedstrijd met veel goals scoren de sterren vaker. Daardoor is de echte kans groter dan het product van de losse kansen, maar de bookmaker weet dat ook.",
+        "Dit is een lot met een kleine kans. Zet er alleen een klein bedrag op, en het telt niet mee op het scorebord."
+      ],
+      "risks": "Eén leg die niet valt, en de hele jackpot is weg.",
+      "sources": [
+        {
+          "label": "Sportsbettingdime: doelpuntenmakers",
+          "url": "https://www.sportsbettingdime.com/news/soccer/barcelona-vs-real-madrid-predictions-odds-oct-25/"
+        },
+        {
+          "label": "Goal.com: Clásico goal fest",
+          "url": "https://www.goal.com/en-us/betting/tips/barcelona-vs-real-madrid-predictions-10-25-26/A%3Abltbefc9e617722778e"
+        },
+        {
+          "label": "Bookmakersreview: odds",
+          "url": "https://www.bookmakersreview.com/industry/el-clasico-odds-barca-vs-real-madrid-team-news-trends/"
+        }
+      ],
+      "result": null
+    },
+    {
+      "id": "jp-clasico-real-stunt",
+      "type": "combi",
+      "jackpot": true,
+      "title": "Real-stunt in Camp Nou",
+      "odd": 20.38,
+      "oddNote": "3.70 × 2.05 × 2.15 × 1.25 = 20.38. Als bet builder in één wedstrijd geeft je bookmaker meestal een lagere prijs, omdat de legs samenhangen.",
+      "confidence": 1,
+      "level": "hoger",
+      "winChance": 4,
+      "legs": [
+        {
+          "match": "Barcelona - Real Madrid",
+          "sport": "voetbal",
+          "competition": "La Liga",
+          "kickoff": "21:00",
+          "home": {
+            "name": "Barcelona",
+            "short": "BAR",
+            "c1": "#A50044",
+            "c2": "#004D98"
+          },
+          "away": {
+            "name": "Real Madrid",
+            "short": "RMA",
+            "c1": "#FFFFFF",
+            "c2": "#00529F"
+          },
+          "espn": {
+            "league": "soccer/esp.1",
+            "date": "20261025"
+          },
+          "market": "Uitslag (1X2)",
+          "pick": "Real Madrid wint",
+          "odd": 3.7,
+          "oddNote": "Prijs indicatief",
+          "result": null
+        },
+        {
+          "match": "Barcelona - Real Madrid",
+          "sport": "voetbal",
+          "competition": "La Liga",
+          "kickoff": "21:00",
+          "home": {
+            "name": "Barcelona",
+            "short": "BAR",
+            "c1": "#A50044",
+            "c2": "#004D98"
+          },
+          "away": {
+            "name": "Real Madrid",
+            "short": "RMA",
+            "c1": "#FFFFFF",
+            "c2": "#00529F"
+          },
+          "espn": {
+            "league": "soccer/esp.1",
+            "date": "20261025"
+          },
+          "market": "Doelpuntenmaker",
+          "pick": "Mbappé scoort",
+          "odd": 2.05,
+          "oddNote": "Prijs indicatief",
+          "result": null
+        },
+        {
+          "match": "Barcelona - Real Madrid",
+          "sport": "voetbal",
+          "competition": "La Liga",
+          "kickoff": "21:00",
+          "home": {
+            "name": "Barcelona",
+            "short": "BAR",
+            "c1": "#A50044",
+            "c2": "#004D98"
+          },
+          "away": {
+            "name": "Real Madrid",
+            "short": "RMA",
+            "c1": "#FFFFFF",
+            "c2": "#00529F"
+          },
+          "espn": {
+            "league": "soccer/esp.1",
+            "date": "20261025"
+          },
+          "market": "Aantal doelpunten",
+          "pick": "Over 4.5 doelpunten",
+          "odd": 2.15,
+          "oddNote": "Prijs indicatief",
+          "result": null
+        },
+        {
+          "match": "Barcelona - Real Madrid",
+          "sport": "voetbal",
+          "competition": "La Liga",
+          "kickoff": "21:00",
+          "home": {
+            "name": "Barcelona",
+            "short": "BAR",
+            "c1": "#A50044",
+            "c2": "#004D98"
+          },
+          "away": {
+            "name": "Real Madrid",
+            "short": "RMA",
+            "c1": "#FFFFFF",
+            "c2": "#00529F"
+          },
+          "espn": {
+            "league": "soccer/esp.1",
+            "date": "20261025"
+          },
+          "market": "Beide teams scoren",
+          "pick": "Beide teams scoren: ja",
+          "odd": 1.25,
+          "oddNote": "Prijs indicatief",
+          "result": null
+        }
+      ],
+      "reasoning": "Real wint ondanks alle afwezigen, Mbappé scoort, en het wordt een wedstrijd met minstens vijf goals.",
+      "keyFactors": [
+        "Real Madrid wint",
+        "Mbappé scoort",
+        "Over 4.5 doelpunten",
+        "Beide teams scoren: ja",
+        "Onze kans: ongeveer 4% (1 op 25)"
+      ],
+      "analysis": [
+        "Bookmakers rekenen in deze Clásico op ongeveer 4,5 goals: over 4.5 staat rond +110 tot +118 (2.10-2.18), Barcelona rond 1.61, gelijk 5.75 en Real 3.70. Barça mist Olmo, Eric García en Christensen en waarschijnlijk Koundé. Real speelt zonder Vinícius (geschorst), Rodrygo, Mendy en Asencio, en sinds vanmiddag ook zonder Courtois (griep).",
+        "Real wint ondanks alle afwezigen, Mbappé scoort, en het wordt een wedstrijd met minstens vijf goals. De legs hangen samen: in een wedstrijd met veel goals scoren de sterren vaker. Daardoor is de echte kans groter dan het product van de losse kansen, maar de bookmaker weet dat ook.",
+        "Dit is een lot met een kleine kans. Zet er alleen een klein bedrag op, en het telt niet mee op het scorebord."
+      ],
+      "risks": "Eén leg die niet valt, en de hele jackpot is weg.",
+      "sources": [
+        {
+          "label": "Sportsbettingdime: doelpuntenmakers",
+          "url": "https://www.sportsbettingdime.com/news/soccer/barcelona-vs-real-madrid-predictions-odds-oct-25/"
+        },
+        {
+          "label": "Goal.com: Clásico goal fest",
+          "url": "https://www.goal.com/en-us/betting/tips/barcelona-vs-real-madrid-predictions-10-25-26/A%3Abltbefc9e617722778e"
+        },
+        {
+          "label": "Bookmakersreview: odds",
+          "url": "https://www.bookmakersreview.com/industry/el-clasico-odds-barca-vs-real-madrid-team-news-trends/"
+        }
+      ],
+      "result": null
+    },
+    {
+      "id": "jp-clasico-sterren",
+      "type": "combi",
+      "jackpot": true,
+      "title": "Alle sterren scoren",
+      "odd": 24.92,
+      "oddNote": "2.05 × 1.87 × 2.00 × 3.25 = 24.92. Als bet builder in één wedstrijd geeft je bookmaker meestal een lagere prijs, omdat de legs samenhangen.",
+      "confidence": 1,
+      "level": "hoger",
+      "winChance": 5,
+      "legs": [
+        {
+          "match": "Barcelona - Real Madrid",
+          "sport": "voetbal",
+          "competition": "La Liga",
+          "kickoff": "21:00",
+          "home": {
+            "name": "Barcelona",
+            "short": "BAR",
+            "c1": "#A50044",
+            "c2": "#004D98"
+          },
+          "away": {
+            "name": "Real Madrid",
+            "short": "RMA",
+            "c1": "#FFFFFF",
+            "c2": "#00529F"
+          },
+          "espn": {
+            "league": "soccer/esp.1",
+            "date": "20261025"
+          },
+          "market": "Doelpuntenmaker",
+          "pick": "Mbappé scoort",
+          "odd": 2.05,
+          "oddNote": "Prijs indicatief",
+          "result": null
+        },
+        {
+          "match": "Barcelona - Real Madrid",
+          "sport": "voetbal",
+          "competition": "La Liga",
+          "kickoff": "21:00",
+          "home": {
+            "name": "Barcelona",
+            "short": "BAR",
+            "c1": "#A50044",
+            "c2": "#004D98"
+          },
+          "away": {
+            "name": "Real Madrid",
+            "short": "RMA",
+            "c1": "#FFFFFF",
+            "c2": "#00529F"
+          },
+          "espn": {
+            "league": "soccer/esp.1",
+            "date": "20261025"
+          },
+          "market": "Doelpuntenmaker",
+          "pick": "Raphinha scoort",
+          "odd": 1.87,
+          "oddNote": "Prijs indicatief",
+          "result": null
+        },
+        {
+          "match": "Barcelona - Real Madrid",
+          "sport": "voetbal",
+          "competition": "La Liga",
+          "kickoff": "21:00",
+          "home": {
+            "name": "Barcelona",
+            "short": "BAR",
+            "c1": "#A50044",
+            "c2": "#004D98"
+          },
+          "away": {
+            "name": "Real Madrid",
+            "short": "RMA",
+            "c1": "#FFFFFF",
+            "c2": "#00529F"
+          },
+          "espn": {
+            "league": "soccer/esp.1",
+            "date": "20261025"
+          },
+          "market": "Doelpuntenmaker",
+          "pick": "Lamine Yamal scoort",
+          "odd": 2.0,
+          "oddNote": "Prijs indicatief",
+          "result": null
+        },
+        {
+          "match": "Barcelona - Real Madrid",
+          "sport": "voetbal",
+          "competition": "La Liga",
+          "kickoff": "21:00",
+          "home": {
+            "name": "Barcelona",
+            "short": "BAR",
+            "c1": "#A50044",
+            "c2": "#004D98"
+          },
+          "away": {
+            "name": "Real Madrid",
+            "short": "RMA",
+            "c1": "#FFFFFF",
+            "c2": "#00529F"
+          },
+          "espn": {
+            "league": "soccer/esp.1",
+            "date": "20261025"
+          },
+          "market": "Aantal doelpunten",
+          "pick": "Over 5.5 doelpunten",
+          "odd": 3.25,
+          "oddNote": "Prijs indicatief",
+          "result": null
+        }
+      ],
+      "reasoning": "Mbappé, Raphinha en Yamal scoren allemaal, in een wedstrijd met zes of meer goals.",
+      "keyFactors": [
+        "Mbappé scoort",
+        "Raphinha scoort",
+        "Lamine Yamal scoort",
+        "Over 5.5 doelpunten",
+        "Onze kans: ongeveer 5% (1 op 20)"
+      ],
+      "analysis": [
+        "Bookmakers rekenen in deze Clásico op ongeveer 4,5 goals: over 4.5 staat rond +110 tot +118 (2.10-2.18), Barcelona rond 1.61, gelijk 5.75 en Real 3.70. Barça mist Olmo, Eric García en Christensen en waarschijnlijk Koundé. Real speelt zonder Vinícius (geschorst), Rodrygo, Mendy en Asencio, en sinds vanmiddag ook zonder Courtois (griep).",
+        "Mbappé, Raphinha en Yamal scoren allemaal, in een wedstrijd met zes of meer goals. De legs hangen samen: in een wedstrijd met veel goals scoren de sterren vaker. Daardoor is de echte kans groter dan het product van de losse kansen, maar de bookmaker weet dat ook.",
+        "Dit is een lot met een kleine kans. Zet er alleen een klein bedrag op, en het telt niet mee op het scorebord."
+      ],
+      "risks": "Eén leg die niet valt, en de hele jackpot is weg.",
+      "sources": [
+        {
+          "label": "Sportsbettingdime: doelpuntenmakers",
+          "url": "https://www.sportsbettingdime.com/news/soccer/barcelona-vs-real-madrid-predictions-odds-oct-25/"
+        },
+        {
+          "label": "Goal.com: Clásico goal fest",
+          "url": "https://www.goal.com/en-us/betting/tips/barcelona-vs-real-madrid-predictions-10-25-26/A%3Abltbefc9e617722778e"
+        },
+        {
+          "label": "Bookmakersreview: odds",
+          "url": "https://www.bookmakersreview.com/industry/el-clasico-odds-barca-vs-real-madrid-team-news-trends/"
+        }
+      ],
+      "result": null
+    },
+    {
+      "id": "jp-clasico-tot-het-eind",
+      "type": "combi",
+      "jackpot": true,
+      "title": "Spektakel tot het eind",
+      "odd": 29.7,
+      "oddNote": "4.50 × 1.61 × 2.05 × 2.00 = 29.70. Als bet builder in één wedstrijd geeft je bookmaker meestal een lagere prijs, omdat de legs samenhangen.",
+      "confidence": 1,
+      "level": "hoger",
+      "winChance": 3,
+      "legs": [
+        {
+          "match": "Barcelona - Real Madrid",
+          "sport": "voetbal",
+          "competition": "La Liga",
+          "kickoff": "21:00",
+          "home": {
+            "name": "Barcelona",
+            "short": "BAR",
+            "c1": "#A50044",
+            "c2": "#004D98"
+          },
+          "away": {
+            "name": "Real Madrid",
+            "short": "RMA",
+            "c1": "#FFFFFF",
+            "c2": "#00529F"
+          },
+          "espn": {
+            "league": "soccer/esp.1",
+            "date": "20261025"
+          },
+          "market": "Beide teams scoren",
+          "pick": "Beide teams scoren in beide helften",
+          "odd": 4.5,
+          "oddNote": "Prijs indicatief",
+          "result": null
+        },
+        {
+          "match": "Barcelona - Real Madrid",
+          "sport": "voetbal",
+          "competition": "La Liga",
+          "kickoff": "21:00",
+          "home": {
+            "name": "Barcelona",
+            "short": "BAR",
+            "c1": "#A50044",
+            "c2": "#004D98"
+          },
+          "away": {
+            "name": "Real Madrid",
+            "short": "RMA",
+            "c1": "#FFFFFF",
+            "c2": "#00529F"
+          },
+          "espn": {
+            "league": "soccer/esp.1",
+            "date": "20261025"
+          },
+          "market": "Uitslag (1X2)",
+          "pick": "Barcelona wint",
+          "odd": 1.61,
+          "oddNote": "Prijs indicatief",
+          "result": null
+        },
+        {
+          "match": "Barcelona - Real Madrid",
+          "sport": "voetbal",
+          "competition": "La Liga",
+          "kickoff": "21:00",
+          "home": {
+            "name": "Barcelona",
+            "short": "BAR",
+            "c1": "#A50044",
+            "c2": "#004D98"
+          },
+          "away": {
+            "name": "Real Madrid",
+            "short": "RMA",
+            "c1": "#FFFFFF",
+            "c2": "#00529F"
+          },
+          "espn": {
+            "league": "soccer/esp.1",
+            "date": "20261025"
+          },
+          "market": "Doelpuntenmaker",
+          "pick": "Mbappé scoort",
+          "odd": 2.05,
+          "oddNote": "Prijs indicatief",
+          "result": null
+        },
+        {
+          "match": "Barcelona - Real Madrid",
+          "sport": "voetbal",
+          "competition": "La Liga",
+          "kickoff": "21:00",
+          "home": {
+            "name": "Barcelona",
+            "short": "BAR",
+            "c1": "#A50044",
+            "c2": "#004D98"
+          },
+          "away": {
+            "name": "Real Madrid",
+            "short": "RMA",
+            "c1": "#FFFFFF",
+            "c2": "#00529F"
+          },
+          "espn": {
+            "league": "soccer/esp.1",
+            "date": "20261025"
+          },
+          "market": "Doelpuntenmaker",
+          "pick": "Lamine Yamal scoort",
+          "odd": 2.0,
+          "oddNote": "Prijs indicatief",
+          "result": null
+        }
+      ],
+      "reasoning": "Beide ploegen scoren in elke helft, Barça wint, en zowel Mbappé als Yamal scoort.",
+      "keyFactors": [
+        "Beide teams scoren in beide helften",
+        "Barcelona wint",
+        "Mbappé scoort",
+        "Lamine Yamal scoort",
+        "Onze kans: ongeveer 3% (1 op 33)"
+      ],
+      "analysis": [
+        "Bookmakers rekenen in deze Clásico op ongeveer 4,5 goals: over 4.5 staat rond +110 tot +118 (2.10-2.18), Barcelona rond 1.61, gelijk 5.75 en Real 3.70. Barça mist Olmo, Eric García en Christensen en waarschijnlijk Koundé. Real speelt zonder Vinícius (geschorst), Rodrygo, Mendy en Asencio, en sinds vanmiddag ook zonder Courtois (griep).",
+        "Beide ploegen scoren in elke helft, Barça wint, en zowel Mbappé als Yamal scoort. De legs hangen samen: in een wedstrijd met veel goals scoren de sterren vaker. Daardoor is de echte kans groter dan het product van de losse kansen, maar de bookmaker weet dat ook.",
+        "Dit is een lot met een kleine kans. Zet er alleen een klein bedrag op, en het telt niet mee op het scorebord."
+      ],
+      "risks": "Eén leg die niet valt, en de hele jackpot is weg.",
+      "sources": [
+        {
+          "label": "Sportsbettingdime: doelpuntenmakers",
+          "url": "https://www.sportsbettingdime.com/news/soccer/barcelona-vs-real-madrid-predictions-odds-oct-25/"
+        },
+        {
+          "label": "Goal.com: Clásico goal fest",
+          "url": "https://www.goal.com/en-us/betting/tips/barcelona-vs-real-madrid-predictions-10-25-26/A%3Abltbefc9e617722778e"
+        },
+        {
+          "label": "Bookmakersreview: odds",
+          "url": "https://www.bookmakersreview.com/industry/el-clasico-odds-barca-vs-real-madrid-team-news-trends/"
+        }
+      ],
+      "result": null
+    },
+    {
+      "id": "jp-clasico-gelijk-thriller",
+      "type": "combi",
+      "jackpot": true,
+      "title": "Gelijkspel-thriller",
+      "odd": 34.17,
+      "oddNote": "5.75 × 1.55 × 2.05 × 1.87 = 34.17. Als bet builder in één wedstrijd geeft je bookmaker meestal een lagere prijs, omdat de legs samenhangen.",
+      "confidence": 1,
+      "level": "hoger",
+      "winChance": 4,
+      "legs": [
+        {
+          "match": "Barcelona - Real Madrid",
+          "sport": "voetbal",
+          "competition": "La Liga",
+          "kickoff": "21:00",
+          "home": {
+            "name": "Barcelona",
+            "short": "BAR",
+            "c1": "#A50044",
+            "c2": "#004D98"
+          },
+          "away": {
+            "name": "Real Madrid",
+            "short": "RMA",
+            "c1": "#FFFFFF",
+            "c2": "#00529F"
+          },
+          "espn": {
+            "league": "soccer/esp.1",
+            "date": "20261025"
+          },
+          "market": "Uitslag (1X2)",
+          "pick": "Gelijkspel",
+          "odd": 5.75,
+          "oddNote": "Prijs indicatief",
+          "result": null
+        },
+        {
+          "match": "Barcelona - Real Madrid",
+          "sport": "voetbal",
+          "competition": "La Liga",
+          "kickoff": "21:00",
+          "home": {
+            "name": "Barcelona",
+            "short": "BAR",
+            "c1": "#A50044",
+            "c2": "#004D98"
+          },
+          "away": {
+            "name": "Real Madrid",
+            "short": "RMA",
+            "c1": "#FFFFFF",
+            "c2": "#00529F"
+          },
+          "espn": {
+            "league": "soccer/esp.1",
+            "date": "20261025"
+          },
+          "market": "Aantal doelpunten",
+          "pick": "Over 3.5 doelpunten",
+          "odd": 1.55,
+          "oddNote": "Prijs indicatief",
+          "result": null
+        },
+        {
+          "match": "Barcelona - Real Madrid",
+          "sport": "voetbal",
+          "competition": "La Liga",
+          "kickoff": "21:00",
+          "home": {
+            "name": "Barcelona",
+            "short": "BAR",
+            "c1": "#A50044",
+            "c2": "#004D98"
+          },
+          "away": {
+            "name": "Real Madrid",
+            "short": "RMA",
+            "c1": "#FFFFFF",
+            "c2": "#00529F"
+          },
+          "espn": {
+            "league": "soccer/esp.1",
+            "date": "20261025"
+          },
+          "market": "Doelpuntenmaker",
+          "pick": "Mbappé scoort",
+          "odd": 2.05,
+          "oddNote": "Prijs indicatief",
+          "result": null
+        },
+        {
+          "match": "Barcelona - Real Madrid",
+          "sport": "voetbal",
+          "competition": "La Liga",
+          "kickoff": "21:00",
+          "home": {
+            "name": "Barcelona",
+            "short": "BAR",
+            "c1": "#A50044",
+            "c2": "#004D98"
+          },
+          "away": {
+            "name": "Real Madrid",
+            "short": "RMA",
+            "c1": "#FFFFFF",
+            "c2": "#00529F"
+          },
+          "espn": {
+            "league": "soccer/esp.1",
+            "date": "20261025"
+          },
+          "market": "Doelpuntenmaker",
+          "pick": "Raphinha scoort",
+          "odd": 1.87,
+          "oddNote": "Prijs indicatief",
+          "result": null
+        }
+      ],
+      "reasoning": "Een gelijkspel met minstens vier goals, met Mbappé en Raphinha allebei op het scoreformulier (bijv. 2-2 of 3-3).",
+      "keyFactors": [
+        "Gelijkspel",
+        "Over 3.5 doelpunten",
+        "Mbappé scoort",
+        "Raphinha scoort",
+        "Onze kans: ongeveer 4% (1 op 25)"
+      ],
+      "analysis": [
+        "Bookmakers rekenen in deze Clásico op ongeveer 4,5 goals: over 4.5 staat rond +110 tot +118 (2.10-2.18), Barcelona rond 1.61, gelijk 5.75 en Real 3.70. Barça mist Olmo, Eric García en Christensen en waarschijnlijk Koundé. Real speelt zonder Vinícius (geschorst), Rodrygo, Mendy en Asencio, en sinds vanmiddag ook zonder Courtois (griep).",
+        "Een gelijkspel met minstens vier goals, met Mbappé en Raphinha allebei op het scoreformulier (bijv. 2-2 of 3-3). De legs hangen samen: in een wedstrijd met veel goals scoren de sterren vaker. Daardoor is de echte kans groter dan het product van de losse kansen, maar de bookmaker weet dat ook.",
+        "Dit is een lot met een kleine kans. Zet er alleen een klein bedrag op, en het telt niet mee op het scorebord."
+      ],
+      "risks": "Eén leg die niet valt, en de hele jackpot is weg.",
+      "sources": [
+        {
+          "label": "Sportsbettingdime: doelpuntenmakers",
+          "url": "https://www.sportsbettingdime.com/news/soccer/barcelona-vs-real-madrid-predictions-odds-oct-25/"
+        },
+        {
+          "label": "Goal.com: Clásico goal fest",
+          "url": "https://www.goal.com/en-us/betting/tips/barcelona-vs-real-madrid-predictions-10-25-26/A%3Abltbefc9e617722778e"
+        },
+        {
+          "label": "Bookmakersreview: odds",
+          "url": "https://www.bookmakersreview.com/industry/el-clasico-odds-barca-vs-real-madrid-team-news-trends/"
+        }
+      ],
+      "result": null
     }
   ],
   "top": [
