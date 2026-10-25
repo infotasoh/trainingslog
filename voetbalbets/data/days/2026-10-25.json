@@ -243,6 +243,431 @@
         "status": "bevestigd",
         "note": "Real mist ook Courtois (griep), dus de BTTS-leg wordt sterker. Koundé twijfelt nog en Lamine Yamal is fit. Bij de Knicks twijfelt alleen Alvarado, Orlando speelt zonder Banchero, Isaac, Penda en Nelson, en Black twijfelt. De combi blijft staan."
       }
+    },
+    {
+      "sport": "voetbal",
+      "match": "Barcelona - Real Madrid",
+      "home": {
+        "name": "Barcelona",
+        "short": "BAR",
+        "c1": "#A50044",
+        "c2": "#004D98"
+      },
+      "away": {
+        "name": "Real Madrid",
+        "short": "RMA",
+        "c1": "#FFFFFF",
+        "c2": "#00529F"
+      },
+      "espn": {
+        "league": "soccer/esp.1",
+        "date": "20261025"
+      },
+      "competition": "La Liga",
+      "kickoff": "21:00",
+      "jackpot": true,
+      "level": "hoger",
+      "lineups": {
+        "status": "verwacht",
+        "home": {
+          "formation": "4-3-3",
+          "missing": [
+            "Olmo",
+            "Eric García",
+            "Christensen",
+            "Bardghji",
+            "Koundé (twijfel, enkel)"
+          ],
+          "note": "Joan García; Xavi Espart, Cubarsí, Gerard Martín, Cancelo; Rodri, Pedri, Fermín; Lamine Yamal, Raphinha, Gordon"
+        },
+        "away": {
+          "formation": "4-4-2",
+          "missing": [
+            "Courtois (griep)",
+            "Vinícius (geschorst)",
+            "Rodrygo",
+            "Asencio",
+            "Mendy"
+          ],
+          "note": "Reservekeeper; Valverde, Rüdiger, Konaté, Cucurella; Camavinga, Tchouaméni, Güler; Bellingham, Diomande; Mbappé"
+        },
+        "impact": "Twee gehavende verdedigingen en bij Real een reservekeeper: de markt rekent op ongeveer 4,5 goals."
+      },
+      "sources": [
+        {
+          "label": "Sportsbettingdime: doelpuntenmakers",
+          "url": "https://www.sportsbettingdime.com/news/soccer/barcelona-vs-real-madrid-predictions-odds-oct-25/"
+        },
+        {
+          "label": "Goal.com: Clásico goal fest",
+          "url": "https://www.goal.com/en-us/betting/tips/barcelona-vs-real-madrid-predictions-10-25-26/A%3Abltbefc9e617722778e"
+        },
+        {
+          "label": "Bookmakersreview: odds",
+          "url": "https://www.bookmakersreview.com/industry/el-clasico-odds-barca-vs-real-madrid-team-news-trends/"
+        }
+      ],
+      "result": null,
+      "id": "clasico-btts-beide-helften",
+      "market": "Beide teams scoren in beide helften",
+      "pick": "Beide teams scoren in de 1e én de 2e helft",
+      "odd": 4.5,
+      "winChance": 20,
+      "confidence": 2,
+      "oddNote": "Prijs indicatief (geschat rond 4.00-5.00); check je bookmaker",
+      "reasoning": "De spannendste bet van het rijtje: je hebt in elke helft een goal van beide kanten nodig, dus hij blijft tot de laatste minuut leven.",
+      "keyFactors": [
+        "Markt verwacht ongeveer 4,5 goals",
+        "BTTS in 5 van de laatste 6 Clásico's",
+        "Real met een reservekeeper, Barça met een noodverdediging",
+        "Onze kans: ongeveer 20% (1 op 5)"
+      ],
+      "analysis": [
+        "Bookmakers rekenen in deze Clásico op ongeveer 4,5 goals: over 4.5 staat rond +110 tot +118 (2.10-2.18), Barcelona rond 1.61, gelijk 5.75 en Real 3.70. Barça mist Olmo, Eric García en Christensen en waarschijnlijk Koundé. Real speelt zonder Vinícius (geschorst), Rodrygo, Mendy en Asencio, en sinds vanmiddag ook zonder Courtois (griep).",
+        "Bij gemiddeld ongeveer 2,2 goals per helft schatten we dat beide ploegen in een helft ongeveer 44% kans hebben om allebei te scoren. Voor beide helften komt dat op ongeveer 20% uit. Met een odd rond 4.50 is dit een eerlijke loterij die je de hele wedstrijd laat meeleven.",
+        "Dit is een fun-bet voor bij het kijken, op jouw verzoek. Hij staat buiten Claudes scorebord, net als de jackpots. Zet er een klein bedrag op."
+      ],
+      "risks": "Eén rustige helft (bijv. 1-0 bij rust) en de bet is al voorbij."
+    },
+    {
+      "sport": "voetbal",
+      "match": "Barcelona - Real Madrid",
+      "home": {
+        "name": "Barcelona",
+        "short": "BAR",
+        "c1": "#A50044",
+        "c2": "#004D98"
+      },
+      "away": {
+        "name": "Real Madrid",
+        "short": "RMA",
+        "c1": "#FFFFFF",
+        "c2": "#00529F"
+      },
+      "espn": {
+        "league": "soccer/esp.1",
+        "date": "20261025"
+      },
+      "competition": "La Liga",
+      "kickoff": "21:00",
+      "jackpot": true,
+      "level": "hoger",
+      "lineups": {
+        "status": "verwacht",
+        "home": {
+          "formation": "4-3-3",
+          "missing": [
+            "Olmo",
+            "Eric García",
+            "Christensen",
+            "Bardghji",
+            "Koundé (twijfel, enkel)"
+          ],
+          "note": "Joan García; Xavi Espart, Cubarsí, Gerard Martín, Cancelo; Rodri, Pedri, Fermín; Lamine Yamal, Raphinha, Gordon"
+        },
+        "away": {
+          "formation": "4-4-2",
+          "missing": [
+            "Courtois (griep)",
+            "Vinícius (geschorst)",
+            "Rodrygo",
+            "Asencio",
+            "Mendy"
+          ],
+          "note": "Reservekeeper; Valverde, Rüdiger, Konaté, Cucurella; Camavinga, Tchouaméni, Güler; Bellingham, Diomande; Mbappé"
+        },
+        "impact": "Twee gehavende verdedigingen en bij Real een reservekeeper: de markt rekent op ongeveer 4,5 goals."
+      },
+      "sources": [
+        {
+          "label": "Sportsbettingdime: doelpuntenmakers",
+          "url": "https://www.sportsbettingdime.com/news/soccer/barcelona-vs-real-madrid-predictions-odds-oct-25/"
+        },
+        {
+          "label": "Goal.com: Clásico goal fest",
+          "url": "https://www.goal.com/en-us/betting/tips/barcelona-vs-real-madrid-predictions-10-25-26/A%3Abltbefc9e617722778e"
+        },
+        {
+          "label": "Bookmakersreview: odds",
+          "url": "https://www.bookmakersreview.com/industry/el-clasico-odds-barca-vs-real-madrid-team-news-trends/"
+        }
+      ],
+      "result": null,
+      "id": "clasico-over-5-5",
+      "market": "Aantal doelpunten",
+      "pick": "Over 5.5 doelpunten (6 of meer)",
+      "odd": 3.25,
+      "winChance": 28,
+      "confidence": 3,
+      "oddNote": "Prijs indicatief, afgeleid van de lijn 4.5 (over +110/+118); check je bookmaker",
+      "reasoning": "Als de markt al 4,5 goals verwacht, ligt 6 goals binnen bereik, zeker met een reservekeeper bij Real.",
+      "keyFactors": [
+        "Totaallijn rond 4.5 bij BetMGM/BetRivers",
+        "Courtois afwezig (griep)",
+        "Barça zonder Eric García, Christensen en Koundé",
+        "Onze kans: ongeveer 28%"
+      ],
+      "analysis": [
+        "Bookmakers rekenen in deze Clásico op ongeveer 4,5 goals: over 4.5 staat rond +110 tot +118 (2.10-2.18), Barcelona rond 1.61, gelijk 5.75 en Real 3.70. Barça mist Olmo, Eric García en Christensen en waarschijnlijk Koundé. Real speelt zonder Vinícius (geschorst), Rodrygo, Mendy en Asencio, en sinds vanmiddag ook zonder Courtois (griep).",
+        "Met een verwachting van ongeveer 4,4 goals is de kans op zes of meer ongeveer 28%. Deze bet blijft spannend: zelfs bij 3-2 in de 80e minuut leeft hij nog.",
+        "Dit is een fun-bet voor bij het kijken, op jouw verzoek. Hij staat buiten Claudes scorebord, net als de jackpots. Zet er een klein bedrag op."
+      ],
+      "risks": "Real kan zich zonder Vinícius terugtrekken en het tempo eruit halen; dan wordt het eerder 2-1."
+    },
+    {
+      "sport": "voetbal",
+      "match": "Barcelona - Real Madrid",
+      "home": {
+        "name": "Barcelona",
+        "short": "BAR",
+        "c1": "#A50044",
+        "c2": "#004D98"
+      },
+      "away": {
+        "name": "Real Madrid",
+        "short": "RMA",
+        "c1": "#FFFFFF",
+        "c2": "#00529F"
+      },
+      "espn": {
+        "league": "soccer/esp.1",
+        "date": "20261025"
+      },
+      "competition": "La Liga",
+      "kickoff": "21:00",
+      "jackpot": true,
+      "level": "hoger",
+      "lineups": {
+        "status": "verwacht",
+        "home": {
+          "formation": "4-3-3",
+          "missing": [
+            "Olmo",
+            "Eric García",
+            "Christensen",
+            "Bardghji",
+            "Koundé (twijfel, enkel)"
+          ],
+          "note": "Joan García; Xavi Espart, Cubarsí, Gerard Martín, Cancelo; Rodri, Pedri, Fermín; Lamine Yamal, Raphinha, Gordon"
+        },
+        "away": {
+          "formation": "4-4-2",
+          "missing": [
+            "Courtois (griep)",
+            "Vinícius (geschorst)",
+            "Rodrygo",
+            "Asencio",
+            "Mendy"
+          ],
+          "note": "Reservekeeper; Valverde, Rüdiger, Konaté, Cucurella; Camavinga, Tchouaméni, Güler; Bellingham, Diomande; Mbappé"
+        },
+        "impact": "Twee gehavende verdedigingen en bij Real een reservekeeper: de markt rekent op ongeveer 4,5 goals."
+      },
+      "sources": [
+        {
+          "label": "Sportsbettingdime: doelpuntenmakers",
+          "url": "https://www.sportsbettingdime.com/news/soccer/barcelona-vs-real-madrid-predictions-odds-oct-25/"
+        },
+        {
+          "label": "Goal.com: Clásico goal fest",
+          "url": "https://www.goal.com/en-us/betting/tips/barcelona-vs-real-madrid-predictions-10-25-26/A%3Abltbefc9e617722778e"
+        },
+        {
+          "label": "Bookmakersreview: odds",
+          "url": "https://www.bookmakersreview.com/industry/el-clasico-odds-barca-vs-real-madrid-team-news-trends/"
+        }
+      ],
+      "result": null,
+      "id": "clasico-mbappe-raphinha",
+      "market": "Doelpuntenmakers (bet builder)",
+      "pick": "Mbappé én Raphinha scoren allebei",
+      "odd": 3.4,
+      "winChance": 28,
+      "confidence": 3,
+      "oddNote": "Indicatief: Raphinha 1.87 en Mbappé 2.05 (Stake), als bet builder rond 3.40",
+      "reasoning": "De twee grootste doelpuntenmakers van beide ploegen moeten allebei scoren, dus je juicht voor beide kanten.",
+      "keyFactors": [
+        "Raphinha 1.87 tot 2.0 als doelpuntenmaker",
+        "Mbappé 1.85 tot 2.05",
+        "Zonder Vinícius gaan nog meer Real-kansen via Mbappé",
+        "Onze kans: ongeveer 28%"
+      ],
+      "analysis": [
+        "Bookmakers rekenen in deze Clásico op ongeveer 4,5 goals: over 4.5 staat rond +110 tot +118 (2.10-2.18), Barcelona rond 1.61, gelijk 5.75 en Real 3.70. Barça mist Olmo, Eric García en Christensen en waarschijnlijk Koundé. Real speelt zonder Vinícius (geschorst), Rodrygo, Mendy en Asencio, en sinds vanmiddag ook zonder Courtois (griep).",
+        "Raphinha (ongeveer 55%) en Mbappé (ongeveer 50%) zijn de meest waarschijnlijke doelpuntenmakers. In een open wedstrijd versterken ze elkaar: scoort de één, dan moet de andere ploeg aanvallen. Samen schatten we ongeveer 28%.",
+        "Dit is een fun-bet voor bij het kijken, op jouw verzoek. Hij staat buiten Claudes scorebord, net als de jackpots. Zet er een klein bedrag op."
+      ],
+      "risks": "Een basisplaats is niet bevestigd, en een wissel of een gemiste penalty kan de bet kosten."
+    },
+    {
+      "sport": "voetbal",
+      "match": "Barcelona - Real Madrid",
+      "home": {
+        "name": "Barcelona",
+        "short": "BAR",
+        "c1": "#A50044",
+        "c2": "#004D98"
+      },
+      "away": {
+        "name": "Real Madrid",
+        "short": "RMA",
+        "c1": "#FFFFFF",
+        "c2": "#00529F"
+      },
+      "espn": {
+        "league": "soccer/esp.1",
+        "date": "20261025"
+      },
+      "competition": "La Liga",
+      "kickoff": "21:00",
+      "jackpot": true,
+      "level": "hoger",
+      "lineups": {
+        "status": "verwacht",
+        "home": {
+          "formation": "4-3-3",
+          "missing": [
+            "Olmo",
+            "Eric García",
+            "Christensen",
+            "Bardghji",
+            "Koundé (twijfel, enkel)"
+          ],
+          "note": "Joan García; Xavi Espart, Cubarsí, Gerard Martín, Cancelo; Rodri, Pedri, Fermín; Lamine Yamal, Raphinha, Gordon"
+        },
+        "away": {
+          "formation": "4-4-2",
+          "missing": [
+            "Courtois (griep)",
+            "Vinícius (geschorst)",
+            "Rodrygo",
+            "Asencio",
+            "Mendy"
+          ],
+          "note": "Reservekeeper; Valverde, Rüdiger, Konaté, Cucurella; Camavinga, Tchouaméni, Güler; Bellingham, Diomande; Mbappé"
+        },
+        "impact": "Twee gehavende verdedigingen en bij Real een reservekeeper: de markt rekent op ongeveer 4,5 goals."
+      },
+      "sources": [
+        {
+          "label": "Sportsbettingdime: doelpuntenmakers",
+          "url": "https://www.sportsbettingdime.com/news/soccer/barcelona-vs-real-madrid-predictions-odds-oct-25/"
+        },
+        {
+          "label": "Goal.com: Clásico goal fest",
+          "url": "https://www.goal.com/en-us/betting/tips/barcelona-vs-real-madrid-predictions-10-25-26/A%3Abltbefc9e617722778e"
+        },
+        {
+          "label": "Bookmakersreview: odds",
+          "url": "https://www.bookmakersreview.com/industry/el-clasico-odds-barca-vs-real-madrid-team-news-trends/"
+        }
+      ],
+      "result": null,
+      "id": "clasico-yamal-barca-wint",
+      "market": "Doelpuntenmaker + uitslag (bet builder)",
+      "pick": "Lamine Yamal scoort én Barcelona wint",
+      "odd": 2.75,
+      "winChance": 36,
+      "confidence": 3,
+      "oddNote": "Indicatief: Yamal 2.00 (Stake) × Barça-zege, als bet builder rond 2.75",
+      "reasoning": "Barcelona is thuis favoriet, en Lamine Yamal is de man die dit soort avonden beslist.",
+      "keyFactors": [
+        "Barcelona -150 tot -182 (ongeveer 60%)",
+        "Yamal ongeveer 50% om te scoren",
+        "Real met een reservekeeper",
+        "Onze kans: ongeveer 36%"
+      ],
+      "analysis": [
+        "Bookmakers rekenen in deze Clásico op ongeveer 4,5 goals: over 4.5 staat rond +110 tot +118 (2.10-2.18), Barcelona rond 1.61, gelijk 5.75 en Real 3.70. Barça mist Olmo, Eric García en Christensen en waarschijnlijk Koundé. Real speelt zonder Vinícius (geschorst), Rodrygo, Mendy en Asencio, en sinds vanmiddag ook zonder Courtois (griep).",
+        "Als Yamal scoort, wint Barça volgens ons in ongeveer 72% van de gevallen. Dat komt samen op ongeveer 36%. Het is de bet met de grootste kans van de vijf, en hij blijft spannend tot het eindsignaal, want een late gelijkmaker van Real maakt hem kapot.",
+        "Dit is een fun-bet voor bij het kijken, op jouw verzoek. Hij staat buiten Claudes scorebord, net als de jackpots. Zet er een klein bedrag op."
+      ],
+      "risks": "Yamal kan scoren terwijl Real terugkomt (3-3), of Barça wint zonder een goal van Yamal."
+    },
+    {
+      "sport": "voetbal",
+      "match": "Barcelona - Real Madrid",
+      "home": {
+        "name": "Barcelona",
+        "short": "BAR",
+        "c1": "#A50044",
+        "c2": "#004D98"
+      },
+      "away": {
+        "name": "Real Madrid",
+        "short": "RMA",
+        "c1": "#FFFFFF",
+        "c2": "#00529F"
+      },
+      "espn": {
+        "league": "soccer/esp.1",
+        "date": "20261025"
+      },
+      "competition": "La Liga",
+      "kickoff": "21:00",
+      "jackpot": true,
+      "level": "hoger",
+      "lineups": {
+        "status": "verwacht",
+        "home": {
+          "formation": "4-3-3",
+          "missing": [
+            "Olmo",
+            "Eric García",
+            "Christensen",
+            "Bardghji",
+            "Koundé (twijfel, enkel)"
+          ],
+          "note": "Joan García; Xavi Espart, Cubarsí, Gerard Martín, Cancelo; Rodri, Pedri, Fermín; Lamine Yamal, Raphinha, Gordon"
+        },
+        "away": {
+          "formation": "4-4-2",
+          "missing": [
+            "Courtois (griep)",
+            "Vinícius (geschorst)",
+            "Rodrygo",
+            "Asencio",
+            "Mendy"
+          ],
+          "note": "Reservekeeper; Valverde, Rüdiger, Konaté, Cucurella; Camavinga, Tchouaméni, Güler; Bellingham, Diomande; Mbappé"
+        },
+        "impact": "Twee gehavende verdedigingen en bij Real een reservekeeper: de markt rekent op ongeveer 4,5 goals."
+      },
+      "sources": [
+        {
+          "label": "Sportsbettingdime: doelpuntenmakers",
+          "url": "https://www.sportsbettingdime.com/news/soccer/barcelona-vs-real-madrid-predictions-odds-oct-25/"
+        },
+        {
+          "label": "Goal.com: Clásico goal fest",
+          "url": "https://www.goal.com/en-us/betting/tips/barcelona-vs-real-madrid-predictions-10-25-26/A%3Abltbefc9e617722778e"
+        },
+        {
+          "label": "Bookmakersreview: odds",
+          "url": "https://www.bookmakersreview.com/industry/el-clasico-odds-barca-vs-real-madrid-team-news-trends/"
+        }
+      ],
+      "result": null,
+      "id": "clasico-barca-1-verschil",
+      "market": "Winstmarge",
+      "pick": "Barcelona wint met precies 1 doelpunt verschil",
+      "odd": 3.6,
+      "winChance": 25,
+      "confidence": 2,
+      "oddNote": "Prijs indicatief (winstmarge-markt, geschat 3.40-4.00)",
+      "reasoning": "Een Clásico die tot de laatste minuut op het randje is: Barça wint, maar net (2-1, 3-2, 4-3).",
+      "keyFactors": [
+        "Barça ongeveer 60% winstkans",
+        "Bij veel goals aan beide kanten is een klein verschil waarschijnlijk",
+        "Previews voorspellen 2-1, 3-1 en 5-3",
+        "Onze kans: ongeveer 25%"
+      ],
+      "analysis": [
+        "Bookmakers rekenen in deze Clásico op ongeveer 4,5 goals: over 4.5 staat rond +110 tot +118 (2.10-2.18), Barcelona rond 1.61, gelijk 5.75 en Real 3.70. Barça mist Olmo, Eric García en Christensen en waarschijnlijk Koundé. Real speelt zonder Vinícius (geschorst), Rodrygo, Mendy en Asencio, en sinds vanmiddag ook zonder Courtois (griep).",
+        "Van alle Barça-zeges eindigt ongeveer 40% met één doelpunt verschil, dus ongeveer 25% van alle uitslagen. Deze bet is tot de laatste minuut spannend: elke goal van Real of Barça verandert alles.",
+        "Dit is een fun-bet voor bij het kijken, op jouw verzoek. Hij staat buiten Claudes scorebord, net als de jackpots. Zet er een klein bedrag op."
+      ],
+      "risks": "Een ruime Barça-zege (3-1) of een gelijkspel en de bet gaat verloren."
     }
   ],
   "top": [
