@@ -1,0 +1,104 @@
+{
+  "date": "2026-10-26",
+  "headline": "Maandag: één tip, de Cowboys in Philadelphia",
+  "intro": "Een dunne maandag en nog altijd een strenge periode: daarom maar één tip, de Cowboys op Monday Night Football tegen een Eagles zonder Jalen Hurts. Odds zijn indicatief, check de prijs bij je eigen bookmaker. 18+, speel bewust.",
+  "generatedAt": "2026-10-26T00:20:00+01:00",
+  "review": "Zondag ging fout: Liverpool won met 2-0 van Brighton en Brighton scoorde voor het eerst dit seizoen niet. Daarmee was beide teams scoren (−5) verloren. We hadden te veel vertrouwd op de serie van Brighton en te weinig gekeken naar zijn vier clean sheets op rij en de afwezigheid van drie spitsen. De combi Clásico + Knicks staat nog open: de BTTS-leg won (Barça - Real 1-2), en de Knicks speelden tijdens het schrijven nog. Van de fun-bets op jouw verzoek viel 'Mbappé én Raphinha scoren' (3.40) goed, net als de losse bets op Mbappé en Raphinha. De vijf jackpots verloren, omdat het bij drie goals bleef en Yamal niet scoorde. Het saldo van de laatste 7 dagen is nu −12 (exclusief de open combi), en als de Knicks verliezen −17. Daarom werken we vandaag volgens de strengste regel: maximaal 3 tips, alleen markten met een modelkans boven 60%, en geen BTTS-markten zonder harde onderbouwing aan beide kanten.",
+  "picks": [
+    {
+      "id": "nfl-cowboys-eagles",
+      "sport": "american-football",
+      "match": "Philadelphia Eagles - Dallas Cowboys",
+      "home": {
+        "name": "Eagles",
+        "espnName": "Philadelphia Eagles",
+        "short": "PHI",
+        "c1": "#004C54",
+        "c2": "#A5ACAF"
+      },
+      "away": {
+        "name": "Cowboys",
+        "espnName": "Dallas Cowboys",
+        "short": "DAL",
+        "c1": "#003594",
+        "c2": "#869397"
+      },
+      "espn": {
+        "league": "football/nfl",
+        "date": "20261026"
+      },
+      "competition": "NFL (Monday Night Football)",
+      "kickoff": "01:15 (nacht)",
+      "market": "Winnaar (moneyline)",
+      "pick": "Cowboys winnen",
+      "odd": 1.47,
+      "oddNote": "Cowboys −205 tot −230 (1.43-1.49), spread −4.5, total 44.5 (Covers/SI), 25 okt",
+      "confidence": 4,
+      "winChance": 72,
+      "level": "lager",
+      "reasoning": "Philadelphia speelt zonder Jalen Hurts (bloedstolsels, seizoen voorbij), DeVonta Smith en Wicks, met reserve Tanner McKee als quarterback, terwijl Dallas juist spelers terugkrijgt.",
+      "keyFactors": [
+        "Jalen Hurts op injured reserve, uit voor het seizoen; Tanner McKee start",
+        "Eagles missen ook WR DeVonta Smith (hamstring) en Dontayvion Wicks (enkel)",
+        "Saquon Barkley twijfelachtig (hamstring), Greenard en Hunt twijfelachtig",
+        "Cowboys krijgen Overshown en Cobie Durant terug in de verdediging",
+        "Eagles dekten de spread dit seizoen nog geen enkele keer thuis (1-5 ATS)"
+      ],
+      "analysis": [
+        "Beide ploegen staan op 2-4, maar de stand vertelt niet alles. Philadelphia kreeg deze week het zwaarste nieuws van het seizoen: Jalen Hurts staat met bloedstolsels op injured reserve en speelt dit jaar niet meer. Reservequarterback Tanner McKee start, en hij mist bovendien zijn tweede ontvanger DeVonta Smith (hamstring) en Dontayvion Wicks (enkel). Saquon Barkley staat twijfelachtig met een hamstringblessure, maar trainde zaterdag volledig mee.",
+        "Dallas wordt juist sterker. Linebacker DeMarvion Overshown, die sinds week 1 niet speelde, en cornerback Cobie Durant (uit sinds week 2) keren terug. Dat is precies wat je wilt tegen een aanval die het nu met een reserve-quarterback en een uitgedunde ontvangersgroep moet doen. De bookmakers maken Dallas daarom favoriet als uitploeg met −4.5, en op de moneyline met −205 tot −230.",
+        "Waarom de moneyline en niet de spread? Bij −4.5 is een zege met 3 punten, de meest voorkomende marge in de NFL, al genoeg om de handicap te verliezen. Op een dag dat we streng moeten zijn, kiezen we de zekerdere markt. Wij schatten de kans op ongeveer 72%, iets hoger dan de 68% van de odd 1.47, omdat de afwezigheid van Hurts en Smith in de prijs volgens ons nog onderschat wordt.",
+        "Philadelphia heeft dit seizoen thuis de spread nog geen enkele keer gedekt (1-5 ATS). Monday Night Football in een vol Lincoln Financial Field kan voor wat extra energie zorgen, maar met zo'n lange blessurelijst verwachten we dat Dallas de wedstrijd controleert."
+      ],
+      "risks": "Divisieduels zijn grillig, en een sterke avond van Barkley en een agressieve Eagles-verdediging kan het spel van Dallas ontregelen. De status van Dak Prescott hebben we niet apart kunnen bevestigen.",
+      "lineups": {
+        "status": "verwacht",
+        "home": {
+          "formation": "QB Tanner McKee",
+          "missing": [
+            "Jalen Hurts (QB, IR)",
+            "DeVonta Smith (hamstring)",
+            "Dontayvion Wicks (enkel)",
+            "Saquon Barkley (twijfel)",
+            "Greenard en Hunt (twijfel)"
+          ],
+          "note": "Reserve-QB met een uitgedunde ontvangersgroep"
+        },
+        "away": {
+          "formation": "Cowboys met Overshown en Durant terug",
+          "missing": [],
+          "note": "Verdediging weer bijna compleet"
+        },
+        "impact": "Het verschil tussen Hurts en McKee, plus het ontbreken van Smith, maakt de Eagles-aanval veel minder gevaarlijk. Daardoor is de Cowboys-zege het meest waarschijnlijk."
+      },
+      "sources": [
+        {
+          "label": "SI: Cowboys - Eagles odds en blessures",
+          "url": "https://www.si.com/betting/cowboys-vs-eagles-prediction-odds-spread-injuries-trends-for-nfl-week-7-2026"
+        },
+        {
+          "label": "Inquirer: Eagles - Cowboys",
+          "url": "https://www.inquirer.com/eagles/eagles-cowboys-newsletter-nfl-20261025.html"
+        },
+        {
+          "label": "Keystone Newsroom: Eagles zonder Hurts",
+          "url": "https://keystonenewsroom.com/news/sports/eagles-still-trying-to-salvage-nfc-east-crown-without-hurts-as-they-host-cowboys-on-monday-night/"
+        }
+      ],
+      "result": null
+    }
+  ],
+  "top": [
+    {
+      "id": "nfl-cowboys-eagles",
+      "why": "De Eagles spelen zonder Hurts en Smith. Wij schatten 72% kans, de odd 1.47 rekent met 68%. Het is de enige tip van vandaag."
+    }
+  ],
+  "quiet": [
+    "Santa Clara - Benfica: Benfica wint waarschijnlijk (1.33-1.38), maar dat is te laag voor een losse tip, en de kans van ongeveer 72% is te laag voor een combi-leg.",
+    "Sevilla - Osasuna: de markt geeft Sevilla maar 1.92 en de previews voorspellen 1-1. Geen duidelijke kant.",
+    "Heat - Mavericks: Heat −8.5, maar Miami staat op 0-3 en Flagg twijfelt. Te onzeker.",
+    "Warriors - Nuggets en Hawks - Rockets: veel twijfelgevallen op de blessurelijsten; overgeslagen.",
+    "Geen combi en geen jackpot: met een saldo rond de −15 houden we het bij één tip."
+  ]
+}

@@ -95,7 +95,7 @@
           "url": "https://www.squawka.com/en/news/sunday-acca-tips-today-25-10-2026/"
         }
       ],
-      "result": null,
+      "result": "lost",
       "lineupCheck": {
         "at": "13:10",
         "status": "bevestigd",
@@ -136,7 +136,7 @@
           "market": "Beide teams scoren",
           "pick": "Beide teams scoren: ja",
           "odd": 1.25,
-          "result": null
+          "result": "won"
         },
         {
           "match": "New York Knicks - Orlando Magic",
@@ -307,7 +307,7 @@
           "url": "https://www.bookmakersreview.com/industry/el-clasico-odds-barca-vs-real-madrid-team-news-trends/"
         }
       ],
-      "result": null,
+      "result": "lost",
       "id": "clasico-btts-beide-helften",
       "market": "Beide teams scoren in beide helften",
       "pick": "Beide teams scoren in de 1e én de 2e helft",
@@ -392,7 +392,7 @@
           "url": "https://www.bookmakersreview.com/industry/el-clasico-odds-barca-vs-real-madrid-team-news-trends/"
         }
       ],
-      "result": null,
+      "result": "lost",
       "id": "clasico-over-5-5",
       "market": "Aantal doelpunten",
       "pick": "Over 5.5 doelpunten (6 of meer)",
@@ -477,7 +477,7 @@
           "url": "https://www.bookmakersreview.com/industry/el-clasico-odds-barca-vs-real-madrid-team-news-trends/"
         }
       ],
-      "result": null,
+      "result": "won",
       "id": "clasico-mbappe-raphinha",
       "market": "Doelpuntenmakers (bet builder)",
       "pick": "Mbappé én Raphinha scoren allebei",
@@ -562,7 +562,7 @@
           "url": "https://www.bookmakersreview.com/industry/el-clasico-odds-barca-vs-real-madrid-team-news-trends/"
         }
       ],
-      "result": null,
+      "result": "lost",
       "id": "clasico-yamal-barca-wint",
       "market": "Doelpuntenmaker + uitslag (bet builder)",
       "pick": "Lamine Yamal scoort én Barcelona wint",
@@ -647,7 +647,7 @@
           "url": "https://www.bookmakersreview.com/industry/el-clasico-odds-barca-vs-real-madrid-team-news-trends/"
         }
       ],
-      "result": null,
+      "result": "lost",
       "id": "clasico-barca-1-verschil",
       "market": "Winstmarge",
       "pick": "Barcelona wint met precies 1 doelpunt verschil",
@@ -732,7 +732,7 @@
           "url": "https://www.bookmakersreview.com/industry/el-clasico-odds-barca-vs-real-madrid-team-news-trends/"
         }
       ],
-      "result": null,
+      "result": "lost",
       "id": "clasico-over-4-5",
       "market": "Aantal doelpunten",
       "pick": "Over 4.5 doelpunten (5 of meer)",
@@ -816,7 +816,7 @@
           "url": "https://www.bookmakersreview.com/industry/el-clasico-odds-barca-vs-real-madrid-team-news-trends/"
         }
       ],
-      "result": null,
+      "result": "won",
       "id": "clasico-mbappe-scoort",
       "market": "Doelpuntenmaker",
       "pick": "Mbappé scoort (op elk moment)",
@@ -900,7 +900,7 @@
           "url": "https://www.bookmakersreview.com/industry/el-clasico-odds-barca-vs-real-madrid-team-news-trends/"
         }
       ],
-      "result": null,
+      "result": "lost",
       "id": "clasico-yamal-scoort",
       "market": "Doelpuntenmaker",
       "pick": "Lamine Yamal scoort (op elk moment)",
@@ -984,7 +984,7 @@
           "url": "https://www.bookmakersreview.com/industry/el-clasico-odds-barca-vs-real-madrid-team-news-trends/"
         }
       ],
-      "result": null,
+      "result": "won",
       "id": "clasico-raphinha-scoort",
       "market": "Doelpuntenmaker",
       "pick": "Raphinha scoort (op elk moment)",
@@ -1068,7 +1068,7 @@
           "url": "https://www.bookmakersreview.com/industry/el-clasico-odds-barca-vs-real-madrid-team-news-trends/"
         }
       ],
-      "result": null,
+      "result": "lost",
       "id": "clasico-barca-wint-btts",
       "market": "Uitslag + beide teams scoren",
       "pick": "Barcelona wint én beide teams scoren",
@@ -1126,7 +1126,7 @@
           "pick": "Barcelona wint",
           "odd": 1.61,
           "oddNote": "Prijs indicatief",
-          "result": null
+          "result": "lost"
         },
         {
           "match": "Barcelona - Real Madrid",
@@ -1153,7 +1153,7 @@
           "pick": "Lamine Yamal scoort",
           "odd": 2.0,
           "oddNote": "Prijs indicatief",
-          "result": null
+          "result": "lost"
         },
         {
           "match": "Barcelona - Real Madrid",
@@ -1180,7 +1180,7 @@
           "pick": "Raphinha scoort",
           "odd": 1.87,
           "oddNote": "Prijs indicatief",
-          "result": null
+          "result": "won"
         },
         {
           "match": "Barcelona - Real Madrid",
@@ -1207,7 +1207,7 @@
           "pick": "Over 5.5 doelpunten",
           "odd": 3.25,
           "oddNote": "Prijs indicatief",
-          "result": null
+          "result": "lost"
         },
         {
           "match": "Barcelona - Real Madrid",
@@ -1234,7 +1234,7 @@
           "pick": "Beide teams scoren: ja",
           "odd": 1.25,
           "oddNote": "Prijs indicatief",
-          "result": null
+          "result": "won"
         }
       ],
       "reasoning": "Barcelona wint een doelpuntenfestijn, met goals van Yamal en Raphinha en een Real-goal erbij.",
@@ -1266,7 +1266,7 @@
           "url": "https://www.bookmakersreview.com/industry/el-clasico-odds-barca-vs-real-madrid-team-news-trends/"
         }
       ],
-      "result": null
+      "result": "lost"
     },
     {
       "id": "jp-clasico-real-stunt",
@@ -1304,7 +1304,7 @@
           "pick": "Real Madrid wint",
           "odd": 3.7,
           "oddNote": "Prijs indicatief",
-          "result": null
+          "result": "won"
         },
         {
           "match": "Barcelona - Real Madrid",
@@ -1331,7 +1331,7 @@
           "pick": "Mbappé scoort",
           "odd": 2.05,
           "oddNote": "Prijs indicatief",
-          "result": null
+          "result": "won"
         },
         {
           "match": "Barcelona - Real Madrid",
@@ -1358,7 +1358,7 @@
           "pick": "Over 4.5 doelpunten",
           "odd": 2.15,
           "oddNote": "Prijs indicatief",
-          "result": null
+          "result": "lost"
         },
         {
           "match": "Barcelona - Real Madrid",
@@ -1385,7 +1385,7 @@
           "pick": "Beide teams scoren: ja",
           "odd": 1.25,
           "oddNote": "Prijs indicatief",
-          "result": null
+          "result": "won"
         }
       ],
       "reasoning": "Real wint ondanks alle afwezigen, Mbappé scoort, en het wordt een wedstrijd met minstens vijf goals.",
@@ -1416,7 +1416,7 @@
           "url": "https://www.bookmakersreview.com/industry/el-clasico-odds-barca-vs-real-madrid-team-news-trends/"
         }
       ],
-      "result": null
+      "result": "lost"
     },
     {
       "id": "jp-clasico-sterren",
@@ -1454,7 +1454,7 @@
           "pick": "Mbappé scoort",
           "odd": 2.05,
           "oddNote": "Prijs indicatief",
-          "result": null
+          "result": "won"
         },
         {
           "match": "Barcelona - Real Madrid",
@@ -1481,7 +1481,7 @@
           "pick": "Raphinha scoort",
           "odd": 1.87,
           "oddNote": "Prijs indicatief",
-          "result": null
+          "result": "won"
         },
         {
           "match": "Barcelona - Real Madrid",
@@ -1508,7 +1508,7 @@
           "pick": "Lamine Yamal scoort",
           "odd": 2.0,
           "oddNote": "Prijs indicatief",
-          "result": null
+          "result": "lost"
         },
         {
           "match": "Barcelona - Real Madrid",
@@ -1535,7 +1535,7 @@
           "pick": "Over 5.5 doelpunten",
           "odd": 3.25,
           "oddNote": "Prijs indicatief",
-          "result": null
+          "result": "lost"
         }
       ],
       "reasoning": "Mbappé, Raphinha en Yamal scoren allemaal, in een wedstrijd met zes of meer goals.",
@@ -1566,7 +1566,7 @@
           "url": "https://www.bookmakersreview.com/industry/el-clasico-odds-barca-vs-real-madrid-team-news-trends/"
         }
       ],
-      "result": null
+      "result": "lost"
     },
     {
       "id": "jp-clasico-tot-het-eind",
@@ -1604,7 +1604,7 @@
           "pick": "Beide teams scoren in beide helften",
           "odd": 4.5,
           "oddNote": "Prijs indicatief",
-          "result": null
+          "result": "lost"
         },
         {
           "match": "Barcelona - Real Madrid",
@@ -1631,7 +1631,7 @@
           "pick": "Barcelona wint",
           "odd": 1.61,
           "oddNote": "Prijs indicatief",
-          "result": null
+          "result": "lost"
         },
         {
           "match": "Barcelona - Real Madrid",
@@ -1658,7 +1658,7 @@
           "pick": "Mbappé scoort",
           "odd": 2.05,
           "oddNote": "Prijs indicatief",
-          "result": null
+          "result": "won"
         },
         {
           "match": "Barcelona - Real Madrid",
@@ -1685,7 +1685,7 @@
           "pick": "Lamine Yamal scoort",
           "odd": 2.0,
           "oddNote": "Prijs indicatief",
-          "result": null
+          "result": "lost"
         }
       ],
       "reasoning": "Beide ploegen scoren in elke helft, Barça wint, en zowel Mbappé als Yamal scoort.",
@@ -1716,7 +1716,7 @@
           "url": "https://www.bookmakersreview.com/industry/el-clasico-odds-barca-vs-real-madrid-team-news-trends/"
         }
       ],
-      "result": null
+      "result": "lost"
     },
     {
       "id": "jp-clasico-gelijk-thriller",
@@ -1754,7 +1754,7 @@
           "pick": "Gelijkspel",
           "odd": 5.75,
           "oddNote": "Prijs indicatief",
-          "result": null
+          "result": "lost"
         },
         {
           "match": "Barcelona - Real Madrid",
@@ -1781,7 +1781,7 @@
           "pick": "Over 3.5 doelpunten",
           "odd": 1.55,
           "oddNote": "Prijs indicatief",
-          "result": null
+          "result": "lost"
         },
         {
           "match": "Barcelona - Real Madrid",
@@ -1808,7 +1808,7 @@
           "pick": "Mbappé scoort",
           "odd": 2.05,
           "oddNote": "Prijs indicatief",
-          "result": null
+          "result": "won"
         },
         {
           "match": "Barcelona - Real Madrid",
@@ -1835,7 +1835,7 @@
           "pick": "Raphinha scoort",
           "odd": 1.87,
           "oddNote": "Prijs indicatief",
-          "result": null
+          "result": "won"
         }
       ],
       "reasoning": "Een gelijkspel met minstens vier goals, met Mbappé en Raphinha allebei op het scoreformulier (bijv. 2-2 of 3-3).",
@@ -1866,7 +1866,7 @@
           "url": "https://www.bookmakersreview.com/industry/el-clasico-odds-barca-vs-real-madrid-team-news-trends/"
         }
       ],
-      "result": null
+      "result": "lost"
     }
   ],
   "top": [
