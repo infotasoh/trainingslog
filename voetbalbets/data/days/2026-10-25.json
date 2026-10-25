@@ -200,6 +200,7 @@
         "away": {
           "formation": "Real 4-3-3 / Magic zonder Banchero",
           "missing": [
+            "Real: Courtois (griep)",
             "Real: Vinícius (geschorst)",
             "Rodrygo",
             "Asencio",
@@ -210,7 +211,7 @@
             "Nelson",
             "Black (twijfel)"
           ],
-          "note": "Real verwacht: Courtois; Valverde, Rüdiger, Konaté, Cucurella; Camavinga, Tchouaméni, Güler; Bellingham, Diomande; Mbappé"
+          "note": "Real verwacht: reservekeeper; Valverde, Rüdiger, Konaté, Cucurella; Camavinga, Tchouaméni, Güler; Bellingham, Diomande; Mbappé"
         },
         "impact": "Gehavende verdedigingen in de Clásico vergroten de kans dat beide ploegen scoren. Zonder Banchero mist Orlando zijn beste scorer en spelmaker."
       },
@@ -238,9 +239,9 @@
       ],
       "result": null,
       "lineupCheck": {
-        "at": "13:10",
+        "at": "19:10",
         "status": "bevestigd",
-        "note": "Barça mist Koundé naar verwachting, en Real is ook Mendy kwijt. Daardoor zijn beide verdedigingen gehavend, wat de BTTS-leg helpt. Bij de Knicks twijfelt alleen Alvarado, bij Orlando Black. De combi blijft staan."
+        "note": "Real mist ook Courtois (griep), dus de BTTS-leg wordt sterker. Koundé twijfelt nog en Lamine Yamal is fit. Bij de Knicks twijfelt alleen Alvarado, Orlando speelt zonder Banchero, Isaac, Penda en Nelson, en Black twijfelt. De combi blijft staan."
       }
     }
   ],
