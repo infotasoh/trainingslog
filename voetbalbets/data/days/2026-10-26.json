@@ -59,15 +59,20 @@
             "Jalen Hurts (QB, IR)",
             "DeVonta Smith (hamstring)",
             "Dontayvion Wicks (enkel)",
-            "Saquon Barkley (twijfel)",
-            "Greenard en Hunt (twijfel)"
+            "Nolan Smith (hersenschudding)",
+            "Michael Carter II (buik)",
+            "Barkley, Dickerson, Greenard en Hunt (twijfel)"
           ],
-          "note": "Reserve-QB met een uitgedunde ontvangersgroep"
+          "note": "QB Tanner McKee; Barkley trainde zaterdag volledig mee en speelt naar verwachting"
         },
         "away": {
           "formation": "Cowboys met Overshown en Durant terug",
-          "missing": [],
-          "note": "Verdediging weer bijna compleet"
+          "missing": [
+            "KaVontae Turpin (ribben)",
+            "Drew Shelton (hamstring)",
+            "Dee Winters (kuit/achilles)"
+          ],
+          "note": "Overshown en Cobie Durant terug, Pickens en Porter Jr. zonder status"
         },
         "impact": "Het verschil tussen Hurts en McKee, plus het ontbreken van Smith, maakt de Eagles-aanval veel minder gevaarlijk. Daardoor is de Cowboys-zege het meest waarschijnlijk."
       },
@@ -85,7 +90,12 @@
           "url": "https://keystonenewsroom.com/news/sports/eagles-still-trying-to-salvage-nfc-east-crown-without-hurts-as-they-host-cowboys-on-monday-night/"
         }
       ],
-      "result": null
+      "result": null,
+      "lineupCheck": {
+        "at": "13:10",
+        "status": "bevestigd",
+        "note": "Final injury report: bij de Eagles vallen zeven spelers uit, onder wie Smith, Wicks, Nolan Smith en Carter II, en McKee start. Barkley speelt waarschijnlijk. Dallas mist alleen rollenspelers (Turpin, Shelton, Winters). Over Prescott is er geen blessurenieuws. De tip blijft staan op 72%."
+      }
     }
   ],
   "top": [
