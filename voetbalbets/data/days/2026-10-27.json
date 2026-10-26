@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-27",
+  "headline": "Dinsdag: alleen Roma, met een buffer",
+  "intro": "Het saldo staat op −17, dus vandaag geldt de strengste regel: alleen markten met een kans boven de 60%. Op een rustige dinsdag levert dat één tip op. Odds zijn indicatief, check de prijs bij je eigen bookmaker. 18+, speel bewust.",
+  "generatedAt": "2026-10-27T00:25:00+01:00",
+  "review": "Zondag ging volledig fout: −10. Liverpool won met 2-0 van Brighton (geen BTTS), en in de combi won de Clásico-leg (1-2, beide teams scoorden), maar de Knicks gingen thuis met 102-111 onderuit tegen een Orlando zonder Banchero. New York stond met nog 9 minuten te spelen 10 punten voor, maar Franz Wagner scoorde er 21 in het laatste kwart. De les: een thuisfavoriet die zelf 0-2 staat is geen 76%-leg, hoe groot de afwezigen bij de tegenstander ook zijn. We gaven te veel gewicht aan de blessurelijst en te weinig aan de vorm van de Knicks. Het saldo over 7 dagen is nu −17 (vrijdag −8, zaterdag +1, zondag −10). De Cowboys-tip van maandag speelde nog toen we dit schreven. Daarom geldt vandaag de strengste regel: maximaal 3 tips, alleen markten met een modelkans boven 60%, geen combi's met NBA-legs en geen favorieten die zelf in slechte vorm zijn.",
+  "picks": [
+    {
+      "id": "roma-cagliari",
+      "sport": "voetbal",
+      "match": "Roma - Cagliari",
+      "home": {
+        "name": "Roma",
+        "espnName": "AS Roma",
+        "short": "ROM",
+        "c1": "#8E1F2F",
+        "c2": "#F0BC42"
+      },
+      "away": {
+        "name": "Cagliari",
+        "short": "CAG",
+        "c1": "#002350",
+        "c2": "#A6192E"
+      },
+      "espn": {
+        "league": "soccer/ita.1",
+        "date": "20261027"
+      },
+      "competition": "Serie A",
+      "kickoff": "20:45",
+      "market": "Uitslag + aantal doelpunten",
+      "pick": "Roma wint én under 4.5 doelpunten",
+      "odd": 1.65,
+      "oddNote": "1 + under 4.5 op 1.65 (Bottadiculo); Roma-zege 1.33-1.37 (AdmiralBet, StarVegas, Marathonbet), 26 okt",
+      "confidence": 4,
+      "winChance": 65,
+      "level": "lager",
+      "reasoning": "Roma is ongeslagen, staat derde en speelt thuis tegen een Cagliari dat twee keer op rij verloor. De under 4.5 kost bijna geen kans maar tilt de odd van 1.35 naar 1.65.",
+      "keyFactors": [
+        "Roma onder Gasperini ongeslagen, derde met 18 punten",
+        "Cagliari verloor de laatste twee duels en mist Winks, Felici en Idrissi",
+        "Bookmakers: Roma-zege ongeveer 71%, Cagliari maar 10%",
+        "Roma mist Svilar (Gollini in doel) en Koné; Gasperini roteert na 3-3 in Napels",
+        "Kans dat het bij een Roma-zege onder de 5 goals blijft: ongeveer 92%"
+      ],
+      "analysis": [
+        "Roma is onder Gian Piero Gasperini nog ongeslagen in de Serie A en staat derde met 18 punten. Zaterdag speelde de ploeg in Napels een spectaculaire 3-3. Cagliari komt naar het Olimpico na twee nederlagen op rij en mist middenvelder Harry Winks, Felici en Idrissi. De bookmakers geven Roma ongeveer 71% kans op de zege (1.33-1.37) en Cagliari maar 10%.",
+        "Een Roma-zege alleen is met 1.35 te laag voor een losse tip. Daarom koppelen we er een under 4.5 aan: alleen bij een uitslag als 4-1, 5-0 of 3-2 gaat dat mis. Bij een thuiszege van een favoriet eindigt ongeveer 9 van de 10 keer onder de vijf goals. Dat brengt de kans op ongeveer 65% (71% × 92%), tegen de 61% die de odd van 1.65 aangeeft.",
+        "Er is wel een kanttekening. Gasperini heeft rotatie aangekondigd na de zware wedstrijd in Napels: Hermoso rust waarschijnlijk, Pisilli en Mora krijgen een kans, en Malen staat alleen voorin. Keeper Svilar is nog uitgeschakeld (stressfractuur), dus Gollini staat onder de lat. Dybala twijfelt. Daarom blijft het vertrouwen op 4 en niet hoger.",
+        "Vergeleken met de fouten van het weekend is dit een ander type bet. Het is een favoriet in vorm (ongeslagen) tegen een tegenstander in een dip, en niet een favoriet die zelf slecht draait, zoals de Knicks."
+      ],
+      "risks": "Door de rotatie bij Roma kan het een stroeve wedstrijd worden, en een gelijkspel (ongeveer 19%) is de grootste bedreiging. Een doelpuntenfestijn als in Napels (3-3) kan de under breken.",
+      "lineups": {
+        "status": "verwacht",
+        "home": {
+          "formation": "3-4-2-1",
+          "missing": [
+            "Svilar (stressfractuur)",
+            "Koné",
+            "Dybala (twijfel)"
+          ],
+          "note": "Gollini; Mancini, Ndicka, Hermoso/Balerdi; Molina, Cristante, Pisilli, Wesley; Soulé, Mora; Malen"
+        },
+        "away": {
+          "formation": "4-3-1-2",
+          "missing": [
+            "Winks",
+            "Felici",
+            "Idrissi"
+          ],
+          "note": "Caprile; Zé Pedro, Mina, J. Rodríguez, Obert; Romano, Adopo, Gagliardini; Maldini; Mendy/Kevin Carlos"
+        },
+        "impact": "Roma roteert, maar het niveauverschil blijft groot. Cagliari mist met Winks zijn balverdeler op het middenveld."
+      },
+      "sources": [
+        {
+          "label": "Infobetting Roma - Cagliari",
+          "url": "https://www.infobetting.com/blog/roma-cagliari-27-10-2026-formazioni-quote-pronostici-20262027-serie-a/"
+        },
+        {
+          "label": "Forzaroma: probabili formazioni",
+          "url": "https://www.forzaroma.info/formazioni/roma-cagliari-le-probabili-formazioni-hermoso-a-riposo-ce-pisilli-chance-mora/"
+        },
+        {
+          "label": "Bottadiculo Serie A",
+          "url": "https://www.bottadiculo.it/scommesse/pronostici/calcio/italia/serie-a/"
+        }
+      ],
+      "result": null
+    }
+  ],
+  "top": [
+    {
+      "id": "roma-cagliari",
+      "why": "De enige tip die vandaag boven de 60% komt: ongeveer 65% kans tegen 61% volgens de odd 1.65."
+    }
+  ],
+  "quiet": [
+    "Torino - Como: Como 1.73 (ongeveer 58%), maar Torino won drie keer op rij. Te weinig voor onze grens van 60%.",
+    "Sassuolo - Lazio: de markt is verdeeld (Lazio 2.10) en we zien geen concrete reden voor een kant.",
+    "Pistons - Knicks: de Knicks staan op 0-3 en Detroit mist Duren. Na zondag even geen Knicks.",
+    "NHL (Bruins - Hurricanes, Leafs - Flames): de keepers waren nog niet bevestigd.",
+    "Geen combi en geen jackpot: met een saldo van −17 houden we het bij één tip."
+  ]
+}

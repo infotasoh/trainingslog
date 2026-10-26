@@ -165,7 +165,7 @@
           "pick": "Knicks winnen",
           "odd": 1.33,
           "oddNote": "Prijs indicatief (afgeleid van −7.5)",
-          "result": null
+          "result": "lost"
         }
       ],
       "reasoning": "In de Clásico scoorden beide ploegen in vijf van de laatste zes duels, en beide verdedigingen zijn gehavend. De Knicks spelen thuis tegen een Magic zonder Banchero en met nog drie andere afwezigen.",
@@ -237,7 +237,7 @@
           "url": "https://sports.yahoo.com/articles/game-preview-knicks-vs-magic-035628469.html"
         }
       ],
-      "result": null,
+      "result": "lost",
       "lineupCheck": {
         "at": "19:10",
         "status": "bevestigd",
