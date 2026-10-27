@@ -57,9 +57,10 @@
           "missing": [
             "Svilar (stressfractuur)",
             "Koné",
-            "Dybala (twijfel)"
+            "Pellegrini",
+            "Dybala (niet zeker in selectie, voorzorg)"
           ],
-          "note": "Gollini; Mancini, Ndicka, Hermoso/Balerdi; Molina, Cristante, Pisilli, Wesley; Soulé, Mora; Malen"
+          "note": "Gollini; Mancini, Ndicka, Balerdi; Molina, Cristante, Pisilli, Wesley; Soulé, Mora; Malen. Gasperini kondigt rotaties aan"
         },
         "away": {
           "formation": "4-3-1-2",
@@ -86,7 +87,12 @@
           "url": "https://www.bottadiculo.it/scommesse/pronostici/calcio/italia/serie-a/"
         }
       ],
-      "result": null
+      "result": null,
+      "lineupCheck": {
+        "at": "13:10",
+        "status": "bevestigd",
+        "note": "Svilar, Koné en Pellegrini ontbreken. Of Dybala bij de selectie zit is onduidelijk; volgens meerdere bronnen rust hij uit voorzorg. Soulé, Mora en Malen starten. Bij Cagliari is er geen nieuws. De tip blijft staan op 65%."
+      }
     }
   ],
   "top": [
