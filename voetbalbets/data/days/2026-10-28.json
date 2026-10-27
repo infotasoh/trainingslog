@@ -1,18 +1,289 @@
 {
   "date": "2026-10-28",
-  "headline": "Woensdag: vandaag geen tip",
-  "intro": "Met een saldo van −19 gelden de strengste regels, en vandaag haalt geen enkele bet de lat van meer dan 60% kans met positieve verwachte winst. Daarom slaan we een dag over. Dat is ook een keuze. 18+, speel bewust.",
-  "generatedAt": "2026-10-28T00:30:00+01:00",
+  "headline": "Woensdag: vijf NBA-tips voor vannacht",
+  "intro": "Eerst stond hier 'geen tip', maar op jouw verzoek toch vijf NBA-tips voor de wedstrijden van 00:30 en 01:00: Celtics - Nets, Knicks - Pistons en Spurs - Kings. Let op: met een saldo van −19 zijn deze tips niet getoetst aan onze strenge 60%-regel; twee ervan zijn hoger-tips. Odds zijn indicatief, check de prijs bij je eigen bookmaker. 18+, speel bewust.",
+  "generatedAt": "2026-10-28T00:45:00+01:00",
   "review": "Maandag zat goed: de Cowboys wonnen met 38-21 in Philadelphia (+3). De Eagles zonder Hurts en Smith kwamen in de tweede helft niet meer tot scoren, precies zoals de analyse voorspelde. Dinsdag ging fout: Roma won met 4-2 van Cagliari, dus de winst klopte, maar met zes goals ging de under 4.5 kapot (−5). Na een 3-3 in Napels hadden we de waarschuwing serieuzer moeten nemen: een ploeg van Gasperini speelt open, en Gollini in het doel maakte Roma kwetsbaarder. De extra goal-voorwaarde kostte ons de bet, terwijl 'Roma wint' alleen goed was geweest. Het saldo over 7 dagen is nu −19 (vr −8, za +1, zo −10, ma +3, di −5). De les van deze week: koppel geen extra voorwaarde aan een goede bet om de odd op te krikken. Liever geen tip dan een tip waarvan de odd kunstmatig is opgehoogd. Daarom geven we vandaag niets: de enige kandidaten (Leverkusen, Hoffenheim en Freiburg in de beker, Inter in Venetië) zijn te laag geprijsd, en een combi daarvan heeft volgens ons een negatieve verwachte winst.",
-  "picks": [],
-  "top": [],
+  "picks": [
+    {
+      "id": "nba-tatum-3pm",
+      "sport": "basketbal",
+      "match": "Boston Celtics - Brooklyn Nets",
+      "home": {
+        "name": "Celtics",
+        "espnName": "Boston Celtics",
+        "short": "BOS",
+        "c1": "#007A33",
+        "c2": "#BA9653"
+      },
+      "away": {
+        "name": "Nets",
+        "espnName": "Brooklyn Nets",
+        "short": "BKN",
+        "c1": "#000000",
+        "c2": "#FFFFFF"
+      },
+      "espn": {
+        "league": "basketball/nba",
+        "date": "20261027"
+      },
+      "competition": "NBA",
+      "kickoff": "00:30 (nacht)",
+      "market": "Speler: driepunters gemaakt",
+      "pick": "Jayson Tatum 3+ driepunters (over 2.5)",
+      "odd": 1.53,
+      "oddNote": "Over 2.5 driepunters −189 (DraftKings, via SI), 27 okt",
+      "confidence": 3,
+      "winChance": 64,
+      "level": "lager",
+      "reasoning": "Brooklyn laat de meeste driepunters per wedstrijd toe en staat 28e in verdedigingspercentage op de driepunter; Boston schiet de meeste driepunters van de competitie.",
+      "keyFactors": [
+        "Nets staan 0-3, 22e in defensive rating en 28e in tegenstanders-3P%",
+        "Celtics maken de meeste driepunters per wedstrijd van de NBA",
+        "Tatum zit nog in een dip: 5 uit 22 van achter de lijn in drie duels",
+        "Celtics spelen een back-to-back, maar de zege van maandag (134-99) kostte weinig energie"
+      ],
+      "analysis": [
+        "Brooklyn begon met drie nederlagen en heeft vooral moeite om de driepunter te verdedigen: tegenstanders maken er per wedstrijd meer dan tegen welk team ook. Boston is het team dat in de hele competitie de meeste driepunters maakt, dus de match-up valt precies op het sterkste wapen van de Celtics.",
+        "Tatum begon koud aan het seizoen (5 uit 22), maar maandag tegen Chicago ging het al beter (2 uit 5). Bij een normaal aantal pogingen (8 tot 10) is drie keer raak voor hem een gewone avond. De odd van 1.53 rekent met ongeveer 65%; wij zitten daar dicht bij, dus dit is geen grote value maar wel een logische speler-tip.",
+        "Waarom niet de handicap van −11.5? Boston speelt de tweede avond van een back-to-back; als het snel uitloopt, rusten de basisspelers. Dat risico geldt hier ook, maar Tatum maakt zijn driepunters meestal in de eerste drie kwarten."
+      ],
+      "risks": "Als Boston bij rust al ver voor staat, speelt Tatum mogelijk geen vierde kwart. Een tweede koude schietavond is ook goed mogelijk. Let op: deze wedstrijd begon om 00:30, controleer of je nog kunt inzetten.",
+      "sources": [
+        {
+          "label": "SI Nets - Celtics 27/10",
+          "url": "https://www.si.com/betting/nets-vs-celtics-prediction-odds-and-best-nba-prop-bets-for-tuesday-oct-27-2026"
+        }
+      ]
+    },
+    {
+      "id": "nba-celtics-nets",
+      "sport": "basketbal",
+      "match": "Boston Celtics - Brooklyn Nets",
+      "home": {
+        "name": "Celtics",
+        "espnName": "Boston Celtics",
+        "short": "BOS",
+        "c1": "#007A33",
+        "c2": "#BA9653"
+      },
+      "away": {
+        "name": "Nets",
+        "espnName": "Brooklyn Nets",
+        "short": "BKN",
+        "c1": "#000000",
+        "c2": "#FFFFFF"
+      },
+      "espn": {
+        "league": "basketball/nba",
+        "date": "20261027"
+      },
+      "competition": "NBA",
+      "kickoff": "00:30 (nacht)",
+      "market": "Handicap (spread)",
+      "pick": "Celtics −11.5",
+      "odd": 1.91,
+      "oddNote": "Celtics −11.5 (−110), moneyline −575, total 222.5 (DraftKings, via SI), 27 okt",
+      "confidence": 3,
+      "winChance": 55,
+      "level": "hoger",
+      "reasoning": "Brooklyn verliest gemiddeld met bijna 13 punten en mist vijf spelers; Boston won vorig seizoen 30 van de 41 thuisduels.",
+      "keyFactors": [
+        "Nets: gemiddeld −12.7 per wedstrijd, 24e in net rating",
+        "Nets missen Bilodeau, Jefferson, Nelson, Powell en Saraf",
+        "Celtics wonnen maandag met 35 verschil van Chicago",
+        "Back-to-back voor Boston: enige team dat vannacht de tweede avond speelt"
+      ],
+      "analysis": [
+        "De gemiddelde marge van Brooklyn (−12.7) ligt al boven de lijn, en dat was tegen Charlotte, Cleveland en Indiana. In Boston, tegen een ploeg die driepunters maakt waar de Nets ze juist weggeven, is een zege met 12 of meer goed denkbaar. SI kiest dezelfde kant.",
+        "De rem is het schema: Boston speelde maandag al. Omdat die wedstrijd een wandeling was, kregen de basisspelers weinig minuten, maar bij een grote voorsprong in het vierde kwart kan de bank de marge laten slinken. Dat maakt dit een hoger-tip: wij schatten 55%, net boven de 52% die de odd aangeeft."
+      ],
+      "risks": "Garbage time: als Boston de basis vroeg laat rusten, kan Brooklyn de achterstand onder de 12 brengen. De wedstrijd begon om 00:30, controleer of je nog kunt inzetten.",
+      "sources": [
+        {
+          "label": "SI Nets - Celtics 27/10",
+          "url": "https://www.si.com/betting/nets-vs-celtics-prediction-odds-and-best-nba-prop-bets-for-tuesday-oct-27-2026"
+        }
+      ]
+    },
+    {
+      "id": "nba-pistons-knicks",
+      "sport": "basketbal",
+      "match": "New York Knicks - Detroit Pistons",
+      "home": {
+        "name": "Knicks",
+        "espnName": "New York Knicks",
+        "short": "NYK",
+        "c1": "#006BB6",
+        "c2": "#F58426"
+      },
+      "away": {
+        "name": "Pistons",
+        "espnName": "Detroit Pistons",
+        "short": "DET",
+        "c1": "#C8102E",
+        "c2": "#1D42BA"
+      },
+      "espn": {
+        "league": "basketball/nba",
+        "date": "20261027"
+      },
+      "competition": "NBA",
+      "kickoff": "01:00 (nacht)",
+      "market": "Handicap (spread)",
+      "pick": "Pistons +4.5",
+      "odd": 1.91,
+      "oddNote": "Pistons +4.5 (−110), moneyline DET +136 / NYK −162, total 218.5 (CBS, Athlon), 27 okt",
+      "confidence": 4,
+      "winChance": 58,
+      "level": "lager",
+      "reasoning": "Detroit is 3-0 en dekte vijf keer op rij als underdog; de Knicks staan 0-3 en dekten de laatste zes duels tegen Detroit niet.",
+      "keyFactors": [
+        "Pistons 3-0 (winst op Boston, Miami en Philadelphia), 3-0 tegen de spread",
+        "Knicks 0-3, niet boven de 103 punten in drie duels",
+        "Knicks dekten zes duels op rij tegen Detroit niet",
+        "Pistons missen Jalen Duren (hamstring, minstens twee weken)",
+        "SportsLine-model: 53% voor Detroit +4.5; Athlon verwacht 112-106 voor Detroit"
+      ],
+      "analysis": [
+        "Dit is precies de les van zondag, maar dan andersom: we spelen niet tegen een favoriet die zelf slecht draait, we kiezen de kant van de ploeg in vorm. De Knicks verloren alle drie hun wedstrijden met minder dan tien punten verschil en kregen geen enkele keer meer dan 103 punten op het bord. Detroit won al in Boston en Philadelphia en verdedigt sterk op de perimeter.",
+        "Met +4.5 hoeft Detroit niet eens te winnen: een nederlaag met vier punten is ook genoeg. De markt geeft de Knicks ongeveer 60% op de winst, maar voor een overwinning met vijf of meer ligt dat duidelijk lager. Wij schatten 58% op deze handicap, tegen 52% volgens de odd.",
+        "Het grootste minpunt is Jalen Duren, de center van Detroit, die minstens twee weken mist. Tegen Towns en Hart kan dat rebounds kosten. Daarom niet hoger dan vertrouwen 4."
+      ],
+      "risks": "Een thuisploeg op 0-3 met de kampioensring kan een reactie geven, en zonder Duren kan Detroit onder de borden tekortkomen. Check de blessurelijst vlak voor 01:00.",
+      "sources": [
+        {
+          "label": "CBS Pistons - Knicks 27/10",
+          "url": "https://www.cbssports.com/betting/news/pistons-vs-knicks-prediction-odds-betting-preview-start-time-nba-picks-best-bets-tuesday-oct-27/"
+        },
+        {
+          "label": "Athlon Pistons - Knicks 27/10",
+          "url": "https://athlonsports.com/nba/detroit-pistons-at-new-york-knicks-nba-prediction-picks-odds-oct27-2026"
+        }
+      ]
+    },
+    {
+      "id": "nba-hart-rebounds",
+      "sport": "basketbal",
+      "match": "New York Knicks - Detroit Pistons",
+      "home": {
+        "name": "Knicks",
+        "espnName": "New York Knicks",
+        "short": "NYK",
+        "c1": "#006BB6",
+        "c2": "#F58426"
+      },
+      "away": {
+        "name": "Pistons",
+        "espnName": "Detroit Pistons",
+        "short": "DET",
+        "c1": "#C8102E",
+        "c2": "#1D42BA"
+      },
+      "espn": {
+        "league": "basketball/nba",
+        "date": "20261027"
+      },
+      "competition": "NBA",
+      "kickoff": "01:00 (nacht)",
+      "market": "Speler: rebounds",
+      "pick": "Josh Hart 8+ rebounds (over 7.5)",
+      "odd": 2.02,
+      "oddNote": "Over 7.5 rebounds +102 (via CBS/SportsLine), 27 okt",
+      "confidence": 3,
+      "winChance": 55,
+      "level": "hoger",
+      "reasoning": "Hart pakt dit seizoen 9,0 rebounds per wedstrijd en zat in elk duel op minstens zeven; Detroit mist zijn center Duren.",
+      "keyFactors": [
+        "Hart: 9,0 rebounds per wedstrijd, in alle drie duels minstens 7",
+        "Al vier seizoenen op rij minstens 7,4 rebounds per wedstrijd",
+        "Pistons zonder Jalen Duren, hun beste rebounder",
+        "SportsLine projecteert 9,2 rebounds"
+      ],
+      "analysis": [
+        "Zonder Duren mist Detroit zijn sterkste man onder de borden, en dat geeft guards en forwards die actief meegaan in de rebound extra kansen. Hart is precies zo'n speler: hij haalt al jaren bijna negen rebounds per wedstrijd als guard/forward.",
+        "De odd van 2.02 rekent met ongeveer 50%. Met een gemiddelde van 9,0 en een projectie van 9,2 schatten wij de kans op acht of meer op 55%. Het is een hoger-tip, omdat rebounds per avond flink kunnen schommelen."
+      ],
+      "risks": "Towns en Robinson pakken veel rebounds weg, en als het schot van de Knicks goed valt, zijn er minder verdedigende rebounds te halen.",
+      "sources": [
+        {
+          "label": "CBS Pistons - Knicks 27/10",
+          "url": "https://www.cbssports.com/betting/news/pistons-vs-knicks-prediction-odds-betting-preview-start-time-nba-picks-best-bets-tuesday-oct-27/"
+        }
+      ]
+    },
+    {
+      "id": "nba-harper-points",
+      "sport": "basketbal",
+      "match": "San Antonio Spurs - Sacramento Kings",
+      "home": {
+        "name": "Spurs",
+        "espnName": "San Antonio Spurs",
+        "short": "SAS",
+        "c1": "#C4CED4",
+        "c2": "#000000"
+      },
+      "away": {
+        "name": "Kings",
+        "espnName": "Sacramento Kings",
+        "short": "SAC",
+        "c1": "#5A2D81",
+        "c2": "#63727A"
+      },
+      "espn": {
+        "league": "basketball/nba",
+        "date": "20261027"
+      },
+      "competition": "NBA",
+      "kickoff": "01:00 (nacht)",
+      "market": "Speler: punten",
+      "pick": "Dylan Harper 18+ punten (over 17.5)",
+      "odd": 1.82,
+      "oddNote": "Over 17.5 punten −122 (DraftKings, via SI), 27 okt; Spurs −17.5, total 231.5",
+      "confidence": 4,
+      "winChance": 60,
+      "level": "lager",
+      "reasoning": "Harper scoorde in elk duel minstens 18 punten en Wembanyama mist deze wedstrijd met een enkelblessure, dus er komen nog meer schoten bij hem terecht.",
+      "keyFactors": [
+        "Wembanyama uit (enkel); Harris en Bassey ook afwezig",
+        "Harper: 20,0 punten op ongeveer 17 schoten per wedstrijd, 48% uit het veld",
+        "In alle drie duels minstens 18 punten en 15+ schoten, ook tegen OKC en Houston",
+        "Kings 0-3, 29e in net rating en een top-5 slechtste verdediging"
+      ],
+      "analysis": [
+        "De belangrijkste nieuwsfactor van vannacht: Victor Wembanyama mist het duel met een enkelverstuiking. Daardoor spelen we geen Spurs-handicap van −17.5; zonder hun ster is zo'n marge te groot. Maar het maakt een tip op Harper juist sterker: de schoten van Wembanyama moeten ergens heen, en Harper is al de nieuwe startende guard en een van de drukste scorers van het team.",
+        "Harper haalde in alle drie de wedstrijden minstens 18 punten, ook tegen de sterke verdedigingen van Oklahoma City en Houston. Nu staat hij tegenover Sacramento, dat bij de slechtste verdedigingen van de competitie hoort. De odd van 1.82 rekent met 55%; wij komen met de extra rol zonder Wembanyama op ongeveer 60%."
+      ],
+      "risks": "Bij een ruime voorsprong kan Harper in het vierde kwart op de bank blijven. Fox en anderen kunnen ook meer schoten opeisen zonder Wembanyama.",
+      "sources": [
+        {
+          "label": "SI Kings - Spurs 27/10",
+          "url": "https://www.si.com/betting/kings-vs-spurs-prediction-odds-and-best-nba-prop-bets-for-tuesday-oct-27-2026"
+        },
+        {
+          "label": "SI injury report Kings - Spurs",
+          "url": "https://www.si.com/nba/kings/news/kings-spurs-injury-report-victor-wembanyama-revealed"
+        }
+      ]
+    }
+  ],
+  "top": [
+    {
+      "id": "nba-harper-points",
+      "why": "Wembanyama mist het duel, dus Harper krijgt nog meer schoten tegen een van de zwakste verdedigingen. Wij schatten 60%, de odd 1.82 rekent met 55%."
+    },
+    {
+      "id": "nba-pistons-knicks",
+      "why": "Detroit in vorm (3-0) tegen Knicks op 0-3; met +4.5 mag Detroit zelfs nipt verliezen. Wij schatten 58% tegen 52% volgens de odd."
+    }
+  ],
   "quiet": [
+    "Spurs −17.5 tegen Sacramento: zonder Wembanyama (enkel) is zo'n marge te groot.",
     "DFB-Pokal: Leverkusen - Nürnberg (1.11-1.20), Kiel - Hoffenheim (1.19) en Freiburg - Wolfsburg (1.22). Samen 1.66, maar wij schatten de kans op ongeveer 56%, tegen 60% volgens de odd. Bekerverrassingen zijn de reden om hier geen combi van te maken.",
     "Venezia - Inter: Inter mist Lautaro, Pavard, Stones en Luis Henrique, en Chivu roteert met het oog op de derby (Bastoni, Barella en Çalhanoğlu rusten mogelijk).",
     "Genoa - Juventus (1.68-1.70) en Milan - Bologna (1.67): ongeveer 59-60% volgens de markt, geen eigen edge erboven.",
     "Monza - Napoli: Napoli 1.77 na de 3-3 tegen Roma, te onzeker.",
     "Liverpool - Chelsea (League Cup): beide ploegen roteren, de markt is verdeeld (42% tegen 34%).",
-    "NBA: Cavaliers - Wizards (−320) is te laag geprijsd. 76ers - Pacers: Embiid twijfelt (hiel).",
-    "Morgen pakken we het weer op, met dezelfde strenge regels."
+    "NBA: Cavaliers - Wizards (−320) is te laag geprijsd. 76ers - Pacers: Embiid twijfelt (hiel)."
   ]
 }
