@@ -1,0 +1,107 @@
+{
+  "date": "2026-10-30",
+  "headline": "Vrijdag: Villarreal tegen een Espanyol in crisis",
+  "intro": "We blijven in de strengste stand (saldo −36 over de laatste 7 dagen) en kiezen één tip met een concrete reden: Espanyol staat 18e en heeft geen vaste trainer langs de lijn. Odds zijn indicatief, check de prijs bij je eigen bookmaker. 18+, speel bewust.",
+  "generatedAt": "2026-10-30T00:20:00+01:00",
+  "review": "Donderdag gaven we geen tip, en dat was bewust: er was niets met een duidelijke edge. Het saldo over de laatste 7 dagen (24 t/m 30 oktober) is −36. De grootste klap blijft woensdag (−25): vijf NBA-tips op één avond, waarvan twee pas na de tip-off zijn toegevoegd en één op basis van verkeerd blessurenieuws (Wembanyama speelde). Sindsdien gelden vaste regels: geen tips voor wedstrijden die al begonnen zijn, blessurenieuws bij twee bronnen checken, en zolang het saldo onder −15 staat maximaal 3 tips, alleen met een modelkans boven 60% en een concrete reden. Vandaag is er één wedstrijd die daaraan voldoet.",
+  "picks": [
+    {
+      "id": "villarreal-espanyol",
+      "sport": "voetbal",
+      "match": "Villarreal - Espanyol",
+      "home": {
+        "name": "Villarreal",
+        "short": "VIL",
+        "c1": "#FFE667",
+        "c2": "#005187"
+      },
+      "away": {
+        "name": "Espanyol",
+        "short": "ESP",
+        "c1": "#007FC8",
+        "c2": "#FFFFFF"
+      },
+      "espn": {
+        "league": "soccer/esp.1",
+        "date": "20261030"
+      },
+      "competition": "La Liga",
+      "kickoff": "20:00",
+      "market": "Uitslag (1X2)",
+      "pick": "Villarreal wint",
+      "odd": 1.47,
+      "oddNote": "1.39-1.49 (tips.gg, bet-experts), 28-29 okt; neem de beste prijs",
+      "confidence": 4,
+      "winChance": 72,
+      "level": "lager",
+      "reasoning": "Espanyol staat 18e, verloor vier van de laatste vijf, en wordt na de trainerswissel van 28 oktober geleid door de interim-coach van het tweede elftal. Villarreal won de laatste zeven onderlinge duels.",
+      "keyFactors": [
+        "Espanyol 18e, 4 nederlagen in de laatste 5 competitieduels",
+        "Nieuwe trainer Eder Sarabia benoemd op 28 oktober; B-coach Sergio García staat vrijdag langs de lijn",
+        "Villarreal won de laatste 7 onderlinge duels",
+        "Espanyol mist Jofre Carreras (lies) en Kike García (hamstring)",
+        "Villarreal mist Pape Gueye (geschorst), Saliba en Carlos Romero; Akhomach twijfelt"
+      ],
+      "analysis": [
+        "Espanyol zit diep in de problemen: de ploeg staat 18e, verloor vier van de laatste vijf competitieduels en ontsloeg deze week de trainer. Eder Sarabia werd op 28 oktober aangesteld, maar vrijdag staat nog interim-coach Sergio García van het tweede elftal langs de lijn. Er is nauwelijks tijd voor een nieuw idee, en in zo'n week is een uitwedstrijd bij een Europese subtopper het lastigste wat er is. Bovendien missen ze spits Kike García (hamstring) en Jofre Carreras (lies).",
+        "Villarreal won de laatste zeven onderlinge duels en speelt in de Cerámica. De ploeg mist wel Pape Gueye (geschorst) op het middenveld en de verdedigers Saliba en Carlos Romero. Akhomach moet een fitheidstest ondergaan. Dat maakt Villarreal kwetsbaarder achterin, maar voorin is er met Mikautadze genoeg kwaliteit. Squawka verwacht dat juist hij het verschil maakt.",
+        "De bookmakers rekenen met 64-70% (1.39-1.49). Wij schatten ongeveer 72%, omdat de trainerswissel en de blessure van de spits van Espanyol in de vroege prijzen nog niet volledig zijn meegenomen. Tegen de beste prijs van rond de 1.47 is dat een kleine positieve verwachte winst. Bewust zonder extra voorwaarde (geen over-goals of handicap): de les van Roma - Cagliari.",
+        "Statz voorspelt 2-0, Footballwhispers 3-1 en TelecomAsia ook een thuiszege. Sportsgambler is de uitzondering en ziet Espanyol +1.25. Dat is een signaal om het vertrouwen op 4 te houden en niet hoger."
+      ],
+      "risks": "Een nieuwe trainer kan een ploeg kortstondig oppeppen (het 'nieuwe-trainereffect'), en zonder Gueye mist Villarreal balans op het middenveld. Een vroege counter-goal van Espanyol kan het lastig maken.",
+      "lineups": {
+        "status": "verwacht",
+        "home": {
+          "formation": "4-4-2",
+          "missing": [
+            "Pape Gueye (geschorst)",
+            "Nathan Saliba",
+            "Carlos Romero",
+            "Akhomach (twijfel)"
+          ],
+          "note": "Mikautadze voorin"
+        },
+        "away": {
+          "formation": "4-2-3-1",
+          "missing": [
+            "Kike García (hamstring)",
+            "Jofre Carreras (lies)"
+          ],
+          "note": "Interim-coach Sergio García; Sarabia neemt het daarna over"
+        },
+        "impact": "Espanyol mist zijn spits en zit in een trainerswissel, terwijl Villarreals afwezigen vooral de defensie raken. Het niveauverschil blijft groot."
+      },
+      "sources": [
+        {
+          "label": "Squawka Villarreal - Espanyol",
+          "url": "https://www.squawka.com/en/news/previews/villarreal-vs-espanyol-predictions-betting-tips-30-10-26/"
+        },
+        {
+          "label": "Bet-Experts (trainer, odds)",
+          "url": "https://www.bet-experts.com/picks/football/villarreal-vs-espanyol-prediction-betting-tips-30-10-2026"
+        },
+        {
+          "label": "Footballwhispers (blessures)",
+          "url": "https://footballwhispers.com/blog/villarreal-vs-espanyol-prediction-30-10-2026/"
+        },
+        {
+          "label": "TelecomAsia (onderlinge duels)",
+          "url": "https://www.telecomasia.net/sports-betting/tips/football/spain-la-liga/villarreal-vs-espanyol-match-prediction-30-october-2026/"
+        }
+      ],
+      "result": null
+    }
+  ],
+  "top": [
+    {
+      "id": "villarreal-espanyol",
+      "why": "Espanyol zit in een trainerswissel en mist zijn spits. Wij schatten 72%, de odd 1.47 rekent met 68%. Het is de enige tip van vandaag."
+    }
+  ],
+  "quiet": [
+    "Le Havre - PSG: PSG mist Kvaratskhelia, Dembélé en Marquinhos. De zege is te laag geprijsd en de handicap te riskant.",
+    "Elversberg - Mainz: de markt is verdeeld (Mainz 2.15, het model van wettbasis geeft 45%). Geen duidelijke kant.",
+    "2. Bundesliga (Bielefeld - Braunschweig, Cottbus - Bochum): te weinig betrouwbare info.",
+    "NBA: na woensdag alleen met bevestigde blessurerapporten, en die waren er vannacht nog niet."
+  ]
+}
