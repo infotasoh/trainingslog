@@ -26,7 +26,7 @@
         "date": "20261030"
       },
       "competition": "La Liga",
-      "kickoff": "20:00",
+      "kickoff": "21:00",
       "market": "Uitslag (1X2)",
       "pick": "Villarreal wint",
       "odd": 1.47,
@@ -55,11 +55,12 @@
           "formation": "4-4-2",
           "missing": [
             "Pape Gueye (geschorst)",
-            "Nathan Saliba",
             "Carlos Romero",
-            "Akhomach (twijfel)"
+            "Nicolas Pépé",
+            "Akhomach (twijfel)",
+            "Saliba (twijfel)"
           ],
-          "note": "Mikautadze voorin"
+          "note": "Trainer Íñigo Pérez. Verwacht: Gulácsi; Freeman, Foyth, Veiga, Mouriño; Comesaña, Maciá; Gerard Moreno en Ayoze/Mikautadze voorin"
         },
         "away": {
           "formation": "4-2-3-1",
@@ -67,7 +68,7 @@
             "Kike García (hamstring)",
             "Jofre Carreras (lies)"
           ],
-          "note": "Interim-coach Sergio García; Sarabia neemt het daarna over"
+          "note": "Interim-coach Sergio García (na het ontslag van Manolo González, Sarabia volgt). Fortuño in doel"
         },
         "impact": "Espanyol mist zijn spits en zit in een trainerswissel, terwijl Villarreals afwezigen vooral de defensie raken. Het niveauverschil blijft groot."
       },
@@ -89,7 +90,12 @@
           "url": "https://www.telecomasia.net/sports-betting/tips/football/spain-la-liga/villarreal-vs-espanyol-match-prediction-30-october-2026/"
         }
       ],
-      "result": null
+      "result": null,
+      "lineupCheck": {
+        "at": "13:10",
+        "status": "bevestigd",
+        "note": "De aftrap is om 21:00, niet 20:00 (gecorrigeerd). Villarreal mist ook Pépé, en Saliba en Akhomach twijfelen. Bij Espanyol ontbreken Kike García en Carreras, en staat interim-coach Sergio García langs de lijn. De tip blijft staan op 72%."
+      }
     }
   ],
   "top": [
